@@ -16,3 +16,12 @@ C:\Users\Usuario\Documents\Visual Studio 2015\Projects\PR004\PR003\obj\Debug\PR0
 C:\Users\Usuario\Documents\Visual Studio 2015\Projects\PR004\PR003\obj\Debug\PR003.Form1.resources
 C:\Users\Usuario\Documents\Visual Studio 2015\Projects\PR004\PR003\obj\Debug\PR003.Properties.Resources.resources
 C:\Users\Usuario\Documents\Visual Studio 2015\Projects\PR004\PR003\obj\Debug\PR003.csproj.GenerateResource.Cache
+C:\Users\Usuario\Documents\GitHub\ID\PR004\PR003\bin\Debug\PR003.exe.config
+C:\Users\Usuario\Documents\GitHub\ID\PR004\PR003\obj\Debug\PR003.exe
+C:\Users\Usuario\Documents\GitHub\ID\PR004\PR003\obj\Debug\PR003.pdb
+C:\Users\Usuario\Documents\GitHub\ID\PR004\PR003\obj\Debug\PR003.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\GitHub\ID\PR004\PR003\obj\Debug\PR003.Form1.resources
+C:\Users\Usuario\Documents\GitHub\ID\PR004\PR003\obj\Debug\PR003.Properties.Resources.resources
+C:\Users\Usuario\Documents\GitHub\ID\PR004\PR003\obj\Debug\PR003.csproj.GenerateResource.Cache
+C:\Users\Usuario\Documents\GitHub\ID\PR004\PR003\bin\Debug\PR003.exe
+C:\Users\Usuario\Documents\GitHub\ID\PR004\PR003\bin\Debug\PR003.pdb

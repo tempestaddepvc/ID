@@ -45,7 +45,7 @@ namespace PR003
                 puntoAntiguoRaton.Y = e.Y;
           
             }
-            personita.huir(sender, e, puntoAntiguoRaton, this.Height, button1,this.Width);
+            personita.huir(sender, e, puntoAntiguoRaton, this.Height, this.Width,button1);
             puntoAntiguoRaton.X = e.X;
             puntoAntiguoRaton.Y = e.Y;
 
