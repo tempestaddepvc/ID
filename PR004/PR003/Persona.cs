@@ -11,29 +11,39 @@ namespace PR003
 {
     class Persona
     {
-       /* protected Button boton; */
+        public Button boton;
         protected Point posicion;
-        protected Image imagen;
-        protected int velocidad;
-        protected int tamanio;
-        protected int vista;
-        public Persona(Point posicion,int tamanio)
+        public Image imagen = Properties.Resources.duckFLIES;
+        protected int velocidadAndar = 1;
+        protected int velocidadCorrer = 5;
+        protected int tamanio=25;
+        protected int vista = 100;
+        public Persona(Point posicion,Button boton)
         {
-            /*this.boton = new Button();
-            this.boton.Location = posicion;
-            this.boton.Width = tamanio;
-            this.boton.Height = tamanio;*/
             this.posicion = posicion;
-          
-          
-            this.tamanio = tamanio;
-            
+            this.boton = boton;
+            boton.Location = posicion;
+            boton.Width = tamanio;
+            boton.Height = tamanio;
+            boton.BackgroundImageLayout = ImageLayout.Zoom;
+            boton.FlatAppearance.BorderSize = 0;
+            boton.Cursor = Cursors.Cross;
+            boton.FlatStyle = FlatStyle.Flat;
+            boton.BackgroundImage = imagen;
+         
+        }
+        public void crecer()
+        {
+            tamanio++;
+            boton.Width = tamanio;
+            boton.Height = tamanio;
+            vista++;
         }
         private double distancia(Point a,Point b)
         {
             return Math.Sqrt(Math.Pow(a.X - b.X, 2) + Math.Pow(a.Y - b.Y, 2));
         }
-        public void huir(object sender, MouseEventArgs e,Point puntoAntiguoRaton,int heightForm,int widthForm,Button button1)
+        public void huir(MouseEventArgs e,Point puntoAntiguoRaton,int heightForm,int widthForm)
         {
             int pixlMovimiento = 0;
             Point nuevoPunto = new Point(posicion.X, posicion.Y);
@@ -45,17 +55,17 @@ namespace PR003
                 if (!puntoAntiguoRaton.Equals(e.Location))
                 {
 
-                    if (distancia(posicion, e.Location) > 100)
+                    if (distancia(posicion, e.Location) > vista)
                     {
                         pixlMovimiento = 0;
                     }
-                    if (distancia(posicion, e.Location) < 100)
+                    if (distancia(posicion, e.Location) < vista)
                     {
-                        pixlMovimiento = 1;
+                        pixlMovimiento = velocidadAndar;
                     }
-                    if (distancia(posicion, e.Location) < 50)
+                    if (distancia(posicion, e.Location) < vista/2)
                     {
-                        pixlMovimiento = 100;
+                        pixlMovimiento = velocidadCorrer;
                     }
 
 
@@ -80,7 +90,7 @@ namespace PR003
                     if (nuevoPunto.X > 10 && nuevoPunto.Y > 10 && nuevoPunto.Y < heightForm - 10 - tamanio && nuevoPunto.X < widthForm - 10 - tamanio)
                     {
                         posicion = nuevoPunto;
-                        button1.Location = posicion;
+                        boton.Location = posicion;
                     }
 
                 }
@@ -90,8 +100,8 @@ namespace PR003
 
         }
     }
-
-
+   
+   
 
 }
 
