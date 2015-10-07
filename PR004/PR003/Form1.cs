@@ -80,14 +80,10 @@ namespace PR003
                
                 if (sender == personita.boton)
                 {
-                    personita.boton.BackgroundImage = Properties.Resources.duckDIES;
-                    
-                    
-                    Console.Beep(200,200);
-                    System.Windows.Forms.Timer ttt = new System.Windows.Forms.Timer();
-                    //ttt.Interval = 500;
-                   // ttt.Tick += (sender,e) => desaparicion(sender,e,personita.boton);
-                    //personita.boton.MouseLeave += new EventHandler(this.desaparicion);
+                  /*  personita.boton.BackgroundImage = Properties.Resources.duckDIES; 
+                       No funciona */
+                 Console.Beep(200,200);
+                    personita.boton.Dispose();
 
 
                 }
@@ -97,17 +93,18 @@ namespace PR003
             personas.Remove(i);
 
         }
-
-        private void desaparicion(object sender, EventArgs e,Button boton)
-        {
-          
-        }
-
         private void timer2_Tick(object sender, EventArgs e)
         {
             foreach (Persona personita in personas)
             {
                 personita.crecer();
+            }
+            foreach(Persona personita in personas)
+            {
+                if (personita.boton.BackgroundImage == Properties.Resources.duckDIES)
+                {
+                    personita.boton.Dispose();
+                }
             }
         }
     }

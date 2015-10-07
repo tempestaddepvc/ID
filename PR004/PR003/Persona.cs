@@ -45,16 +45,17 @@ namespace PR003
         }
         public void huir(MouseEventArgs e,Point puntoAntiguoRaton,int heightForm,int widthForm)
         {
-            int pixlMovimiento = 0;
+            int pixlMovimiento = 0;//Cantidad de pixeles que se va a mover por cada movimiento del ratón.
             Point nuevoPunto = new Point(posicion.X, posicion.Y);
         
 
-            if (Math.Abs(posicion.X - e.X) < Math.Abs(posicion.X - puntoAntiguoRaton.X) || Math.Abs(posicion.Y - e.Y) < Math.Abs(posicion.Y - puntoAntiguoRaton.Y))
+            if (Math.Abs(posicion.X - e.X) < Math.Abs(posicion.X - puntoAntiguoRaton.X) ||
+                Math.Abs(posicion.Y - e.Y) < Math.Abs(posicion.Y - puntoAntiguoRaton.Y)) /*se comprueba que el ratón se haya acercado a la persona*/
             {
 
-                if (!puntoAntiguoRaton.Equals(e.Location))
+                if (!puntoAntiguoRaton.Equals(e.Location))/*se comprueba que el ratón se haya movido*/
                 {
-
+                    /* dependiendo de la distancia,se cambia lo que se mueve*/
                     if (distancia(posicion, e.Location) > vista)
                     {
                         pixlMovimiento = 0;
@@ -67,8 +68,8 @@ namespace PR003
                     {
                         pixlMovimiento = velocidadCorrer;
                     }
-
-
+                    
+                    /* Se comprueba la posición del ratón con respecto al botón para que se mueva huyendo de él*/
                     if (posicion.X > e.Location.X)
                     {
                         nuevoPunto.X = nuevoPunto.X + pixlMovimiento;
