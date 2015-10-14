@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace MiniPracticaCheckBoxRadioButton
 {
     public partial class Form1 : Form
     {
+        Random random = new Random(new Random(new Random(new Random(new Random().Next()).Next()).Next()).Next());
+        ArrayList checkboxes;
         public Form1()
         {
             InitializeComponent();
@@ -62,7 +65,7 @@ namespace MiniPracticaCheckBoxRadioButton
             }
         }
 
-        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        private void checkBox4_click(object sender, EventArgs e)
         {
 
             if (!checkBox4.Checked)
@@ -75,7 +78,7 @@ namespace MiniPracticaCheckBoxRadioButton
             }
             
         }
-        private void checkBox5_CheckedChanged(object sender, EventArgs e)
+        private void checkBox5_click(object sender, EventArgs e)
         {
             if (!checkBox5.Checked)
             {
@@ -86,7 +89,7 @@ namespace MiniPracticaCheckBoxRadioButton
                 checkBox6.Checked = false;
             }
         }
-        private void checkBox6_CheckedChanged(object sender, EventArgs e)
+        private void checkBox6_click(object sender, EventArgs e)
         {
             if (!checkBox6.Checked)
             {
@@ -96,6 +99,28 @@ namespace MiniPracticaCheckBoxRadioButton
             {
                 checkBox4.Checked = false;
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+            CheckBox nuevoCheckBox = new CheckBox();
+            nuevoCheckBox.AutoSize = true;
+            nuevoCheckBox.Location = new Point(random.Next(0,this.Width),random.Next(0,this.Height));
+            nuevoCheckBox.Size = new Size(69, 17);
+            nuevoCheckBox.TabIndex = 2;
+            nuevoCheckBox.Text = "caca";
+            nuevoCheckBox.UseVisualStyleBackColor = true;
+            this.Controls.Add(nuevoCheckBox);
+            checkboxes.Add(nuevoCheckBox);
+            foreach (CheckBox checkcajita in checkboxes)
+            {
+                checkcajita.Checked = false;
+            }
+
+
+           
+
         }
     }
 }
