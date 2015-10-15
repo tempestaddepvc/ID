@@ -12,6 +12,7 @@ namespace FichaRol
 {
     public partial class Form1 : Form
     {
+        panelConCheckBoxes panelcito;
         public Form1()
         {
             InitializeComponent();
@@ -19,7 +20,7 @@ namespace FichaRol
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+          panelcito = new panelConCheckBoxes(panel2);
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
@@ -28,6 +29,11 @@ namespace FichaRol
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
 
         }

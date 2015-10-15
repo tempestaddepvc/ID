@@ -13,8 +13,9 @@ namespace MiniPracticaCheckBoxRadioButton
 {
     public partial class Form1 : Form
     {
-        Random random = new Random(new Random(new Random(new Random(new Random().Next()).Next()).Next()).Next());
-        ArrayList checkboxes;
+        protected Random random = new Random(new Random(new Random(new Random(new Random(new Random().Next()).Next()).Next()).Next()).Next());
+        protected int contador=0;
+        
         public Form1()
         {
             InitializeComponent();
@@ -103,23 +104,26 @@ namespace MiniPracticaCheckBoxRadioButton
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-
+            contador++;
             CheckBox nuevoCheckBox = new CheckBox();
-            nuevoCheckBox.AutoSize = true;
             nuevoCheckBox.Location = new Point(random.Next(0,this.Width),random.Next(0,this.Height));
             nuevoCheckBox.Size = new Size(69, 17);
             nuevoCheckBox.TabIndex = 2;
-            nuevoCheckBox.Text = "caca";
+            nuevoCheckBox.Text = contador+ "";
             nuevoCheckBox.UseVisualStyleBackColor = true;
             this.Controls.Add(nuevoCheckBox);
-            checkboxes.Add(nuevoCheckBox);
-            foreach (CheckBox checkcajita in checkboxes)
-            {
-                checkcajita.Checked = false;
+           
+
+
+             foreach (Object checkcajita in Controls)
+            { 
+                if(checkcajita is CheckBox) { 
+                 ((CheckBox)checkcajita).Checked = false;
+                }
             }
 
 
-           
+
 
         }
     }
