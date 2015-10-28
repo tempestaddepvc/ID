@@ -86,9 +86,6 @@
     <None Include="Resources\duck hunt clean.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\duckDIES.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\duckFLIES.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

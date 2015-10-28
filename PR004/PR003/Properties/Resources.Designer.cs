@@ -63,16 +63,6 @@ namespace PR003.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap duckDIES {
-            get {
-                object obj = ResourceManager.GetObject("duckDIES", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap duckFLIES {
             get {
                 object obj = ResourceManager.GetObject("duckFLIES", resourceCulture);

@@ -34,16 +34,18 @@ namespace PR003
         }
         public void crecer()
         {
+            //si no aumentamos la vista a la vez que el tamanio,al final el boton se dejaria de mover
             tamanio++;
             boton.Width = tamanio;
             boton.Height = tamanio;
             vista++;
+
         }
         private double distancia(Point a,Point b)
         {
             return Math.Sqrt(Math.Pow(a.X - b.X, 2) + Math.Pow(a.Y - b.Y, 2));
         }
-        public void huir(MouseEventArgs e,Point puntoAntiguoRaton,int heightForm,int widthForm)
+public void huir(MouseEventArgs e,Point puntoAntiguoRaton,int heightForm,int widthForm)
         {
             int pixlMovimiento = 0;//Cantidad de pixeles que se va a mover por cada movimiento del ratón.
             Point nuevoPunto = new Point(posicion.X, posicion.Y);
@@ -101,8 +103,6 @@ namespace PR003
 
         }
     }
-   
-   
 
 }
 

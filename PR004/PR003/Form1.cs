@@ -28,10 +28,7 @@ namespace PR003
 
         }
         
-        private void button1_MouseMove(object sender, MouseEventArgs e)
-        {
-
-        }
+ 
         private double distancia2Puntos(Point a,Point b)
         {
          return Math.Sqrt(Math.Pow(a.X - b.X,2) + Math.Pow(a.Y - b.Y,2));
@@ -73,15 +70,13 @@ namespace PR003
 
         }
         public void clickEnPersona(Object sender,System.EventArgs e)
-        {
+        {       
             int i = 0;
-            foreach (Persona personita in personas)
+            foreach (Persona personita in personas) //busca en que posición del array de personas está y la borra de él
             {
                
                 if (sender == personita.boton)
                 {
-                  /*  personita.boton.BackgroundImage = Properties.Resources.duckDIES; 
-                       No funciona */
                  Console.Beep(200,200);
                     personita.boton.Dispose();
 
@@ -99,13 +94,7 @@ namespace PR003
             {
                 personita.crecer();
             }
-            foreach(Persona personita in personas)
-            {
-                if (personita.boton.BackgroundImage == Properties.Resources.duckDIES)
-                {
-                    personita.boton.Dispose();
-                }
-            }
+        
         }
     }
 }
