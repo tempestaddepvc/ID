@@ -11,18 +11,24 @@ namespace FichaRol
     {
         protected Panel panel;
         protected LinkedList<CheckBox> checkboxes;
-        protected CheckBox auxiliar;
-       public panelConCheckBoxes(Panel panel)
-        {
-            this.panel = panel;
-            for (int i = 0; i < 5; i++)
-            {
-                auxiliar = new CheckBox();
-                auxiliar.Location = new System.Drawing.Point(10*i,0);
-                /*checkboxes.AddLast(auxiliar);*/
-                panel.Controls.Add(auxiliar);
+        protected int longitudArray;
+        protected CheckBox[] arrayCB;
+        
 
-            }
+        public panelConCheckBoxes(Panel panel,int longitudArray)
+        {
+            this.longitudArray = longitudArray;
+            this.panel = panel;
+            arrayCB = new CheckBox[longitudArray];
+            /* for (int i = 0; i < 5; i++)
+             {
+                 arrayCB[i] = new CheckBox();
+                 arrayCB[i].Location= new System.Drawing.Point(10*i,0);
+
+                 panel.Controls.Add(arrayCB[i]);
+
+             }*/
+          /*  panel.Controls.Add(new CheckBox()); */
 
         }
 

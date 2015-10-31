@@ -20,7 +20,7 @@ namespace FichaRol
 
         private void Form1_Load(object sender, EventArgs e)
         {
-          panelcito = new panelConCheckBoxes(panel2);
+          panelcito = new panelConCheckBoxes(panel2,5);
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
