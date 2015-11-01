@@ -42,6 +42,23 @@ namespace Ficha_Ragnarok_Online
             nudSuerte.Tag = 1;
             nudVitalidad.Tag = 1;
 
+            panelHabilidad1PrimerTrabajo.Tag = 0; //En el tag del panel se guardan los puntos antiguos de cada skill
+            panelHabilidad2PrimerTrabajo.Tag = 0;
+            panelHabilidad3PrimerTrabajo.Tag = 0;
+            panelHabilidad4PrimerTrabajo.Tag = 0;
+            panelHabilidad1SegundoTrabajo.Tag = 0;
+            panelHabilidad2SegundoTrabajo.Tag = 0;
+            panelHabilidad3SegundoTrabajo.Tag = 0;
+            panelHabilidad4SegundoTrabajo.Tag = 0;
+            lblJob1Skill1.Tag = 0; //En el tag de la equiqueta se guardan los puntos nuevos de cada skill
+            lblJob1Skill2.Tag = 0;
+            lblJob1Skill3.Tag = 0;
+            lblJob1Skill4.Tag = 0;
+            lblJob2Skill1.Tag = 0;
+            lblJob2Skill2.Tag = 0;
+            lblJob2Skill3.Tag = 0;
+            lblJob2Skill4.Tag = 0;
+
 
         }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -323,33 +340,67 @@ namespace Ficha_Ragnarok_Online
         }
         private void checkBoxClick(object sender, EventArgs e)
         {
-            if (!((CheckBox)sender).Checked)
+            Label lblAux = new Label();
+            Panel panelDeSkill = ((Panel)((CheckBox)sender).Parent);
+            Panel panelDeTrabajo = ((Panel)((Panel)((CheckBox)sender).Parent).Parent);
+            CheckBox checkboxAux = new CheckBox();
+            foreach (Object item in panelDeSkill.Controls)
             {
-                ((CheckBox)sender).Checked = false;
-                foreach (Object item in ((Panel)((CheckBox)sender).Parent).Controls)
+                if (item is Label)
                 {
-                    if (item is CheckBox)
-                    {
-                        if ((((CheckBox)sender).TabIndex) < (((CheckBox)item).TabIndex))
-                        {
-                            ((CheckBox)item).Checked = false;
-                        }
-                    }
+                    lblAux = ((Label)item);
+
                 }
+            }
+
+            if (((CheckBox)sender).Checked)
+            {
+                lblAux.Tag = ((CheckBox)sender).TabIndex;
             }
             else
             {
-                ((CheckBox)sender).Checked = true;
-                foreach (Object item in ((Panel)((CheckBox)sender).Parent).Controls)
+                lblAux.Tag = ((CheckBox)sender).TabIndex - 1;
+            }
+
+            if ((((int)panelDeTrabajo.Tag) - ((int)lblAux.Tag) + ((int)panelDeSkill.Tag)) >= 0)
+            {
+                if (!((CheckBox)sender).Checked)
                 {
-                    if (item is CheckBox)
+                    ((CheckBox)sender).Checked = false;
+                    foreach (Object item in ((Panel)((CheckBox)sender).Parent).Controls)
                     {
-                        if ((((CheckBox)sender).TabIndex) > (((CheckBox)item).TabIndex))
+                        if (item is CheckBox)
                         {
-                            ((CheckBox)item).Checked = true;
+                            if ((((CheckBox)sender).TabIndex) < (((CheckBox)item).TabIndex) && (((CheckBox)item).Checked))
+                            {
+                                ((CheckBox)item).Checked = false;
+                            }
                         }
                     }
                 }
+                else
+                {
+                    ((CheckBox)sender).Checked = true;
+                    foreach (Object item in ((Panel)((CheckBox)sender).Parent).Controls)
+                    {
+                        if (item is CheckBox)
+                        {
+                            if ((((CheckBox)sender).TabIndex) > (((CheckBox)item).TabIndex) && !(((CheckBox)item).Checked))
+                            {
+                                ((CheckBox)item).Checked = true;
+                            }
+                        }
+                    }
+                }
+                panelDeTrabajo.Tag = ((int)panelDeTrabajo.Tag - ((int)lblAux.Tag) + ((int)panelDeSkill.Tag));
+                panelDeSkill.Tag = ((int)lblAux.Tag);
+                escribirPuntosRestantes(panelDeTrabajo);
+                escribirAvisosCaracteristicas(panelDeTrabajo, ALEATORIO);
+            }
+            else
+            {
+                escribirAvisosCaracteristicas(panelDeTrabajo, ERROR);
+                ((CheckBox)sender).Checked = false;
             }
         }
 
