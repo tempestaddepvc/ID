@@ -7,3 +7,6 @@ c:\users\usuario\documents\visual studio 2015\Projects\WindowsFormsApplication1\
 c:\users\usuario\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
 c:\users\usuario\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\PR002.exe
 c:\users\usuario\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\PR002.pdb
+C:\Users\JuanPablo\Documents\GitHub\ID\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\PR002.exe.config
+C:\Users\JuanPablo\Documents\GitHub\ID\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\PR002.exe
+C:\Users\JuanPablo\Documents\GitHub\ID\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\PR002.pdb

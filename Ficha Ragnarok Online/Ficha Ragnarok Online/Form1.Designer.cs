@@ -28,23 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.characterImage = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblStats = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.prbNivel = new System.Windows.Forms.ProgressBar();
-            this.lblMsgNivel = new System.Windows.Forms.Label();
-            this.numNivel = new System.Windows.Forms.NumericUpDown();
-            this.lblFuerza = new System.Windows.Forms.Label();
-            this.lblInteligencia = new System.Windows.Forms.Label();
-            this.lblAgilidad = new System.Windows.Forms.Label();
-            this.nudFuerza = new System.Windows.Forms.NumericUpDown();
-            this.nudInteligencia = new System.Windows.Forms.NumericUpDown();
-            this.nudAgilidad = new System.Windows.Forms.NumericUpDown();
-            this.lblSuerte = new System.Windows.Forms.Label();
-            this.lblVitalidad = new System.Windows.Forms.Label();
-            this.lblDestreza = new System.Windows.Forms.Label();
             this.rdbtnMujer = new System.Windows.Forms.RadioButton();
             this.lblSexo = new System.Windows.Forms.Label();
             this.rdbtnHombre = new System.Windows.Forms.RadioButton();
@@ -53,48 +38,16 @@
             this.cmboxLocalizacion = new System.Windows.Forms.ComboBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.nudSuerte = new System.Windows.Forms.NumericUpDown();
-            this.nudVitalidad = new System.Windows.Forms.NumericUpDown();
-            this.nudDestreza = new System.Windows.Forms.NumericUpDown();
-            this.lblPuntosRestantesStats = new System.Windows.Forms.Label();
-            this.lblNumPuntosRestantesStats = new System.Windows.Forms.Label();
-            this.btnAlAzarStats = new System.Windows.Forms.Button();
-            this.btnLimpiarStats = new System.Windows.Forms.Button();
-            this.lblMsgStats = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.panelPrimerTrabajo = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.lblMsgJob1 = new System.Windows.Forms.Label();
-            this.btnLimpiarJob1 = new System.Windows.Forms.Button();
-            this.btnAlAzarJob1 = new System.Windows.Forms.Button();
-            this.lblNumPuntosRestantesJob1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.nudJob1 = new System.Windows.Forms.NumericUpDown();
+            this.progressBarJob1 = new System.Windows.Forms.ProgressBar();
+            this.cmboxPrimerJob = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.lblPrimerTrabajo = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblJob1Skill1 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.lblJob1Skill3 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.lblJob1Skill2 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.lblJob1Skills = new System.Windows.Forms.Label();
+            this.panelHabilidad4PrimerTrabajo = new System.Windows.Forms.Panel();
             this.checkBox16 = new System.Windows.Forms.CheckBox();
             this.checkBox17 = new System.Windows.Forms.CheckBox();
             this.checkBox18 = new System.Windows.Forms.CheckBox();
@@ -102,11 +55,40 @@
             this.checkBox20 = new System.Windows.Forms.CheckBox();
             this.lblJob1Skill4 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.lblJob1Skills = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
+            this.lblMsgJob1Skills = new System.Windows.Forms.Label();
+            this.panelHabilidad2PrimerTrabajo = new System.Windows.Forms.Panel();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.checkBox13 = new System.Windows.Forms.CheckBox();
+            this.checkBox14 = new System.Windows.Forms.CheckBox();
+            this.checkBox15 = new System.Windows.Forms.CheckBox();
+            this.lblJob1Skill2 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panelHabilidad3PrimerTrabajo = new System.Windows.Forms.Panel();
+            this.lblJob1Skill3 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panelHabilidad1PrimerTrabajo = new System.Windows.Forms.Panel();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.lblJob1Skill1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnAlAzarJob1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnLimpiarJob1 = new System.Windows.Forms.Button();
+            this.lblNumPuntosRestantesJob1 = new System.Windows.Forms.Label();
+            this.panelSegundoTrabajo = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lblMsgJob2 = new System.Windows.Forms.Label();
+            this.nudJob2 = new System.Windows.Forms.NumericUpDown();
+            this.progressBarJob2 = new System.Windows.Forms.ProgressBar();
+            this.cmboxSegundoTrabajo = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
+            this.panelHabilidad4SegundoTrabajo = new System.Windows.Forms.Panel();
             this.checkBox21 = new System.Windows.Forms.CheckBox();
             this.checkBox22 = new System.Windows.Forms.CheckBox();
             this.checkBox23 = new System.Windows.Forms.CheckBox();
@@ -114,8 +96,8 @@
             this.checkBox25 = new System.Windows.Forms.CheckBox();
             this.lblJob2Skill4 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.lblMsgJob2 = new System.Windows.Forms.Label();
-            this.panel13 = new System.Windows.Forms.Panel();
+            this.lblMsgJob2Skills = new System.Windows.Forms.Label();
+            this.panelHabilidad2SegundoTrabajo = new System.Windows.Forms.Panel();
             this.checkBox26 = new System.Windows.Forms.CheckBox();
             this.checkBox27 = new System.Windows.Forms.CheckBox();
             this.checkBox28 = new System.Windows.Forms.CheckBox();
@@ -123,7 +105,7 @@
             this.checkBox30 = new System.Windows.Forms.CheckBox();
             this.lblJob2Skill2 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.panel14 = new System.Windows.Forms.Panel();
+            this.panelHabilidad3SegundoTrabajo = new System.Windows.Forms.Panel();
             this.checkBox31 = new System.Windows.Forms.CheckBox();
             this.checkBox32 = new System.Windows.Forms.CheckBox();
             this.checkBox33 = new System.Windows.Forms.CheckBox();
@@ -131,7 +113,7 @@
             this.checkBox35 = new System.Windows.Forms.CheckBox();
             this.lblJob2Skill3 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.panel15 = new System.Windows.Forms.Panel();
+            this.panelHabilidad1SegundoTrabajo = new System.Windows.Forms.Panel();
             this.checkBox36 = new System.Windows.Forms.CheckBox();
             this.checkBox37 = new System.Windows.Forms.CheckBox();
             this.checkBox38 = new System.Windows.Forms.CheckBox();
@@ -142,285 +124,83 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.label3 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblNumPuntosRestantesJob2 = new System.Windows.Forms.Label();
+            this.panelNivelStats = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.nudNivel = new System.Windows.Forms.NumericUpDown();
+            this.lblMsgNivel = new System.Windows.Forms.Label();
+            this.prbNivel = new System.Windows.Forms.ProgressBar();
+            this.lblNivelStats = new System.Windows.Forms.Label();
+            this.lblMsgStats = new System.Windows.Forms.Label();
+            this.btnLimpiarStats = new System.Windows.Forms.Button();
+            this.btnAlAzarStats = new System.Windows.Forms.Button();
+            this.lblNumPuntosRestantesStats = new System.Windows.Forms.Label();
+            this.lblPuntosRestantesStats = new System.Windows.Forms.Label();
+            this.nudSuerte = new System.Windows.Forms.NumericUpDown();
+            this.nudVitalidad = new System.Windows.Forms.NumericUpDown();
+            this.nudDestreza = new System.Windows.Forms.NumericUpDown();
+            this.lblSuerte = new System.Windows.Forms.Label();
+            this.lblVitalidad = new System.Windows.Forms.Label();
+            this.lblDestreza = new System.Windows.Forms.Label();
+            this.nudAgilidad = new System.Windows.Forms.NumericUpDown();
+            this.nudInteligencia = new System.Windows.Forms.NumericUpDown();
+            this.nudFuerza = new System.Windows.Forms.NumericUpDown();
+            this.lblAgilidad = new System.Windows.Forms.Label();
+            this.lblInteligencia = new System.Windows.Forms.Label();
+            this.lblFuerza = new System.Windows.Forms.Label();
+            this.lblStats = new System.Windows.Forms.Label();
+            this.timerAvisosCaracteristicas = new System.Windows.Forms.Timer(this.components);
+            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.characterImage)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numNivel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudFuerza)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudInteligencia)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudAgilidad)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panelPrimerTrabajo.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudJob1)).BeginInit();
+            this.panelHabilidad4PrimerTrabajo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panelHabilidad2PrimerTrabajo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panelHabilidad3PrimerTrabajo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panelHabilidad1PrimerTrabajo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelSegundoTrabajo.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudJob2)).BeginInit();
+            this.panelHabilidad4SegundoTrabajo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panelHabilidad2SegundoTrabajo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.panelHabilidad3SegundoTrabajo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.panelHabilidad1SegundoTrabajo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.panelNivelStats.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudNivel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSuerte)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudVitalidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudDestreza)).BeginInit();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel10.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAgilidad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudInteligencia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudFuerza)).BeginInit();
             this.SuspendLayout();
             // 
             // characterImage
             // 
-            this.characterImage.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.characterImage.BackColor = System.Drawing.Color.Transparent;
             this.characterImage.Location = new System.Drawing.Point(46, 48);
-            this.characterImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.characterImage.Margin = new System.Windows.Forms.Padding(4);
             this.characterImage.MaximumSize = new System.Drawing.Size(200, 200);
             this.characterImage.MinimumSize = new System.Drawing.Size(200, 200);
             this.characterImage.Name = "characterImage";
             this.characterImage.Size = new System.Drawing.Size(200, 200);
             this.characterImage.TabIndex = 0;
             this.characterImage.TabStop = false;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.lblMsgStats);
-            this.panel2.Controls.Add(this.btnLimpiarStats);
-            this.panel2.Controls.Add(this.btnAlAzarStats);
-            this.panel2.Controls.Add(this.lblNumPuntosRestantesStats);
-            this.panel2.Controls.Add(this.lblPuntosRestantesStats);
-            this.panel2.Controls.Add(this.nudSuerte);
-            this.panel2.Controls.Add(this.nudVitalidad);
-            this.panel2.Controls.Add(this.nudDestreza);
-            this.panel2.Controls.Add(this.lblSuerte);
-            this.panel2.Controls.Add(this.lblVitalidad);
-            this.panel2.Controls.Add(this.lblDestreza);
-            this.panel2.Controls.Add(this.nudAgilidad);
-            this.panel2.Controls.Add(this.nudInteligencia);
-            this.panel2.Controls.Add(this.nudFuerza);
-            this.panel2.Controls.Add(this.lblAgilidad);
-            this.panel2.Controls.Add(this.lblInteligencia);
-            this.panel2.Controls.Add(this.lblFuerza);
-            this.panel2.Controls.Add(this.lblStats);
-            this.panel2.Location = new System.Drawing.Point(635, 123);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(380, 196);
-            this.panel2.TabIndex = 11;
-            // 
-            // lblStats
-            // 
-            this.lblStats.AutoSize = true;
-            this.lblStats.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStats.Location = new System.Drawing.Point(4, 3);
-            this.lblStats.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblStats.Name = "lblStats";
-            this.lblStats.Size = new System.Drawing.Size(115, 21);
-            this.lblStats.TabIndex = 9;
-            this.lblStats.Text = "Estadísticas";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 21);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Nivel";
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.numNivel);
-            this.panel3.Controls.Add(this.lblMsgNivel);
-            this.panel3.Controls.Add(this.prbNivel);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(635, 12);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 89);
-            this.panel3.TabIndex = 12;
-            // 
-            // prbNivel
-            // 
-            this.prbNivel.Location = new System.Drawing.Point(76, 22);
-            this.prbNivel.Name = "prbNivel";
-            this.prbNivel.Size = new System.Drawing.Size(100, 23);
-            this.prbNivel.TabIndex = 11;
-            // 
-            // lblMsgNivel
-            // 
-            this.lblMsgNivel.AutoSize = true;
-            this.lblMsgNivel.ForeColor = System.Drawing.Color.Black;
-            this.lblMsgNivel.Location = new System.Drawing.Point(5, 61);
-            this.lblMsgNivel.Name = "lblMsgNivel";
-            this.lblMsgNivel.Size = new System.Drawing.Size(66, 17);
-            this.lblMsgNivel.TabIndex = 12;
-            this.lblMsgNivel.Text = "MsgNivel";
-            this.lblMsgNivel.Visible = false;
-            this.lblMsgNivel.Click += new System.EventHandler(this.lblMsgNivel_Click);
-            // 
-            // numNivel
-            // 
-            this.numNivel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.numNivel.Location = new System.Drawing.Point(8, 25);
-            this.numNivel.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.numNivel.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numNivel.Name = "numNivel";
-            this.numNivel.Size = new System.Drawing.Size(62, 20);
-            this.numNivel.TabIndex = 13;
-            this.numNivel.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // lblFuerza
-            // 
-            this.lblFuerza.AutoSize = true;
-            this.lblFuerza.Location = new System.Drawing.Point(5, 38);
-            this.lblFuerza.Name = "lblFuerza";
-            this.lblFuerza.Size = new System.Drawing.Size(54, 17);
-            this.lblFuerza.TabIndex = 10;
-            this.lblFuerza.Text = "Fuerza";
-            // 
-            // lblInteligencia
-            // 
-            this.lblInteligencia.AutoSize = true;
-            this.lblInteligencia.Location = new System.Drawing.Point(5, 72);
-            this.lblInteligencia.Name = "lblInteligencia";
-            this.lblInteligencia.Size = new System.Drawing.Size(80, 17);
-            this.lblInteligencia.TabIndex = 11;
-            this.lblInteligencia.Text = "Inteligencia";
-            // 
-            // lblAgilidad
-            // 
-            this.lblAgilidad.AutoSize = true;
-            this.lblAgilidad.Location = new System.Drawing.Point(5, 103);
-            this.lblAgilidad.Name = "lblAgilidad";
-            this.lblAgilidad.Size = new System.Drawing.Size(58, 17);
-            this.lblAgilidad.TabIndex = 12;
-            this.lblAgilidad.Text = "Agilidad";
-            // 
-            // nudFuerza
-            // 
-            this.nudFuerza.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.nudFuerza.Location = new System.Drawing.Point(95, 39);
-            this.nudFuerza.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.nudFuerza.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudFuerza.Name = "nudFuerza";
-            this.nudFuerza.Size = new System.Drawing.Size(40, 20);
-            this.nudFuerza.TabIndex = 14;
-            this.nudFuerza.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudFuerza.ValueChanged += new System.EventHandler(this.nudFuerza_ValueChanged);
-            // 
-            // nudInteligencia
-            // 
-            this.nudInteligencia.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.nudInteligencia.Location = new System.Drawing.Point(95, 73);
-            this.nudInteligencia.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.nudInteligencia.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudInteligencia.Name = "nudInteligencia";
-            this.nudInteligencia.Size = new System.Drawing.Size(40, 20);
-            this.nudInteligencia.TabIndex = 15;
-            this.nudInteligencia.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // nudAgilidad
-            // 
-            this.nudAgilidad.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.nudAgilidad.Location = new System.Drawing.Point(95, 107);
-            this.nudAgilidad.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.nudAgilidad.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudAgilidad.Name = "nudAgilidad";
-            this.nudAgilidad.Size = new System.Drawing.Size(40, 20);
-            this.nudAgilidad.TabIndex = 16;
-            this.nudAgilidad.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // lblSuerte
-            // 
-            this.lblSuerte.AutoSize = true;
-            this.lblSuerte.Location = new System.Drawing.Point(209, 107);
-            this.lblSuerte.Name = "lblSuerte";
-            this.lblSuerte.Size = new System.Drawing.Size(51, 17);
-            this.lblSuerte.TabIndex = 19;
-            this.lblSuerte.Text = "Suerte";
-            // 
-            // lblVitalidad
-            // 
-            this.lblVitalidad.AutoSize = true;
-            this.lblVitalidad.Location = new System.Drawing.Point(209, 72);
-            this.lblVitalidad.Name = "lblVitalidad";
-            this.lblVitalidad.Size = new System.Drawing.Size(62, 17);
-            this.lblVitalidad.TabIndex = 18;
-            this.lblVitalidad.Text = "Vitalidad";
-            // 
-            // lblDestreza
-            // 
-            this.lblDestreza.AutoSize = true;
-            this.lblDestreza.Location = new System.Drawing.Point(209, 38);
-            this.lblDestreza.Name = "lblDestreza";
-            this.lblDestreza.Size = new System.Drawing.Size(68, 17);
-            this.lblDestreza.TabIndex = 17;
-            this.lblDestreza.Text = "Destreza";
             // 
             // rdbtnMujer
             // 
@@ -430,25 +210,27 @@
             this.rdbtnMujer.Name = "rdbtnMujer";
             this.rdbtnMujer.Size = new System.Drawing.Size(61, 21);
             this.rdbtnMujer.TabIndex = 3;
-            this.rdbtnMujer.TabStop = true;
             this.rdbtnMujer.Text = "Mujer";
             this.rdbtnMujer.UseVisualStyleBackColor = true;
+            this.rdbtnMujer.CheckedChanged += new System.EventHandler(this.rdbtnMujer_CheckedChanged);
             // 
             // lblSexo
             // 
             this.lblSexo.AutoSize = true;
             this.lblSexo.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSexo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblSexo.Location = new System.Drawing.Point(279, 109);
             this.lblSexo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSexo.Name = "lblSexo";
-            this.lblSexo.Size = new System.Drawing.Size(55, 21);
+            this.lblSexo.Size = new System.Drawing.Size(75, 21);
             this.lblSexo.TabIndex = 7;
-            this.lblSexo.Text = "Sexo";
-            this.lblSexo.Click += new System.EventHandler(this.lblSexo_Click);
+            this.lblSexo.Text = "Sexo    ";
             // 
             // rdbtnHombre
             // 
             this.rdbtnHombre.AutoSize = true;
+            this.rdbtnHombre.Checked = true;
+            this.rdbtnHombre.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.rdbtnHombre.Location = new System.Drawing.Point(279, 134);
             this.rdbtnHombre.Margin = new System.Windows.Forms.Padding(4);
             this.rdbtnHombre.Name = "rdbtnHombre";
@@ -457,6 +239,7 @@
             this.rdbtnHombre.TabStop = true;
             this.rdbtnHombre.Text = "Hombre";
             this.rdbtnHombre.UseVisualStyleBackColor = true;
+            this.rdbtnHombre.CheckedChanged += new System.EventHandler(this.rdbtnHombre_CheckedChanged);
             // 
             // lblLocalizacion
             // 
@@ -493,7 +276,7 @@
             this.cmboxLocalizacion.Name = "cmboxLocalizacion";
             this.cmboxLocalizacion.Size = new System.Drawing.Size(121, 25);
             this.cmboxLocalizacion.TabIndex = 4;
-            this.cmboxLocalizacion.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cmboxLocalizacion.SelectedIndexChanged += new System.EventHandler(this.comboCambiarLocalizacion);
             // 
             // lblNombre
             // 
@@ -518,200 +301,92 @@
             this.panel1.Controls.Add(this.rdbtnMujer);
             this.panel1.Location = new System.Drawing.Point(30, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(441, 332);
+            this.panel1.Size = new System.Drawing.Size(441, 269);
             this.panel1.TabIndex = 10;
             // 
-            // nudSuerte
+            // panelPrimerTrabajo
             // 
-            this.nudSuerte.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.nudSuerte.Location = new System.Drawing.Point(283, 107);
-            this.nudSuerte.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.nudSuerte.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudSuerte.Name = "nudSuerte";
-            this.nudSuerte.Size = new System.Drawing.Size(40, 20);
-            this.nudSuerte.TabIndex = 22;
-            this.nudSuerte.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.panelPrimerTrabajo.Controls.Add(this.panel3);
+            this.panelPrimerTrabajo.Controls.Add(this.lblJob1Skills);
+            this.panelPrimerTrabajo.Controls.Add(this.panelHabilidad4PrimerTrabajo);
+            this.panelPrimerTrabajo.Controls.Add(this.lblMsgJob1Skills);
+            this.panelPrimerTrabajo.Controls.Add(this.panelHabilidad2PrimerTrabajo);
+            this.panelPrimerTrabajo.Controls.Add(this.panelHabilidad3PrimerTrabajo);
+            this.panelPrimerTrabajo.Controls.Add(this.panelHabilidad1PrimerTrabajo);
+            this.panelPrimerTrabajo.Controls.Add(this.btnAlAzarJob1);
+            this.panelPrimerTrabajo.Controls.Add(this.label4);
+            this.panelPrimerTrabajo.Controls.Add(this.btnLimpiarJob1);
+            this.panelPrimerTrabajo.Controls.Add(this.lblNumPuntosRestantesJob1);
+            this.panelPrimerTrabajo.Location = new System.Drawing.Point(30, 316);
+            this.panelPrimerTrabajo.Name = "panelPrimerTrabajo";
+            this.panelPrimerTrabajo.Size = new System.Drawing.Size(472, 280);
+            this.panelPrimerTrabajo.TabIndex = 28;
             // 
-            // nudVitalidad
+            // panel3
             // 
-            this.nudVitalidad.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.nudVitalidad.Location = new System.Drawing.Point(283, 73);
-            this.nudVitalidad.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.nudVitalidad.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudVitalidad.Name = "nudVitalidad";
-            this.nudVitalidad.Size = new System.Drawing.Size(40, 20);
-            this.nudVitalidad.TabIndex = 21;
-            this.nudVitalidad.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // nudDestreza
-            // 
-            this.nudDestreza.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.nudDestreza.Location = new System.Drawing.Point(283, 39);
-            this.nudDestreza.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.nudDestreza.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudDestreza.Name = "nudDestreza";
-            this.nudDestreza.Size = new System.Drawing.Size(40, 20);
-            this.nudDestreza.TabIndex = 20;
-            this.nudDestreza.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // lblPuntosRestantesStats
-            // 
-            this.lblPuntosRestantesStats.AutoSize = true;
-            this.lblPuntosRestantesStats.Location = new System.Drawing.Point(114, 150);
-            this.lblPuntosRestantesStats.Name = "lblPuntosRestantesStats";
-            this.lblPuntosRestantesStats.Size = new System.Drawing.Size(123, 17);
-            this.lblPuntosRestantesStats.TabIndex = 23;
-            this.lblPuntosRestantesStats.Text = "Puntos restantes:";
-            // 
-            // lblNumPuntosRestantesStats
-            // 
-            this.lblNumPuntosRestantesStats.AutoSize = true;
-            this.lblNumPuntosRestantesStats.Location = new System.Drawing.Point(244, 150);
-            this.lblNumPuntosRestantesStats.Name = "lblNumPuntosRestantesStats";
-            this.lblNumPuntosRestantesStats.Size = new System.Drawing.Size(16, 17);
-            this.lblNumPuntosRestantesStats.TabIndex = 24;
-            this.lblNumPuntosRestantesStats.Text = "0";
-            // 
-            // btnAlAzarStats
-            // 
-            this.btnAlAzarStats.Location = new System.Drawing.Point(8, 150);
-            this.btnAlAzarStats.Name = "btnAlAzarStats";
-            this.btnAlAzarStats.Size = new System.Drawing.Size(75, 23);
-            this.btnAlAzarStats.TabIndex = 25;
-            this.btnAlAzarStats.Text = "Al azar";
-            this.btnAlAzarStats.UseVisualStyleBackColor = true;
-            // 
-            // btnLimpiarStats
-            // 
-            this.btnLimpiarStats.Location = new System.Drawing.Point(288, 150);
-            this.btnLimpiarStats.Name = "btnLimpiarStats";
-            this.btnLimpiarStats.Size = new System.Drawing.Size(75, 23);
-            this.btnLimpiarStats.TabIndex = 26;
-            this.btnLimpiarStats.Text = "Limpiar";
-            this.btnLimpiarStats.UseVisualStyleBackColor = true;
-            // 
-            // lblMsgStats
-            // 
-            this.lblMsgStats.AutoSize = true;
-            this.lblMsgStats.Location = new System.Drawing.Point(131, 7);
-            this.lblMsgStats.Name = "lblMsgStats";
-            this.lblMsgStats.Size = new System.Drawing.Size(69, 17);
-            this.lblMsgStats.TabIndex = 27;
-            this.lblMsgStats.Text = "MsgStats";
-            this.lblMsgStats.Visible = false;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.numericUpDown1);
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.progressBar1);
-            this.panel4.Controls.Add(this.comboBox1);
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Controls.Add(this.lblPrimerTrabajo);
-            this.panel4.Location = new System.Drawing.Point(30, 369);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(472, 280);
-            this.panel4.TabIndex = 28;
+            this.panel3.Controls.Add(this.lblMsgJob1);
+            this.panel3.Controls.Add(this.nudJob1);
+            this.panel3.Controls.Add(this.progressBarJob1);
+            this.panel3.Controls.Add(this.cmboxPrimerJob);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.lblPrimerTrabajo);
+            this.panel3.Location = new System.Drawing.Point(3, 5);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(450, 73);
+            this.panel3.TabIndex = 48;
             // 
             // lblMsgJob1
             // 
             this.lblMsgJob1.AutoSize = true;
-            this.lblMsgJob1.Location = new System.Drawing.Point(127, 13);
+            this.lblMsgJob1.Location = new System.Drawing.Point(198, 6);
             this.lblMsgJob1.Name = "lblMsgJob1";
             this.lblMsgJob1.Size = new System.Drawing.Size(66, 17);
-            this.lblMsgJob1.TabIndex = 27;
+            this.lblMsgJob1.TabIndex = 43;
             this.lblMsgJob1.Text = "MsgJob1";
             this.lblMsgJob1.Visible = false;
             // 
-            // btnLimpiarJob1
+            // nudJob1
             // 
-            this.btnLimpiarJob1.Location = new System.Drawing.Point(315, 178);
-            this.btnLimpiarJob1.Name = "btnLimpiarJob1";
-            this.btnLimpiarJob1.Size = new System.Drawing.Size(75, 23);
-            this.btnLimpiarJob1.TabIndex = 26;
-            this.btnLimpiarJob1.Text = "Limpiar";
-            this.btnLimpiarJob1.UseVisualStyleBackColor = true;
+            this.nudJob1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nudJob1.Location = new System.Drawing.Point(226, 37);
+            this.nudJob1.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.nudJob1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudJob1.Name = "nudJob1";
+            this.nudJob1.Size = new System.Drawing.Size(62, 20);
+            this.nudJob1.TabIndex = 42;
+            this.nudJob1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudJob1.ValueChanged += new System.EventHandler(this.nudNivel_valueChanged);
             // 
-            // btnAlAzarJob1
+            // progressBarJob1
             // 
-            this.btnAlAzarJob1.Location = new System.Drawing.Point(35, 178);
-            this.btnAlAzarJob1.Name = "btnAlAzarJob1";
-            this.btnAlAzarJob1.Size = new System.Drawing.Size(75, 23);
-            this.btnAlAzarJob1.TabIndex = 25;
-            this.btnAlAzarJob1.Text = "Al azar";
-            this.btnAlAzarJob1.UseVisualStyleBackColor = true;
+            this.progressBarJob1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.progressBarJob1.Location = new System.Drawing.Point(294, 34);
+            this.progressBarJob1.Maximum = 20;
+            this.progressBarJob1.Minimum = 1;
+            this.progressBarJob1.Name = "progressBarJob1";
+            this.progressBarJob1.Size = new System.Drawing.Size(100, 23);
+            this.progressBarJob1.TabIndex = 41;
+            this.progressBarJob1.Value = 1;
+            this.progressBarJob1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.progressbarNivelClick);
             // 
-            // lblNumPuntosRestantesJob1
+            // cmboxPrimerJob
             // 
-            this.lblNumPuntosRestantesJob1.AutoSize = true;
-            this.lblNumPuntosRestantesJob1.Location = new System.Drawing.Point(271, 178);
-            this.lblNumPuntosRestantesJob1.Name = "lblNumPuntosRestantesJob1";
-            this.lblNumPuntosRestantesJob1.Size = new System.Drawing.Size(16, 17);
-            this.lblNumPuntosRestantesJob1.TabIndex = 24;
-            this.lblNumPuntosRestantesJob1.Text = "0";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(141, 178);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 17);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "Puntos restantes:";
-            // 
-            // lblPrimerTrabajo
-            // 
-            this.lblPrimerTrabajo.AutoSize = true;
-            this.lblPrimerTrabajo.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrimerTrabajo.Location = new System.Drawing.Point(4, 3);
-            this.lblPrimerTrabajo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblPrimerTrabajo.Name = "lblPrimerTrabajo";
-            this.lblPrimerTrabajo.Size = new System.Drawing.Size(138, 21);
-            this.lblPrimerTrabajo.TabIndex = 9;
-            this.lblPrimerTrabajo.Text = "Primer Trabajo";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmboxPrimerJob.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmboxPrimerJob.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmboxPrimerJob.FormattingEnabled = true;
+            this.cmboxPrimerJob.Items.AddRange(new object[] {
             "Sin seleccionar",
             "Acólito",
             "Arquero",
@@ -719,280 +394,59 @@
             "Ladrón",
             "Mago",
             "Mercader",
-            "Taekwon"});
-            this.comboBox1.Location = new System.Drawing.Point(6, 36);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 25);
-            this.comboBox1.TabIndex = 9;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
+            "Taekwondista"});
+            this.cmboxPrimerJob.Location = new System.Drawing.Point(4, 35);
+            this.cmboxPrimerJob.Name = "cmboxPrimerJob";
+            this.cmboxPrimerJob.Size = new System.Drawing.Size(121, 25);
+            this.cmboxPrimerJob.TabIndex = 38;
+            this.cmboxPrimerJob.SelectedIndexChanged += new System.EventHandler(this.cmboxPrimerJob_SelectedIndexChanged);
             // 
-            // panel5
+            // label3
             // 
-            this.panel5.Controls.Add(this.lblJob1Skills);
-            this.panel5.Controls.Add(this.panel9);
-            this.panel5.Controls.Add(this.lblMsgJob1);
-            this.panel5.Controls.Add(this.panel8);
-            this.panel5.Controls.Add(this.panel7);
-            this.panel5.Controls.Add(this.panel6);
-            this.panel5.Controls.Add(this.btnAlAzarJob1);
-            this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.btnLimpiarJob1);
-            this.panel5.Controls.Add(this.lblNumPuntosRestantesJob1);
-            this.panel5.Location = new System.Drawing.Point(8, 67);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(433, 210);
-            this.panel5.TabIndex = 28;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(164, 37);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 18);
+            this.label3.TabIndex = 40;
+            this.label3.Text = "Nivel";
             // 
-            // panel6
+            // lblPrimerTrabajo
             // 
-            this.panel6.Controls.Add(this.checkBox5);
-            this.panel6.Controls.Add(this.checkBox4);
-            this.panel6.Controls.Add(this.checkBox3);
-            this.panel6.Controls.Add(this.checkBox2);
-            this.panel6.Controls.Add(this.checkBox1);
-            this.panel6.Controls.Add(this.lblJob1Skill1);
-            this.panel6.Controls.Add(this.pictureBox1);
-            this.panel6.Location = new System.Drawing.Point(3, 51);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(187, 49);
-            this.panel6.TabIndex = 27;
+            this.lblPrimerTrabajo.AutoSize = true;
+            this.lblPrimerTrabajo.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrimerTrabajo.Location = new System.Drawing.Point(2, 2);
+            this.lblPrimerTrabajo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPrimerTrabajo.Name = "lblPrimerTrabajo";
+            this.lblPrimerTrabajo.Size = new System.Drawing.Size(138, 21);
+            this.lblPrimerTrabajo.TabIndex = 39;
+            this.lblPrimerTrabajo.Text = "Primer Trabajo";
             // 
-            // pictureBox1
+            // lblJob1Skills
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 17);
-            this.pictureBox1.MaximumSize = new System.Drawing.Size(24, 24);
-            this.pictureBox1.MinimumSize = new System.Drawing.Size(24, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.lblJob1Skills.AutoSize = true;
+            this.lblJob1Skills.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJob1Skills.Location = new System.Drawing.Point(4, 80);
+            this.lblJob1Skills.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblJob1Skills.Name = "lblJob1Skills";
+            this.lblJob1Skills.Size = new System.Drawing.Size(112, 21);
+            this.lblJob1Skills.TabIndex = 47;
+            this.lblJob1Skills.Text = "Habilidades";
             // 
-            // lblJob1Skill1
+            // panelHabilidad4PrimerTrabajo
             // 
-            this.lblJob1Skill1.AutoSize = true;
-            this.lblJob1Skill1.Location = new System.Drawing.Point(35, 4);
-            this.lblJob1Skill1.Name = "lblJob1Skill1";
-            this.lblJob1Skill1.Size = new System.Drawing.Size(87, 17);
-            this.lblJob1Skill1.TabIndex = 1;
-            this.lblJob1Skill1.Text = "lblJob1Skill1";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(34, 23);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(55, 23);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(15, 14);
-            this.checkBox2.TabIndex = 2;
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(76, 23);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(15, 14);
-            this.checkBox3.TabIndex = 3;
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(95, 23);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(15, 14);
-            this.checkBox4.TabIndex = 4;
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(116, 23);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(15, 14);
-            this.checkBox5.TabIndex = 5;
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.checkBox6);
-            this.panel7.Controls.Add(this.checkBox7);
-            this.panel7.Controls.Add(this.checkBox8);
-            this.panel7.Controls.Add(this.checkBox9);
-            this.panel7.Controls.Add(this.checkBox10);
-            this.panel7.Controls.Add(this.lblJob1Skill3);
-            this.panel7.Controls.Add(this.pictureBox2);
-            this.panel7.Location = new System.Drawing.Point(209, 51);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(187, 49);
-            this.panel7.TabIndex = 28;
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(116, 23);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(15, 14);
-            this.checkBox6.TabIndex = 5;
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // checkBox7
-            // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(95, 23);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(15, 14);
-            this.checkBox7.TabIndex = 4;
-            this.checkBox7.UseVisualStyleBackColor = true;
-            // 
-            // checkBox8
-            // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(76, 23);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(15, 14);
-            this.checkBox8.TabIndex = 3;
-            this.checkBox8.UseVisualStyleBackColor = true;
-            // 
-            // checkBox9
-            // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(55, 23);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(15, 14);
-            this.checkBox9.TabIndex = 2;
-            this.checkBox9.UseVisualStyleBackColor = true;
-            // 
-            // checkBox10
-            // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(34, 23);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(15, 14);
-            this.checkBox10.TabIndex = 1;
-            this.checkBox10.UseVisualStyleBackColor = true;
-            // 
-            // lblJob1Skill3
-            // 
-            this.lblJob1Skill3.AutoSize = true;
-            this.lblJob1Skill3.Location = new System.Drawing.Point(35, 4);
-            this.lblJob1Skill3.Name = "lblJob1Skill3";
-            this.lblJob1Skill3.Size = new System.Drawing.Size(87, 17);
-            this.lblJob1Skill3.TabIndex = 1;
-            this.lblJob1Skill3.Text = "lblJob1Skill3";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 17);
-            this.pictureBox2.MaximumSize = new System.Drawing.Size(24, 24);
-            this.pictureBox2.MinimumSize = new System.Drawing.Size(24, 24);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.checkBox11);
-            this.panel8.Controls.Add(this.checkBox12);
-            this.panel8.Controls.Add(this.checkBox13);
-            this.panel8.Controls.Add(this.checkBox14);
-            this.panel8.Controls.Add(this.checkBox15);
-            this.panel8.Controls.Add(this.lblJob1Skill2);
-            this.panel8.Controls.Add(this.pictureBox3);
-            this.panel8.Location = new System.Drawing.Point(6, 111);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(187, 49);
-            this.panel8.TabIndex = 28;
-            // 
-            // checkBox11
-            // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(116, 23);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(15, 14);
-            this.checkBox11.TabIndex = 5;
-            this.checkBox11.UseVisualStyleBackColor = true;
-            // 
-            // checkBox12
-            // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(95, 23);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(15, 14);
-            this.checkBox12.TabIndex = 4;
-            this.checkBox12.UseVisualStyleBackColor = true;
-            // 
-            // checkBox13
-            // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Location = new System.Drawing.Point(76, 23);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(15, 14);
-            this.checkBox13.TabIndex = 3;
-            this.checkBox13.UseVisualStyleBackColor = true;
-            // 
-            // checkBox14
-            // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Location = new System.Drawing.Point(55, 23);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(15, 14);
-            this.checkBox14.TabIndex = 2;
-            this.checkBox14.UseVisualStyleBackColor = true;
-            // 
-            // checkBox15
-            // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(34, 23);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(15, 14);
-            this.checkBox15.TabIndex = 1;
-            this.checkBox15.UseVisualStyleBackColor = true;
-            // 
-            // lblJob1Skill2
-            // 
-            this.lblJob1Skill2.AutoSize = true;
-            this.lblJob1Skill2.Location = new System.Drawing.Point(35, 4);
-            this.lblJob1Skill2.Name = "lblJob1Skill2";
-            this.lblJob1Skill2.Size = new System.Drawing.Size(87, 17);
-            this.lblJob1Skill2.TabIndex = 1;
-            this.lblJob1Skill2.Text = "lblJob1Skill2";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 17);
-            this.pictureBox3.MaximumSize = new System.Drawing.Size(24, 24);
-            this.pictureBox3.MinimumSize = new System.Drawing.Size(24, 24);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.checkBox16);
-            this.panel9.Controls.Add(this.checkBox17);
-            this.panel9.Controls.Add(this.checkBox18);
-            this.panel9.Controls.Add(this.checkBox19);
-            this.panel9.Controls.Add(this.checkBox20);
-            this.panel9.Controls.Add(this.lblJob1Skill4);
-            this.panel9.Controls.Add(this.pictureBox4);
-            this.panel9.Location = new System.Drawing.Point(209, 111);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(187, 49);
-            this.panel9.TabIndex = 28;
+            this.panelHabilidad4PrimerTrabajo.Controls.Add(this.checkBox16);
+            this.panelHabilidad4PrimerTrabajo.Controls.Add(this.checkBox17);
+            this.panelHabilidad4PrimerTrabajo.Controls.Add(this.checkBox18);
+            this.panelHabilidad4PrimerTrabajo.Controls.Add(this.checkBox19);
+            this.panelHabilidad4PrimerTrabajo.Controls.Add(this.checkBox20);
+            this.panelHabilidad4PrimerTrabajo.Controls.Add(this.lblJob1Skill4);
+            this.panelHabilidad4PrimerTrabajo.Controls.Add(this.pictureBox4);
+            this.panelHabilidad4PrimerTrabajo.Location = new System.Drawing.Point(220, 179);
+            this.panelHabilidad4PrimerTrabajo.Name = "panelHabilidad4PrimerTrabajo";
+            this.panelHabilidad4PrimerTrabajo.Size = new System.Drawing.Size(194, 49);
+            this.panelHabilidad4PrimerTrabajo.TabIndex = 44;
             // 
             // checkBox16
             // 
@@ -1002,6 +456,7 @@
             this.checkBox16.Size = new System.Drawing.Size(15, 14);
             this.checkBox16.TabIndex = 5;
             this.checkBox16.UseVisualStyleBackColor = true;
+            this.checkBox16.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // checkBox17
             // 
@@ -1011,6 +466,7 @@
             this.checkBox17.Size = new System.Drawing.Size(15, 14);
             this.checkBox17.TabIndex = 4;
             this.checkBox17.UseVisualStyleBackColor = true;
+            this.checkBox17.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // checkBox18
             // 
@@ -1020,6 +476,7 @@
             this.checkBox18.Size = new System.Drawing.Size(15, 14);
             this.checkBox18.TabIndex = 3;
             this.checkBox18.UseVisualStyleBackColor = true;
+            this.checkBox18.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // checkBox19
             // 
@@ -1029,6 +486,7 @@
             this.checkBox19.Size = new System.Drawing.Size(15, 14);
             this.checkBox19.TabIndex = 2;
             this.checkBox19.UseVisualStyleBackColor = true;
+            this.checkBox19.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // checkBox20
             // 
@@ -1038,6 +496,7 @@
             this.checkBox20.Size = new System.Drawing.Size(15, 14);
             this.checkBox20.TabIndex = 1;
             this.checkBox20.UseVisualStyleBackColor = true;
+            this.checkBox20.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // lblJob1Skill4
             // 
@@ -1059,71 +518,391 @@
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
             // 
-            // lblJob1Skills
+            // lblMsgJob1Skills
             // 
-            this.lblJob1Skills.AutoSize = true;
-            this.lblJob1Skills.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJob1Skills.Location = new System.Drawing.Point(4, 12);
-            this.lblJob1Skills.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblJob1Skills.Name = "lblJob1Skills";
-            this.lblJob1Skills.Size = new System.Drawing.Size(112, 21);
-            this.lblJob1Skills.TabIndex = 29;
-            this.lblJob1Skills.Text = "Habilidades";
+            this.lblMsgJob1Skills.AutoSize = true;
+            this.lblMsgJob1Skills.ForeColor = System.Drawing.Color.Red;
+            this.lblMsgJob1Skills.Location = new System.Drawing.Point(127, 81);
+            this.lblMsgJob1Skills.Name = "lblMsgJob1Skills";
+            this.lblMsgJob1Skills.Size = new System.Drawing.Size(37, 17);
+            this.lblMsgJob1Skills.TabIndex = 42;
+            this.lblMsgJob1Skills.Text = "msg";
+            this.lblMsgJob1Skills.Visible = false;
             // 
-            // panel10
+            // panelHabilidad2PrimerTrabajo
             // 
-            this.panel10.Controls.Add(this.numericUpDown2);
-            this.panel10.Controls.Add(this.panel11);
-            this.panel10.Controls.Add(this.progressBar2);
-            this.panel10.Controls.Add(this.comboBox2);
-            this.panel10.Controls.Add(this.label5);
-            this.panel10.Controls.Add(this.label11);
-            this.panel10.Location = new System.Drawing.Point(643, 369);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(472, 280);
-            this.panel10.TabIndex = 29;
+            this.panelHabilidad2PrimerTrabajo.Controls.Add(this.checkBox11);
+            this.panelHabilidad2PrimerTrabajo.Controls.Add(this.checkBox12);
+            this.panelHabilidad2PrimerTrabajo.Controls.Add(this.checkBox13);
+            this.panelHabilidad2PrimerTrabajo.Controls.Add(this.checkBox14);
+            this.panelHabilidad2PrimerTrabajo.Controls.Add(this.checkBox15);
+            this.panelHabilidad2PrimerTrabajo.Controls.Add(this.lblJob1Skill2);
+            this.panelHabilidad2PrimerTrabajo.Controls.Add(this.pictureBox3);
+            this.panelHabilidad2PrimerTrabajo.Location = new System.Drawing.Point(6, 179);
+            this.panelHabilidad2PrimerTrabajo.Name = "panelHabilidad2PrimerTrabajo";
+            this.panelHabilidad2PrimerTrabajo.Size = new System.Drawing.Size(194, 49);
+            this.panelHabilidad2PrimerTrabajo.TabIndex = 45;
             // 
-            // panel11
+            // checkBox11
             // 
-            this.panel11.Controls.Add(this.label2);
-            this.panel11.Controls.Add(this.panel12);
-            this.panel11.Controls.Add(this.lblMsgJob2);
-            this.panel11.Controls.Add(this.panel13);
-            this.panel11.Controls.Add(this.panel14);
-            this.panel11.Controls.Add(this.panel15);
-            this.panel11.Controls.Add(this.button1);
-            this.panel11.Controls.Add(this.label9);
-            this.panel11.Controls.Add(this.button2);
-            this.panel11.Controls.Add(this.label10);
-            this.panel11.Location = new System.Drawing.Point(8, 67);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(433, 210);
-            this.panel11.TabIndex = 28;
+            this.checkBox11.AutoSize = true;
+            this.checkBox11.Location = new System.Drawing.Point(116, 23);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.Size = new System.Drawing.Size(15, 14);
+            this.checkBox11.TabIndex = 5;
+            this.checkBox11.UseVisualStyleBackColor = true;
+            this.checkBox11.Click += new System.EventHandler(this.checkBoxClick);
+            // 
+            // checkBox12
+            // 
+            this.checkBox12.AutoSize = true;
+            this.checkBox12.Location = new System.Drawing.Point(95, 23);
+            this.checkBox12.Name = "checkBox12";
+            this.checkBox12.Size = new System.Drawing.Size(15, 14);
+            this.checkBox12.TabIndex = 4;
+            this.checkBox12.UseVisualStyleBackColor = true;
+            this.checkBox12.Click += new System.EventHandler(this.checkBoxClick);
+            // 
+            // checkBox13
+            // 
+            this.checkBox13.AutoSize = true;
+            this.checkBox13.Location = new System.Drawing.Point(76, 23);
+            this.checkBox13.Name = "checkBox13";
+            this.checkBox13.Size = new System.Drawing.Size(15, 14);
+            this.checkBox13.TabIndex = 3;
+            this.checkBox13.UseVisualStyleBackColor = true;
+            this.checkBox13.Click += new System.EventHandler(this.checkBoxClick);
+            // 
+            // checkBox14
+            // 
+            this.checkBox14.AutoSize = true;
+            this.checkBox14.Location = new System.Drawing.Point(55, 23);
+            this.checkBox14.Name = "checkBox14";
+            this.checkBox14.Size = new System.Drawing.Size(15, 14);
+            this.checkBox14.TabIndex = 2;
+            this.checkBox14.UseVisualStyleBackColor = true;
+            this.checkBox14.Click += new System.EventHandler(this.checkBoxClick);
+            // 
+            // checkBox15
+            // 
+            this.checkBox15.AutoSize = true;
+            this.checkBox15.Location = new System.Drawing.Point(34, 23);
+            this.checkBox15.Name = "checkBox15";
+            this.checkBox15.Size = new System.Drawing.Size(15, 14);
+            this.checkBox15.TabIndex = 1;
+            this.checkBox15.UseVisualStyleBackColor = true;
+            this.checkBox15.Click += new System.EventHandler(this.checkBoxClick);
+            // 
+            // lblJob1Skill2
+            // 
+            this.lblJob1Skill2.AutoSize = true;
+            this.lblJob1Skill2.Location = new System.Drawing.Point(35, 4);
+            this.lblJob1Skill2.Name = "lblJob1Skill2";
+            this.lblJob1Skill2.Size = new System.Drawing.Size(87, 17);
+            this.lblJob1Skill2.TabIndex = 1;
+            this.lblJob1Skill2.Text = "lblJob1Skill2";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 17);
+            this.pictureBox3.MaximumSize = new System.Drawing.Size(24, 24);
+            this.pictureBox3.MinimumSize = new System.Drawing.Size(24, 24);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // panelHabilidad3PrimerTrabajo
+            // 
+            this.panelHabilidad3PrimerTrabajo.Controls.Add(this.checkBox6);
+            this.panelHabilidad3PrimerTrabajo.Controls.Add(this.checkBox7);
+            this.panelHabilidad3PrimerTrabajo.Controls.Add(this.checkBox8);
+            this.panelHabilidad3PrimerTrabajo.Controls.Add(this.checkBox9);
+            this.panelHabilidad3PrimerTrabajo.Controls.Add(this.checkBox10);
+            this.panelHabilidad3PrimerTrabajo.Controls.Add(this.lblJob1Skill3);
+            this.panelHabilidad3PrimerTrabajo.Controls.Add(this.pictureBox2);
+            this.panelHabilidad3PrimerTrabajo.Location = new System.Drawing.Point(220, 119);
+            this.panelHabilidad3PrimerTrabajo.Name = "panelHabilidad3PrimerTrabajo";
+            this.panelHabilidad3PrimerTrabajo.Size = new System.Drawing.Size(194, 49);
+            this.panelHabilidad3PrimerTrabajo.TabIndex = 46;
+            // 
+            // lblJob1Skill3
+            // 
+            this.lblJob1Skill3.AutoSize = true;
+            this.lblJob1Skill3.Location = new System.Drawing.Point(35, 4);
+            this.lblJob1Skill3.Name = "lblJob1Skill3";
+            this.lblJob1Skill3.Size = new System.Drawing.Size(87, 17);
+            this.lblJob1Skill3.TabIndex = 1;
+            this.lblJob1Skill3.Text = "lblJob1Skill3";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 17);
+            this.pictureBox2.MaximumSize = new System.Drawing.Size(24, 24);
+            this.pictureBox2.MinimumSize = new System.Drawing.Size(24, 24);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // panelHabilidad1PrimerTrabajo
+            // 
+            this.panelHabilidad1PrimerTrabajo.Controls.Add(this.checkBox5);
+            this.panelHabilidad1PrimerTrabajo.Controls.Add(this.checkBox4);
+            this.panelHabilidad1PrimerTrabajo.Controls.Add(this.checkBox3);
+            this.panelHabilidad1PrimerTrabajo.Controls.Add(this.checkBox2);
+            this.panelHabilidad1PrimerTrabajo.Controls.Add(this.checkBox1);
+            this.panelHabilidad1PrimerTrabajo.Controls.Add(this.lblJob1Skill1);
+            this.panelHabilidad1PrimerTrabajo.Controls.Add(this.pictureBox1);
+            this.panelHabilidad1PrimerTrabajo.Location = new System.Drawing.Point(3, 119);
+            this.panelHabilidad1PrimerTrabajo.Name = "panelHabilidad1PrimerTrabajo";
+            this.panelHabilidad1PrimerTrabajo.Size = new System.Drawing.Size(200, 49);
+            this.panelHabilidad1PrimerTrabajo.TabIndex = 43;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(116, 23);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(15, 14);
+            this.checkBox5.TabIndex = 5;
+            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox5.Click += new System.EventHandler(this.checkBoxClick);
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(95, 23);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(15, 14);
+            this.checkBox4.TabIndex = 4;
+            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.Click += new System.EventHandler(this.checkBoxClick);
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(76, 23);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(15, 14);
+            this.checkBox3.TabIndex = 3;
+            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.Click += new System.EventHandler(this.checkBoxClick);
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(55, 23);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(15, 14);
+            this.checkBox2.TabIndex = 2;
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.Click += new System.EventHandler(this.checkBoxClick);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(34, 23);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1.TabIndex = 1;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.Click += new System.EventHandler(this.checkBoxClick);
+            // 
+            // lblJob1Skill1
+            // 
+            this.lblJob1Skill1.AutoSize = true;
+            this.lblJob1Skill1.Location = new System.Drawing.Point(35, 4);
+            this.lblJob1Skill1.Name = "lblJob1Skill1";
+            this.lblJob1Skill1.Size = new System.Drawing.Size(87, 17);
+            this.lblJob1Skill1.TabIndex = 1;
+            this.lblJob1Skill1.Text = "lblJob1Skill1";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 17);
+            this.pictureBox1.MaximumSize = new System.Drawing.Size(24, 24);
+            this.pictureBox1.MinimumSize = new System.Drawing.Size(24, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnAlAzarJob1
+            // 
+            this.btnAlAzarJob1.Location = new System.Drawing.Point(35, 246);
+            this.btnAlAzarJob1.Name = "btnAlAzarJob1";
+            this.btnAlAzarJob1.Size = new System.Drawing.Size(75, 23);
+            this.btnAlAzarJob1.TabIndex = 40;
+            this.btnAlAzarJob1.Text = "Al azar";
+            this.btnAlAzarJob1.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(141, 246);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(123, 17);
+            this.label4.TabIndex = 38;
+            this.label4.Text = "Puntos restantes:";
+            // 
+            // btnLimpiarJob1
+            // 
+            this.btnLimpiarJob1.Location = new System.Drawing.Point(315, 246);
+            this.btnLimpiarJob1.Name = "btnLimpiarJob1";
+            this.btnLimpiarJob1.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiarJob1.TabIndex = 41;
+            this.btnLimpiarJob1.Text = "Limpiar";
+            this.btnLimpiarJob1.UseVisualStyleBackColor = true;
+            // 
+            // lblNumPuntosRestantesJob1
+            // 
+            this.lblNumPuntosRestantesJob1.AutoSize = true;
+            this.lblNumPuntosRestantesJob1.Location = new System.Drawing.Point(271, 246);
+            this.lblNumPuntosRestantesJob1.Name = "lblNumPuntosRestantesJob1";
+            this.lblNumPuntosRestantesJob1.Size = new System.Drawing.Size(16, 17);
+            this.lblNumPuntosRestantesJob1.TabIndex = 39;
+            this.lblNumPuntosRestantesJob1.Text = "0";
+            // 
+            // panelSegundoTrabajo
+            // 
+            this.panelSegundoTrabajo.Controls.Add(this.panel4);
+            this.panelSegundoTrabajo.Controls.Add(this.label2);
+            this.panelSegundoTrabajo.Controls.Add(this.panelHabilidad4SegundoTrabajo);
+            this.panelSegundoTrabajo.Controls.Add(this.lblMsgJob2Skills);
+            this.panelSegundoTrabajo.Controls.Add(this.panelHabilidad2SegundoTrabajo);
+            this.panelSegundoTrabajo.Controls.Add(this.panelHabilidad3SegundoTrabajo);
+            this.panelSegundoTrabajo.Controls.Add(this.panelHabilidad1SegundoTrabajo);
+            this.panelSegundoTrabajo.Controls.Add(this.button1);
+            this.panelSegundoTrabajo.Controls.Add(this.label9);
+            this.panelSegundoTrabajo.Controls.Add(this.button2);
+            this.panelSegundoTrabajo.Controls.Add(this.lblNumPuntosRestantesJob2);
+            this.panelSegundoTrabajo.Location = new System.Drawing.Point(635, 316);
+            this.panelSegundoTrabajo.Name = "panelSegundoTrabajo";
+            this.panelSegundoTrabajo.Size = new System.Drawing.Size(472, 280);
+            this.panelSegundoTrabajo.TabIndex = 29;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.lblMsgJob2);
+            this.panel4.Controls.Add(this.nudJob2);
+            this.panel4.Controls.Add(this.progressBarJob2);
+            this.panel4.Controls.Add(this.cmboxSegundoTrabajo);
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.label11);
+            this.panel4.Location = new System.Drawing.Point(3, 5);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(448, 69);
+            this.panel4.TabIndex = 47;
+            // 
+            // lblMsgJob2
+            // 
+            this.lblMsgJob2.AutoSize = true;
+            this.lblMsgJob2.Location = new System.Drawing.Point(197, 9);
+            this.lblMsgJob2.Name = "lblMsgJob2";
+            this.lblMsgJob2.Size = new System.Drawing.Size(66, 17);
+            this.lblMsgJob2.TabIndex = 42;
+            this.lblMsgJob2.Text = "MsgJob2";
+            this.lblMsgJob2.Visible = false;
+            // 
+            // nudJob2
+            // 
+            this.nudJob2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nudJob2.Location = new System.Drawing.Point(276, 40);
+            this.nudJob2.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.nudJob2.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudJob2.Name = "nudJob2";
+            this.nudJob2.Size = new System.Drawing.Size(62, 20);
+            this.nudJob2.TabIndex = 41;
+            this.nudJob2.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudJob2.ValueChanged += new System.EventHandler(this.nudNivel_valueChanged);
+            // 
+            // progressBarJob2
+            // 
+            this.progressBarJob2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.progressBarJob2.Location = new System.Drawing.Point(344, 37);
+            this.progressBarJob2.Maximum = 20;
+            this.progressBarJob2.Minimum = 1;
+            this.progressBarJob2.Name = "progressBarJob2";
+            this.progressBarJob2.Size = new System.Drawing.Size(100, 23);
+            this.progressBarJob2.TabIndex = 40;
+            this.progressBarJob2.Value = 1;
+            this.progressBarJob2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.progressbarNivelClick);
+            // 
+            // cmboxSegundoTrabajo
+            // 
+            this.cmboxSegundoTrabajo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmboxSegundoTrabajo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmboxSegundoTrabajo.FormattingEnabled = true;
+            this.cmboxSegundoTrabajo.Items.AddRange(new object[] {
+            "Sin seleccionar"});
+            this.cmboxSegundoTrabajo.Location = new System.Drawing.Point(3, 38);
+            this.cmboxSegundoTrabajo.Name = "cmboxSegundoTrabajo";
+            this.cmboxSegundoTrabajo.Size = new System.Drawing.Size(204, 25);
+            this.cmboxSegundoTrabajo.TabIndex = 37;
+            this.cmboxSegundoTrabajo.SelectedIndexChanged += new System.EventHandler(this.cmboxSegundoTrabajo_SelectedIndexChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(214, 40);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(45, 18);
+            this.label5.TabIndex = 39;
+            this.label5.Text = "Nivel";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(1, 5);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(157, 21);
+            this.label11.TabIndex = 38;
+            this.label11.Text = "Segundo Trabajo";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 12);
+            this.label2.Location = new System.Drawing.Point(4, 77);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 21);
-            this.label2.TabIndex = 29;
+            this.label2.TabIndex = 46;
             this.label2.Text = "Habilidades";
             // 
-            // panel12
+            // panelHabilidad4SegundoTrabajo
             // 
-            this.panel12.Controls.Add(this.checkBox21);
-            this.panel12.Controls.Add(this.checkBox22);
-            this.panel12.Controls.Add(this.checkBox23);
-            this.panel12.Controls.Add(this.checkBox24);
-            this.panel12.Controls.Add(this.checkBox25);
-            this.panel12.Controls.Add(this.lblJob2Skill4);
-            this.panel12.Controls.Add(this.pictureBox5);
-            this.panel12.Location = new System.Drawing.Point(209, 111);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(187, 49);
-            this.panel12.TabIndex = 28;
+            this.panelHabilidad4SegundoTrabajo.Controls.Add(this.checkBox21);
+            this.panelHabilidad4SegundoTrabajo.Controls.Add(this.checkBox22);
+            this.panelHabilidad4SegundoTrabajo.Controls.Add(this.checkBox23);
+            this.panelHabilidad4SegundoTrabajo.Controls.Add(this.checkBox24);
+            this.panelHabilidad4SegundoTrabajo.Controls.Add(this.checkBox25);
+            this.panelHabilidad4SegundoTrabajo.Controls.Add(this.lblJob2Skill4);
+            this.panelHabilidad4SegundoTrabajo.Controls.Add(this.pictureBox5);
+            this.panelHabilidad4SegundoTrabajo.Location = new System.Drawing.Point(219, 176);
+            this.panelHabilidad4SegundoTrabajo.Name = "panelHabilidad4SegundoTrabajo";
+            this.panelHabilidad4SegundoTrabajo.Size = new System.Drawing.Size(195, 49);
+            this.panelHabilidad4SegundoTrabajo.TabIndex = 43;
             // 
             // checkBox21
             // 
@@ -1133,6 +912,7 @@
             this.checkBox21.Size = new System.Drawing.Size(15, 14);
             this.checkBox21.TabIndex = 5;
             this.checkBox21.UseVisualStyleBackColor = true;
+            this.checkBox21.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // checkBox22
             // 
@@ -1142,6 +922,7 @@
             this.checkBox22.Size = new System.Drawing.Size(15, 14);
             this.checkBox22.TabIndex = 4;
             this.checkBox22.UseVisualStyleBackColor = true;
+            this.checkBox22.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // checkBox23
             // 
@@ -1151,6 +932,7 @@
             this.checkBox23.Size = new System.Drawing.Size(15, 14);
             this.checkBox23.TabIndex = 3;
             this.checkBox23.UseVisualStyleBackColor = true;
+            this.checkBox23.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // checkBox24
             // 
@@ -1160,6 +942,7 @@
             this.checkBox24.Size = new System.Drawing.Size(15, 14);
             this.checkBox24.TabIndex = 2;
             this.checkBox24.UseVisualStyleBackColor = true;
+            this.checkBox24.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // checkBox25
             // 
@@ -1169,6 +952,7 @@
             this.checkBox25.Size = new System.Drawing.Size(15, 14);
             this.checkBox25.TabIndex = 1;
             this.checkBox25.UseVisualStyleBackColor = true;
+            this.checkBox25.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // lblJob2Skill4
             // 
@@ -1190,29 +974,30 @@
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
-            // lblMsgJob2
+            // lblMsgJob2Skills
             // 
-            this.lblMsgJob2.AutoSize = true;
-            this.lblMsgJob2.Location = new System.Drawing.Point(127, 13);
-            this.lblMsgJob2.Name = "lblMsgJob2";
-            this.lblMsgJob2.Size = new System.Drawing.Size(66, 17);
-            this.lblMsgJob2.TabIndex = 27;
-            this.lblMsgJob2.Text = "MsgJob2";
-            this.lblMsgJob2.Visible = false;
+            this.lblMsgJob2Skills.AutoSize = true;
+            this.lblMsgJob2Skills.ForeColor = System.Drawing.Color.Red;
+            this.lblMsgJob2Skills.Location = new System.Drawing.Point(127, 78);
+            this.lblMsgJob2Skills.Name = "lblMsgJob2Skills";
+            this.lblMsgJob2Skills.Size = new System.Drawing.Size(37, 17);
+            this.lblMsgJob2Skills.TabIndex = 41;
+            this.lblMsgJob2Skills.Text = "msg";
+            this.lblMsgJob2Skills.Visible = false;
             // 
-            // panel13
+            // panelHabilidad2SegundoTrabajo
             // 
-            this.panel13.Controls.Add(this.checkBox26);
-            this.panel13.Controls.Add(this.checkBox27);
-            this.panel13.Controls.Add(this.checkBox28);
-            this.panel13.Controls.Add(this.checkBox29);
-            this.panel13.Controls.Add(this.checkBox30);
-            this.panel13.Controls.Add(this.lblJob2Skill2);
-            this.panel13.Controls.Add(this.pictureBox6);
-            this.panel13.Location = new System.Drawing.Point(6, 111);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(187, 49);
-            this.panel13.TabIndex = 28;
+            this.panelHabilidad2SegundoTrabajo.Controls.Add(this.checkBox26);
+            this.panelHabilidad2SegundoTrabajo.Controls.Add(this.checkBox27);
+            this.panelHabilidad2SegundoTrabajo.Controls.Add(this.checkBox28);
+            this.panelHabilidad2SegundoTrabajo.Controls.Add(this.checkBox29);
+            this.panelHabilidad2SegundoTrabajo.Controls.Add(this.checkBox30);
+            this.panelHabilidad2SegundoTrabajo.Controls.Add(this.lblJob2Skill2);
+            this.panelHabilidad2SegundoTrabajo.Controls.Add(this.pictureBox6);
+            this.panelHabilidad2SegundoTrabajo.Location = new System.Drawing.Point(6, 176);
+            this.panelHabilidad2SegundoTrabajo.Name = "panelHabilidad2SegundoTrabajo";
+            this.panelHabilidad2SegundoTrabajo.Size = new System.Drawing.Size(196, 49);
+            this.panelHabilidad2SegundoTrabajo.TabIndex = 44;
             // 
             // checkBox26
             // 
@@ -1222,6 +1007,7 @@
             this.checkBox26.Size = new System.Drawing.Size(15, 14);
             this.checkBox26.TabIndex = 5;
             this.checkBox26.UseVisualStyleBackColor = true;
+            this.checkBox26.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // checkBox27
             // 
@@ -1231,6 +1017,7 @@
             this.checkBox27.Size = new System.Drawing.Size(15, 14);
             this.checkBox27.TabIndex = 4;
             this.checkBox27.UseVisualStyleBackColor = true;
+            this.checkBox27.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // checkBox28
             // 
@@ -1240,6 +1027,7 @@
             this.checkBox28.Size = new System.Drawing.Size(15, 14);
             this.checkBox28.TabIndex = 3;
             this.checkBox28.UseVisualStyleBackColor = true;
+            this.checkBox28.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // checkBox29
             // 
@@ -1249,6 +1037,7 @@
             this.checkBox29.Size = new System.Drawing.Size(15, 14);
             this.checkBox29.TabIndex = 2;
             this.checkBox29.UseVisualStyleBackColor = true;
+            this.checkBox29.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // checkBox30
             // 
@@ -1258,6 +1047,7 @@
             this.checkBox30.Size = new System.Drawing.Size(15, 14);
             this.checkBox30.TabIndex = 1;
             this.checkBox30.UseVisualStyleBackColor = true;
+            this.checkBox30.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // lblJob2Skill2
             // 
@@ -1279,19 +1069,19 @@
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
             // 
-            // panel14
+            // panelHabilidad3SegundoTrabajo
             // 
-            this.panel14.Controls.Add(this.checkBox31);
-            this.panel14.Controls.Add(this.checkBox32);
-            this.panel14.Controls.Add(this.checkBox33);
-            this.panel14.Controls.Add(this.checkBox34);
-            this.panel14.Controls.Add(this.checkBox35);
-            this.panel14.Controls.Add(this.lblJob2Skill3);
-            this.panel14.Controls.Add(this.pictureBox7);
-            this.panel14.Location = new System.Drawing.Point(209, 51);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(187, 49);
-            this.panel14.TabIndex = 28;
+            this.panelHabilidad3SegundoTrabajo.Controls.Add(this.checkBox31);
+            this.panelHabilidad3SegundoTrabajo.Controls.Add(this.checkBox32);
+            this.panelHabilidad3SegundoTrabajo.Controls.Add(this.checkBox33);
+            this.panelHabilidad3SegundoTrabajo.Controls.Add(this.checkBox34);
+            this.panelHabilidad3SegundoTrabajo.Controls.Add(this.checkBox35);
+            this.panelHabilidad3SegundoTrabajo.Controls.Add(this.lblJob2Skill3);
+            this.panelHabilidad3SegundoTrabajo.Controls.Add(this.pictureBox7);
+            this.panelHabilidad3SegundoTrabajo.Location = new System.Drawing.Point(219, 116);
+            this.panelHabilidad3SegundoTrabajo.Name = "panelHabilidad3SegundoTrabajo";
+            this.panelHabilidad3SegundoTrabajo.Size = new System.Drawing.Size(195, 49);
+            this.panelHabilidad3SegundoTrabajo.TabIndex = 45;
             // 
             // checkBox31
             // 
@@ -1301,6 +1091,7 @@
             this.checkBox31.Size = new System.Drawing.Size(15, 14);
             this.checkBox31.TabIndex = 5;
             this.checkBox31.UseVisualStyleBackColor = true;
+            this.checkBox31.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // checkBox32
             // 
@@ -1310,6 +1101,7 @@
             this.checkBox32.Size = new System.Drawing.Size(15, 14);
             this.checkBox32.TabIndex = 4;
             this.checkBox32.UseVisualStyleBackColor = true;
+            this.checkBox32.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // checkBox33
             // 
@@ -1319,6 +1111,7 @@
             this.checkBox33.Size = new System.Drawing.Size(15, 14);
             this.checkBox33.TabIndex = 3;
             this.checkBox33.UseVisualStyleBackColor = true;
+            this.checkBox33.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // checkBox34
             // 
@@ -1328,6 +1121,7 @@
             this.checkBox34.Size = new System.Drawing.Size(15, 14);
             this.checkBox34.TabIndex = 2;
             this.checkBox34.UseVisualStyleBackColor = true;
+            this.checkBox34.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // checkBox35
             // 
@@ -1337,6 +1131,7 @@
             this.checkBox35.Size = new System.Drawing.Size(15, 14);
             this.checkBox35.TabIndex = 1;
             this.checkBox35.UseVisualStyleBackColor = true;
+            this.checkBox35.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // lblJob2Skill3
             // 
@@ -1358,19 +1153,19 @@
             this.pictureBox7.TabIndex = 0;
             this.pictureBox7.TabStop = false;
             // 
-            // panel15
+            // panelHabilidad1SegundoTrabajo
             // 
-            this.panel15.Controls.Add(this.checkBox36);
-            this.panel15.Controls.Add(this.checkBox37);
-            this.panel15.Controls.Add(this.checkBox38);
-            this.panel15.Controls.Add(this.checkBox39);
-            this.panel15.Controls.Add(this.checkBox40);
-            this.panel15.Controls.Add(this.lblJob2Skill1);
-            this.panel15.Controls.Add(this.pictureBox8);
-            this.panel15.Location = new System.Drawing.Point(3, 51);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(187, 49);
-            this.panel15.TabIndex = 27;
+            this.panelHabilidad1SegundoTrabajo.Controls.Add(this.checkBox36);
+            this.panelHabilidad1SegundoTrabajo.Controls.Add(this.checkBox37);
+            this.panelHabilidad1SegundoTrabajo.Controls.Add(this.checkBox38);
+            this.panelHabilidad1SegundoTrabajo.Controls.Add(this.checkBox39);
+            this.panelHabilidad1SegundoTrabajo.Controls.Add(this.checkBox40);
+            this.panelHabilidad1SegundoTrabajo.Controls.Add(this.lblJob2Skill1);
+            this.panelHabilidad1SegundoTrabajo.Controls.Add(this.pictureBox8);
+            this.panelHabilidad1SegundoTrabajo.Location = new System.Drawing.Point(3, 116);
+            this.panelHabilidad1SegundoTrabajo.Name = "panelHabilidad1SegundoTrabajo";
+            this.panelHabilidad1SegundoTrabajo.Size = new System.Drawing.Size(199, 49);
+            this.panelHabilidad1SegundoTrabajo.TabIndex = 42;
             // 
             // checkBox36
             // 
@@ -1380,6 +1175,7 @@
             this.checkBox36.Size = new System.Drawing.Size(15, 14);
             this.checkBox36.TabIndex = 5;
             this.checkBox36.UseVisualStyleBackColor = true;
+            this.checkBox36.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // checkBox37
             // 
@@ -1389,6 +1185,7 @@
             this.checkBox37.Size = new System.Drawing.Size(15, 14);
             this.checkBox37.TabIndex = 4;
             this.checkBox37.UseVisualStyleBackColor = true;
+            this.checkBox37.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // checkBox38
             // 
@@ -1398,6 +1195,7 @@
             this.checkBox38.Size = new System.Drawing.Size(15, 14);
             this.checkBox38.TabIndex = 3;
             this.checkBox38.UseVisualStyleBackColor = true;
+            this.checkBox38.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // checkBox39
             // 
@@ -1407,6 +1205,7 @@
             this.checkBox39.Size = new System.Drawing.Size(15, 14);
             this.checkBox39.TabIndex = 2;
             this.checkBox39.UseVisualStyleBackColor = true;
+            this.checkBox39.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // checkBox40
             // 
@@ -1416,6 +1215,7 @@
             this.checkBox40.Size = new System.Drawing.Size(15, 14);
             this.checkBox40.TabIndex = 1;
             this.checkBox40.UseVisualStyleBackColor = true;
+            this.checkBox40.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // lblJob2Skill1
             // 
@@ -1439,211 +1239,513 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(35, 178);
+            this.button1.Location = new System.Drawing.Point(35, 243);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 25;
+            this.button1.TabIndex = 39;
             this.button1.Text = "Al azar";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(141, 178);
+            this.label9.Location = new System.Drawing.Point(141, 243);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(123, 17);
-            this.label9.TabIndex = 23;
+            this.label9.TabIndex = 37;
             this.label9.Text = "Puntos restantes:";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(315, 178);
+            this.button2.Location = new System.Drawing.Point(315, 243);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 26;
+            this.button2.TabIndex = 40;
             this.button2.Text = "Limpiar";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // label10
+            // lblNumPuntosRestantesJob2
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(271, 178);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(16, 17);
-            this.label10.TabIndex = 24;
-            this.label10.Text = "0";
+            this.lblNumPuntosRestantesJob2.AutoSize = true;
+            this.lblNumPuntosRestantesJob2.Location = new System.Drawing.Point(271, 243);
+            this.lblNumPuntosRestantesJob2.Name = "lblNumPuntosRestantesJob2";
+            this.lblNumPuntosRestantesJob2.Size = new System.Drawing.Size(16, 17);
+            this.lblNumPuntosRestantesJob2.TabIndex = 38;
+            this.lblNumPuntosRestantesJob2.Text = "0";
             // 
-            // comboBox2
+            // panelNivelStats
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Sin seleccionar"});
-            this.comboBox2.Location = new System.Drawing.Point(6, 36);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 25);
-            this.comboBox2.TabIndex = 9;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.panelNivelStats.Controls.Add(this.panel2);
+            this.panelNivelStats.Controls.Add(this.lblMsgStats);
+            this.panelNivelStats.Controls.Add(this.btnLimpiarStats);
+            this.panelNivelStats.Controls.Add(this.btnAlAzarStats);
+            this.panelNivelStats.Controls.Add(this.lblNumPuntosRestantesStats);
+            this.panelNivelStats.Controls.Add(this.lblPuntosRestantesStats);
+            this.panelNivelStats.Controls.Add(this.nudSuerte);
+            this.panelNivelStats.Controls.Add(this.nudVitalidad);
+            this.panelNivelStats.Controls.Add(this.nudDestreza);
+            this.panelNivelStats.Controls.Add(this.lblSuerte);
+            this.panelNivelStats.Controls.Add(this.lblVitalidad);
+            this.panelNivelStats.Controls.Add(this.lblDestreza);
+            this.panelNivelStats.Controls.Add(this.nudAgilidad);
+            this.panelNivelStats.Controls.Add(this.nudInteligencia);
+            this.panelNivelStats.Controls.Add(this.nudFuerza);
+            this.panelNivelStats.Controls.Add(this.lblAgilidad);
+            this.panelNivelStats.Controls.Add(this.lblInteligencia);
+            this.panelNivelStats.Controls.Add(this.lblFuerza);
+            this.panelNivelStats.Controls.Add(this.lblStats);
+            this.panelNivelStats.Location = new System.Drawing.Point(635, 12);
+            this.panelNivelStats.Name = "panelNivelStats";
+            this.panelNivelStats.Size = new System.Drawing.Size(430, 269);
+            this.panelNivelStats.TabIndex = 12;
             // 
-            // label11
+            // panel2
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(4, 3);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(157, 21);
-            this.label11.TabIndex = 9;
-            this.label11.Text = "Segundo Trabajo";
+            this.panel2.Controls.Add(this.nudNivel);
+            this.panel2.Controls.Add(this.lblMsgNivel);
+            this.panel2.Controls.Add(this.prbNivel);
+            this.panel2.Controls.Add(this.lblNivelStats);
+            this.panel2.Location = new System.Drawing.Point(8, 4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(342, 51);
+            this.panel2.TabIndex = 46;
             // 
-            // numericUpDown1
+            // nudNivel
             // 
-            this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.numericUpDown1.Location = new System.Drawing.Point(228, 38);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.nudNivel.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nudNivel.Location = new System.Drawing.Point(1, 25);
+            this.nudNivel.Maximum = new decimal(new int[] {
             99,
             0,
             0,
             0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.nudNivel.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(62, 20);
-            this.numericUpDown1.TabIndex = 32;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.nudNivel.Name = "nudNivel";
+            this.nudNivel.Size = new System.Drawing.Size(62, 20);
+            this.nudNivel.TabIndex = 13;
+            this.nudNivel.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
+            this.nudNivel.ValueChanged += new System.EventHandler(this.nudNivel_valueChanged);
             // 
-            // progressBar1
+            // lblMsgNivel
             // 
-            this.progressBar1.Location = new System.Drawing.Point(296, 35);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(100, 23);
-            this.progressBar1.TabIndex = 31;
+            this.lblMsgNivel.AutoSize = true;
+            this.lblMsgNivel.ForeColor = System.Drawing.Color.Black;
+            this.lblMsgNivel.Location = new System.Drawing.Point(189, 28);
+            this.lblMsgNivel.Name = "lblMsgNivel";
+            this.lblMsgNivel.Size = new System.Drawing.Size(66, 17);
+            this.lblMsgNivel.TabIndex = 16;
+            this.lblMsgNivel.Text = "MsgNivel";
+            this.lblMsgNivel.Visible = false;
             // 
-            // label3
+            // prbNivel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(166, 38);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 18);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "Nivel";
+            this.prbNivel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.prbNivel.Location = new System.Drawing.Point(69, 22);
+            this.prbNivel.Maximum = 99;
+            this.prbNivel.Minimum = 1;
+            this.prbNivel.Name = "prbNivel";
+            this.prbNivel.Size = new System.Drawing.Size(100, 23);
+            this.prbNivel.TabIndex = 15;
+            this.prbNivel.Value = 1;
+            this.prbNivel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.progressbarNivelClick);
             // 
-            // numericUpDown2
+            // lblNivelStats
             // 
-            this.numericUpDown2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.numericUpDown2.Location = new System.Drawing.Point(227, 39);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.lblNivelStats.AutoSize = true;
+            this.lblNivelStats.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNivelStats.Location = new System.Drawing.Point(-3, 0);
+            this.lblNivelStats.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNivelStats.Name = "lblNivelStats";
+            this.lblNivelStats.Size = new System.Drawing.Size(55, 21);
+            this.lblNivelStats.TabIndex = 14;
+            this.lblNivelStats.Text = "Nivel";
+            // 
+            // lblMsgStats
+            // 
+            this.lblMsgStats.AutoSize = true;
+            this.lblMsgStats.ForeColor = System.Drawing.Color.Red;
+            this.lblMsgStats.Location = new System.Drawing.Point(131, 79);
+            this.lblMsgStats.Name = "lblMsgStats";
+            this.lblMsgStats.Size = new System.Drawing.Size(37, 17);
+            this.lblMsgStats.TabIndex = 45;
+            this.lblMsgStats.Text = "msg";
+            this.lblMsgStats.Visible = false;
+            // 
+            // btnLimpiarStats
+            // 
+            this.btnLimpiarStats.Location = new System.Drawing.Point(288, 222);
+            this.btnLimpiarStats.Name = "btnLimpiarStats";
+            this.btnLimpiarStats.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiarStats.TabIndex = 44;
+            this.btnLimpiarStats.Text = "Limpiar";
+            this.btnLimpiarStats.UseVisualStyleBackColor = true;
+            this.btnLimpiarStats.Click += new System.EventHandler(this.btnLimpiarStats_Click);
+            // 
+            // btnAlAzarStats
+            // 
+            this.btnAlAzarStats.Location = new System.Drawing.Point(8, 222);
+            this.btnAlAzarStats.Name = "btnAlAzarStats";
+            this.btnAlAzarStats.Size = new System.Drawing.Size(75, 23);
+            this.btnAlAzarStats.TabIndex = 43;
+            this.btnAlAzarStats.Text = "Al azar";
+            this.btnAlAzarStats.UseVisualStyleBackColor = true;
+            this.btnAlAzarStats.Click += new System.EventHandler(this.btnAlAzarStats_Click);
+            // 
+            // lblNumPuntosRestantesStats
+            // 
+            this.lblNumPuntosRestantesStats.AutoSize = true;
+            this.lblNumPuntosRestantesStats.Location = new System.Drawing.Point(244, 222);
+            this.lblNumPuntosRestantesStats.Name = "lblNumPuntosRestantesStats";
+            this.lblNumPuntosRestantesStats.Size = new System.Drawing.Size(16, 17);
+            this.lblNumPuntosRestantesStats.TabIndex = 42;
+            this.lblNumPuntosRestantesStats.Text = "0";
+            // 
+            // lblPuntosRestantesStats
+            // 
+            this.lblPuntosRestantesStats.AutoSize = true;
+            this.lblPuntosRestantesStats.Location = new System.Drawing.Point(114, 222);
+            this.lblPuntosRestantesStats.Name = "lblPuntosRestantesStats";
+            this.lblPuntosRestantesStats.Size = new System.Drawing.Size(123, 17);
+            this.lblPuntosRestantesStats.TabIndex = 41;
+            this.lblPuntosRestantesStats.Text = "Puntos restantes:";
+            // 
+            // nudSuerte
+            // 
+            this.nudSuerte.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nudSuerte.Location = new System.Drawing.Point(283, 179);
+            this.nudSuerte.Maximum = new decimal(new int[] {
             99,
             0,
             0,
             0});
-            this.numericUpDown2.Minimum = new decimal(new int[] {
+            this.nudSuerte.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(62, 20);
-            this.numericUpDown2.TabIndex = 35;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.nudSuerte.Name = "nudSuerte";
+            this.nudSuerte.Size = new System.Drawing.Size(40, 20);
+            this.nudSuerte.TabIndex = 40;
+            this.nudSuerte.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
+            this.nudSuerte.ValueChanged += new System.EventHandler(this.ndStats_changed);
             // 
-            // progressBar2
+            // nudVitalidad
             // 
-            this.progressBar2.Location = new System.Drawing.Point(295, 36);
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(100, 23);
-            this.progressBar2.TabIndex = 34;
+            this.nudVitalidad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nudVitalidad.Location = new System.Drawing.Point(283, 145);
+            this.nudVitalidad.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.nudVitalidad.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudVitalidad.Name = "nudVitalidad";
+            this.nudVitalidad.Size = new System.Drawing.Size(40, 20);
+            this.nudVitalidad.TabIndex = 39;
+            this.nudVitalidad.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudVitalidad.ValueChanged += new System.EventHandler(this.ndStats_changed);
             // 
-            // label5
+            // nudDestreza
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(165, 39);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 18);
-            this.label5.TabIndex = 33;
-            this.label5.Text = "Nivel";
+            this.nudDestreza.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nudDestreza.Location = new System.Drawing.Point(283, 111);
+            this.nudDestreza.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.nudDestreza.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudDestreza.Name = "nudDestreza";
+            this.nudDestreza.Size = new System.Drawing.Size(40, 20);
+            this.nudDestreza.TabIndex = 38;
+            this.nudDestreza.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudDestreza.ValueChanged += new System.EventHandler(this.ndStats_changed);
+            // 
+            // lblSuerte
+            // 
+            this.lblSuerte.AutoSize = true;
+            this.lblSuerte.Location = new System.Drawing.Point(209, 179);
+            this.lblSuerte.Name = "lblSuerte";
+            this.lblSuerte.Size = new System.Drawing.Size(51, 17);
+            this.lblSuerte.TabIndex = 37;
+            this.lblSuerte.Text = "Suerte";
+            // 
+            // lblVitalidad
+            // 
+            this.lblVitalidad.AutoSize = true;
+            this.lblVitalidad.Location = new System.Drawing.Point(209, 144);
+            this.lblVitalidad.Name = "lblVitalidad";
+            this.lblVitalidad.Size = new System.Drawing.Size(62, 17);
+            this.lblVitalidad.TabIndex = 36;
+            this.lblVitalidad.Text = "Vitalidad";
+            // 
+            // lblDestreza
+            // 
+            this.lblDestreza.AutoSize = true;
+            this.lblDestreza.Location = new System.Drawing.Point(209, 110);
+            this.lblDestreza.Name = "lblDestreza";
+            this.lblDestreza.Size = new System.Drawing.Size(68, 17);
+            this.lblDestreza.TabIndex = 35;
+            this.lblDestreza.Text = "Destreza";
+            // 
+            // nudAgilidad
+            // 
+            this.nudAgilidad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nudAgilidad.Location = new System.Drawing.Point(95, 179);
+            this.nudAgilidad.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.nudAgilidad.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudAgilidad.Name = "nudAgilidad";
+            this.nudAgilidad.Size = new System.Drawing.Size(40, 20);
+            this.nudAgilidad.TabIndex = 34;
+            this.nudAgilidad.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudAgilidad.ValueChanged += new System.EventHandler(this.ndStats_changed);
+            // 
+            // nudInteligencia
+            // 
+            this.nudInteligencia.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nudInteligencia.Location = new System.Drawing.Point(95, 145);
+            this.nudInteligencia.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.nudInteligencia.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudInteligencia.Name = "nudInteligencia";
+            this.nudInteligencia.Size = new System.Drawing.Size(40, 20);
+            this.nudInteligencia.TabIndex = 33;
+            this.nudInteligencia.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudInteligencia.ValueChanged += new System.EventHandler(this.ndStats_changed);
+            // 
+            // nudFuerza
+            // 
+            this.nudFuerza.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nudFuerza.Location = new System.Drawing.Point(95, 111);
+            this.nudFuerza.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.nudFuerza.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudFuerza.Name = "nudFuerza";
+            this.nudFuerza.Size = new System.Drawing.Size(40, 20);
+            this.nudFuerza.TabIndex = 32;
+            this.nudFuerza.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudFuerza.ValueChanged += new System.EventHandler(this.ndStats_changed);
+            // 
+            // lblAgilidad
+            // 
+            this.lblAgilidad.AutoSize = true;
+            this.lblAgilidad.Location = new System.Drawing.Point(5, 175);
+            this.lblAgilidad.Name = "lblAgilidad";
+            this.lblAgilidad.Size = new System.Drawing.Size(58, 17);
+            this.lblAgilidad.TabIndex = 31;
+            this.lblAgilidad.Text = "Agilidad";
+            // 
+            // lblInteligencia
+            // 
+            this.lblInteligencia.AutoSize = true;
+            this.lblInteligencia.Location = new System.Drawing.Point(5, 144);
+            this.lblInteligencia.Name = "lblInteligencia";
+            this.lblInteligencia.Size = new System.Drawing.Size(80, 17);
+            this.lblInteligencia.TabIndex = 30;
+            this.lblInteligencia.Text = "Inteligencia";
+            // 
+            // lblFuerza
+            // 
+            this.lblFuerza.AutoSize = true;
+            this.lblFuerza.Location = new System.Drawing.Point(5, 110);
+            this.lblFuerza.Name = "lblFuerza";
+            this.lblFuerza.Size = new System.Drawing.Size(54, 17);
+            this.lblFuerza.TabIndex = 29;
+            this.lblFuerza.Text = "Fuerza";
+            // 
+            // lblStats
+            // 
+            this.lblStats.AutoSize = true;
+            this.lblStats.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStats.Location = new System.Drawing.Point(4, 75);
+            this.lblStats.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblStats.Name = "lblStats";
+            this.lblStats.Size = new System.Drawing.Size(115, 21);
+            this.lblStats.TabIndex = 28;
+            this.lblStats.Text = "Estadísticas";
+            // 
+            // timerAvisosCaracteristicas
+            // 
+            this.timerAvisosCaracteristicas.Interval = 1000;
+            this.timerAvisosCaracteristicas.Tick += new System.EventHandler(this.timerAvisosCaracteristicas_Tick);
+            // 
+            // checkBox10
+            // 
+            this.checkBox10.AutoSize = true;
+            this.checkBox10.Location = new System.Drawing.Point(34, 23);
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.Size = new System.Drawing.Size(15, 14);
+            this.checkBox10.TabIndex = 1;
+            this.checkBox10.UseVisualStyleBackColor = true;
+            this.checkBox10.Click += new System.EventHandler(this.checkBoxClick);
+            // 
+            // checkBox9
+            // 
+            this.checkBox9.AutoSize = true;
+            this.checkBox9.Location = new System.Drawing.Point(55, 23);
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.Size = new System.Drawing.Size(15, 14);
+            this.checkBox9.TabIndex = 2;
+            this.checkBox9.UseVisualStyleBackColor = true;
+            this.checkBox9.Click += new System.EventHandler(this.checkBoxClick);
+            // 
+            // checkBox8
+            // 
+            this.checkBox8.AutoSize = true;
+            this.checkBox8.Location = new System.Drawing.Point(76, 23);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(15, 14);
+            this.checkBox8.TabIndex = 3;
+            this.checkBox8.UseVisualStyleBackColor = true;
+            this.checkBox8.Click += new System.EventHandler(this.checkBoxClick);
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Location = new System.Drawing.Point(95, 23);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(15, 14);
+            this.checkBox7.TabIndex = 4;
+            this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBox7.Click += new System.EventHandler(this.checkBoxClick);
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Location = new System.Drawing.Point(116, 23);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(15, 14);
+            this.checkBox6.TabIndex = 5;
+            this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBox6.Click += new System.EventHandler(this.checkBoxClick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 661);
-            this.Controls.Add(this.panel10);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panelSegundoTrabajo);
+            this.Controls.Add(this.panelPrimerTrabajo);
+            this.Controls.Add(this.panelNivelStats);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(1200, 700);
             this.MinimumSize = new System.Drawing.Size(1200, 700);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ragnarok ";
+            this.Click += new System.EventHandler(this.checkBoxClick);
             ((System.ComponentModel.ISupportInitialize)(this.characterImage)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numNivel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudFuerza)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudInteligencia)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudAgilidad)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panelPrimerTrabajo.ResumeLayout(false);
+            this.panelPrimerTrabajo.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudJob1)).EndInit();
+            this.panelHabilidad4PrimerTrabajo.ResumeLayout(false);
+            this.panelHabilidad4PrimerTrabajo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panelHabilidad2PrimerTrabajo.ResumeLayout(false);
+            this.panelHabilidad2PrimerTrabajo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panelHabilidad3PrimerTrabajo.ResumeLayout(false);
+            this.panelHabilidad3PrimerTrabajo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panelHabilidad1PrimerTrabajo.ResumeLayout(false);
+            this.panelHabilidad1PrimerTrabajo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelSegundoTrabajo.ResumeLayout(false);
+            this.panelSegundoTrabajo.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudJob2)).EndInit();
+            this.panelHabilidad4SegundoTrabajo.ResumeLayout(false);
+            this.panelHabilidad4SegundoTrabajo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panelHabilidad2SegundoTrabajo.ResumeLayout(false);
+            this.panelHabilidad2SegundoTrabajo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.panelHabilidad3SegundoTrabajo.ResumeLayout(false);
+            this.panelHabilidad3SegundoTrabajo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.panelHabilidad1SegundoTrabajo.ResumeLayout(false);
+            this.panelHabilidad1SegundoTrabajo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.panelNivelStats.ResumeLayout(false);
+            this.panelNivelStats.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudNivel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSuerte)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudVitalidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudDestreza)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.panel15.ResumeLayout(false);
-            this.panel15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAgilidad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudInteligencia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudFuerza)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1651,13 +1753,25 @@
         #endregion
 
         private System.Windows.Forms.PictureBox characterImage;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lblStats;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.ProgressBar prbNivel;
-        private System.Windows.Forms.Label lblMsgNivel;
-        private System.Windows.Forms.NumericUpDown numNivel;
+        private System.Windows.Forms.RadioButton rdbtnMujer;
+        private System.Windows.Forms.Label lblSexo;
+        private System.Windows.Forms.RadioButton rdbtnHombre;
+        private System.Windows.Forms.Label lblLocalizacion;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cmboxLocalizacion;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelPrimerTrabajo;
+        private System.Windows.Forms.Panel panelSegundoTrabajo;
+        private System.Windows.Forms.Panel panelNivelStats;
+        private System.Windows.Forms.Label lblMsgStats;
+        private System.Windows.Forms.Button btnLimpiarStats;
+        private System.Windows.Forms.Button btnAlAzarStats;
+        private System.Windows.Forms.Label lblNumPuntosRestantesStats;
+        private System.Windows.Forms.Label lblPuntosRestantesStats;
+        private System.Windows.Forms.NumericUpDown nudSuerte;
+        private System.Windows.Forms.NumericUpDown nudVitalidad;
+        private System.Windows.Forms.NumericUpDown nudDestreza;
         private System.Windows.Forms.Label lblSuerte;
         private System.Windows.Forms.Label lblVitalidad;
         private System.Windows.Forms.Label lblDestreza;
@@ -1667,32 +1781,9 @@
         private System.Windows.Forms.Label lblAgilidad;
         private System.Windows.Forms.Label lblInteligencia;
         private System.Windows.Forms.Label lblFuerza;
-        private System.Windows.Forms.RadioButton rdbtnMujer;
-        private System.Windows.Forms.Label lblSexo;
-        private System.Windows.Forms.RadioButton rdbtnHombre;
-        private System.Windows.Forms.Label lblLocalizacion;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox cmboxLocalizacion;
-        private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblNumPuntosRestantesStats;
-        private System.Windows.Forms.Label lblPuntosRestantesStats;
-        private System.Windows.Forms.NumericUpDown nudSuerte;
-        private System.Windows.Forms.NumericUpDown nudVitalidad;
-        private System.Windows.Forms.NumericUpDown nudDestreza;
-        private System.Windows.Forms.Button btnLimpiarStats;
-        private System.Windows.Forms.Button btnAlAzarStats;
-        private System.Windows.Forms.Label lblMsgStats;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label lblMsgJob1;
-        private System.Windows.Forms.Button btnLimpiarJob1;
-        private System.Windows.Forms.Button btnAlAzarJob1;
-        private System.Windows.Forms.Label lblNumPuntosRestantesJob1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lblPrimerTrabajo;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label lblStats;
+        private System.Windows.Forms.Label lblJob1Skills;
+        private System.Windows.Forms.Panel panelHabilidad4PrimerTrabajo;
         private System.Windows.Forms.CheckBox checkBox16;
         private System.Windows.Forms.CheckBox checkBox17;
         private System.Windows.Forms.CheckBox checkBox18;
@@ -1700,23 +1791,18 @@
         private System.Windows.Forms.CheckBox checkBox20;
         private System.Windows.Forms.Label lblJob1Skill4;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label lblMsgJob1Skills;
+        private System.Windows.Forms.Panel panelHabilidad2PrimerTrabajo;
         private System.Windows.Forms.CheckBox checkBox11;
         private System.Windows.Forms.CheckBox checkBox12;
         private System.Windows.Forms.CheckBox checkBox13;
         private System.Windows.Forms.CheckBox checkBox14;
-        private System.Windows.Forms.CheckBox checkBox15;
         private System.Windows.Forms.Label lblJob1Skill2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox10;
+        private System.Windows.Forms.Panel panelHabilidad3PrimerTrabajo;
         private System.Windows.Forms.Label lblJob1Skill3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panelHabilidad1PrimerTrabajo;
         private System.Windows.Forms.CheckBox checkBox5;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox3;
@@ -1724,11 +1810,12 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label lblJob1Skill1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lblJob1Skills;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Button btnAlAzarJob1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnLimpiarJob1;
+        private System.Windows.Forms.Label lblNumPuntosRestantesJob1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panelHabilidad4SegundoTrabajo;
         private System.Windows.Forms.CheckBox checkBox21;
         private System.Windows.Forms.CheckBox checkBox22;
         private System.Windows.Forms.CheckBox checkBox23;
@@ -1736,8 +1823,8 @@
         private System.Windows.Forms.CheckBox checkBox25;
         private System.Windows.Forms.Label lblJob2Skill4;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label lblMsgJob2;
-        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Label lblMsgJob2Skills;
+        private System.Windows.Forms.Panel panelHabilidad2SegundoTrabajo;
         private System.Windows.Forms.CheckBox checkBox26;
         private System.Windows.Forms.CheckBox checkBox27;
         private System.Windows.Forms.CheckBox checkBox28;
@@ -1745,7 +1832,7 @@
         private System.Windows.Forms.CheckBox checkBox30;
         private System.Windows.Forms.Label lblJob2Skill2;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Panel panelHabilidad3SegundoTrabajo;
         private System.Windows.Forms.CheckBox checkBox31;
         private System.Windows.Forms.CheckBox checkBox32;
         private System.Windows.Forms.CheckBox checkBox33;
@@ -1753,7 +1840,7 @@
         private System.Windows.Forms.CheckBox checkBox35;
         private System.Windows.Forms.Label lblJob2Skill3;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Panel panelHabilidad1SegundoTrabajo;
         private System.Windows.Forms.CheckBox checkBox36;
         private System.Windows.Forms.CheckBox checkBox37;
         private System.Windows.Forms.CheckBox checkBox38;
@@ -1764,15 +1851,33 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label lblNumPuntosRestantesJob2;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.NumericUpDown nudNivel;
+        private System.Windows.Forms.Label lblMsgNivel;
+        private System.Windows.Forms.ProgressBar prbNivel;
+        private System.Windows.Forms.Label lblNivelStats;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label lblMsgJob1;
+        private System.Windows.Forms.NumericUpDown nudJob1;
+        private System.Windows.Forms.ProgressBar progressBarJob1;
+        private System.Windows.Forms.ComboBox cmboxPrimerJob;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.ProgressBar progressBar2;
+        private System.Windows.Forms.Label lblPrimerTrabajo;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label lblMsgJob2;
+        private System.Windows.Forms.NumericUpDown nudJob2;
+        private System.Windows.Forms.ProgressBar progressBarJob2;
+        private System.Windows.Forms.ComboBox cmboxSegundoTrabajo;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Timer timerAvisosCaracteristicas;
+        private System.Windows.Forms.CheckBox checkBox15;
+        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.CheckBox checkBox8;
+        private System.Windows.Forms.CheckBox checkBox9;
+        private System.Windows.Forms.CheckBox checkBox10;
     }
 }
 
