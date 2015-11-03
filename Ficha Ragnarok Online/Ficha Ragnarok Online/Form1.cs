@@ -15,6 +15,7 @@ namespace Ficha_Ragnarok_Online
     public partial class Form1 : Form
     {
         private String avatarPath = "..\\..\\elementosVisuales\\avatar\\male\\";
+        private int avatarSize = 200;
         private const int LIMPIAR = 0;
         private const int ALEATORIO = 1;
         private const int ERROR = 2;
@@ -93,12 +94,13 @@ namespace Ficha_Ragnarok_Online
         {
             if (cmboxSegundoTrabajo.SelectedIndex != 0)
             {
-                characterImage.Image = new Bitmap(avatarPath + "segundoJob\\" + cmboxSegundoTrabajo.Text + ".gif");
+                characterImage.Image = new Bitmap(new Bitmap(avatarPath + "segundoJob\\" + cmboxSegundoTrabajo.Text + ".gif"),avatarSize,avatarSize);
             }
             else
             {
-                characterImage.Image = new Bitmap(avatarPath + "primerJob\\" + cmboxPrimerJob.Text + ".gif");
+                characterImage.Image = new Bitmap(new Bitmap(avatarPath + "primerJob\\" + cmboxPrimerJob.Text + ".gif"), avatarSize, avatarSize);
             }
+          
         }
         private void rdbtnHombre_CheckedChanged(object sender, EventArgs e)
         {
@@ -119,6 +121,16 @@ namespace Ficha_Ragnarok_Online
                 cambiarAvatar();
                 lblSexo.Image = new Bitmap("..\\..\\elementosVisuales\\iconos sexo\\Mujer.gif");
             }
+        }
+        private void rdbtnEdadAdulto(object sender, EventArgs e)
+        {
+            avatarSize = 200;
+            cambiarAvatar();
+        }
+        private void rdbtnEdadNinio(object sender, EventArgs e)
+        {
+            avatarSize = 150;
+            cambiarAvatar();
         }
         private void progressbarNivelClick(object sender, MouseEventArgs e)
         {
@@ -151,8 +163,8 @@ namespace Ficha_Ragnarok_Online
                     aux = false;
                 }
             }
-            ((Panel)((Panel)((NumericUpDown)sender).Parent).Parent).Tag = (int)((Panel)((NumericUpDown)sender).Parent).Parent.Tag + ((int)((NumericUpDown)sender).Value) - (int)((NumericUpDown)sender).Tag; //Se cambian los puntos restantes por:puntos restantes + nivel actual - nivel antiguo
-
+            // ((Panel)((Panel)((NumericUpDown)sender).Parent).Parent).Tag = (int)((Panel)((NumericUpDown)sender).Parent).Parent.Tag + ((int)((NumericUpDown)sender).Value) - (int)((NumericUpDown)sender).Tag; //Se cambian los puntos restantes por:puntos restantes + nivel actual - nivel antiguo
+            diferentesAccionesNudProgressbar(((Panel)((Panel)((NumericUpDown)sender).Parent).Parent),(NumericUpDown)sender);
 
             ((NumericUpDown)sender).Tag = ((int)((NumericUpDown)sender).Value);
             escribirPuntosRestantes(((Panel)((Panel)((NumericUpDown)sender).Parent).Parent));
@@ -436,7 +448,11 @@ namespace Ficha_Ragnarok_Online
             Random rnd = new Random();
             int numpaneles;
             int auxRandom;
-            foreach (Object panel in panelTrabajo.Controls)
+            if (((int)panelTrabajo.Tag) == 0)
+            {
+                escribirAvisosCaracteristicas(panelTrabajo, ERROR);
+            }
+            else{ foreach (Object panel in panelTrabajo.Controls)
             {
                 if (panel is Panel)
                 {
@@ -467,9 +483,27 @@ namespace Ficha_Ragnarok_Online
                     }
                 }
 
-                escribirPuntosRestantes(panelTrabajo);
-                escribirAvisosCaracteristicas(panelTrabajo, ALEATORIO);
+
+            }
+            escribirPuntosRestantes(panelTrabajo);
+            escribirAvisosCaracteristicas(panelTrabajo, ALEATORIO);
+        }
+        }
+        private void diferentesAccionesNudProgressbar(Panel panel,NumericUpDown sender)
+        {
+            if (panel== panelPrimerTrabajo || panel == panelSegundoTrabajo || panel==panelNivelStats)
+            {
+                panel.Tag = (int)panel.Tag + ((int)sender.Value) - (int)sender.Tag; //Se cambian los puntos restantes por:puntos restantes + nivel actual - nivel antiguo
             }
         }
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void lblNombre_Click(object sender, EventArgs e)
+        {
+
+        }
+      
     }
 }

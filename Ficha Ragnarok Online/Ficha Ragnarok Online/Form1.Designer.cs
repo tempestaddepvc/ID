@@ -155,6 +155,15 @@
             this.lblFuerza = new System.Windows.Forms.Label();
             this.lblStats = new System.Windows.Forms.Label();
             this.timerAvisosCaracteristicas = new System.Windows.Forms.Timer(this.components);
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.rdbtnNinio = new System.Windows.Forms.RadioButton();
+            this.rdbtnAdulto = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.characterImage)).BeginInit();
             this.panel1.SuspendLayout();
             this.panelPrimerTrabajo.SuspendLayout();
@@ -188,6 +197,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudAgilidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudInteligencia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudFuerza)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // characterImage
@@ -205,7 +218,7 @@
             // rdbtnMujer
             // 
             this.rdbtnMujer.AutoSize = true;
-            this.rdbtnMujer.Location = new System.Drawing.Point(279, 159);
+            this.rdbtnMujer.Location = new System.Drawing.Point(4, 50);
             this.rdbtnMujer.Margin = new System.Windows.Forms.Padding(4);
             this.rdbtnMujer.Name = "rdbtnMujer";
             this.rdbtnMujer.Size = new System.Drawing.Size(61, 21);
@@ -219,7 +232,7 @@
             this.lblSexo.AutoSize = true;
             this.lblSexo.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSexo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblSexo.Location = new System.Drawing.Point(279, 109);
+            this.lblSexo.Location = new System.Drawing.Point(-3, 0);
             this.lblSexo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSexo.Name = "lblSexo";
             this.lblSexo.Size = new System.Drawing.Size(75, 21);
@@ -231,7 +244,7 @@
             this.rdbtnHombre.AutoSize = true;
             this.rdbtnHombre.Checked = true;
             this.rdbtnHombre.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rdbtnHombre.Location = new System.Drawing.Point(279, 134);
+            this.rdbtnHombre.Location = new System.Drawing.Point(4, 25);
             this.rdbtnHombre.Margin = new System.Windows.Forms.Padding(4);
             this.rdbtnHombre.Name = "rdbtnHombre";
             this.rdbtnHombre.Size = new System.Drawing.Size(78, 21);
@@ -245,7 +258,7 @@
             // 
             this.lblLocalizacion.AutoSize = true;
             this.lblLocalizacion.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLocalizacion.Location = new System.Drawing.Point(279, 184);
+            this.lblLocalizacion.Location = new System.Drawing.Point(42, 262);
             this.lblLocalizacion.Name = "lblLocalizacion";
             this.lblLocalizacion.Size = new System.Drawing.Size(118, 21);
             this.lblLocalizacion.TabIndex = 8;
@@ -253,11 +266,12 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(279, 73);
+            this.textBox1.Location = new System.Drawing.Point(255, 51);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(132, 24);
             this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // cmboxLocalizacion
             // 
@@ -272,7 +286,7 @@
             "Comodo",
             "Cueva de Thor",
             "Eimburg"});
-            this.cmboxLocalizacion.Location = new System.Drawing.Point(283, 208);
+            this.cmboxLocalizacion.Location = new System.Drawing.Point(157, 262);
             this.cmboxLocalizacion.Name = "cmboxLocalizacion";
             this.cmboxLocalizacion.Size = new System.Drawing.Size(121, 25);
             this.cmboxLocalizacion.TabIndex = 4;
@@ -282,26 +296,27 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(279, 48);
+            this.lblNombre.Location = new System.Drawing.Point(255, 26);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(80, 21);
             this.lblNombre.TabIndex = 4;
             this.lblNombre.Text = "Nombre";
+            this.lblNombre.Click += new System.EventHandler(this.lblNombre_Click);
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel7);
+            this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.lblNombre);
             this.panel1.Controls.Add(this.cmboxLocalizacion);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.characterImage);
             this.panel1.Controls.Add(this.lblLocalizacion);
-            this.panel1.Controls.Add(this.rdbtnHombre);
-            this.panel1.Controls.Add(this.lblSexo);
-            this.panel1.Controls.Add(this.rdbtnMujer);
             this.panel1.Location = new System.Drawing.Point(30, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(441, 269);
+            this.panel1.Size = new System.Drawing.Size(472, 298);
             this.panel1.TabIndex = 10;
             // 
             // panelPrimerTrabajo
@@ -1685,11 +1700,109 @@
             this.timerAvisosCaracteristicas.Interval = 1000;
             this.timerAvisosCaracteristicas.Tick += new System.EventHandler(this.timerAvisosCaracteristicas_Tick);
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.numericUpDown1);
+            this.panel5.Controls.Add(this.progressBar1);
+            this.panel5.Controls.Add(this.label6);
+            this.panel5.Location = new System.Drawing.Point(258, 157);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(176, 60);
+            this.panel5.TabIndex = 47;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numericUpDown1.Location = new System.Drawing.Point(1, 25);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(62, 20);
+            this.numericUpDown1.TabIndex = 13;
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.nudNivel_valueChanged);
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.progressBar1.Location = new System.Drawing.Point(69, 22);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(100, 23);
+            this.progressBar1.TabIndex = 15;
+            this.progressBar1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.progressbarNivelClick);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(-3, 0);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(59, 21);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Salud";
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.lblSexo);
+            this.panel6.Controls.Add(this.rdbtnMujer);
+            this.panel6.Controls.Add(this.rdbtnHombre);
+            this.panel6.Location = new System.Drawing.Point(258, 82);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(98, 73);
+            this.panel6.TabIndex = 48;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.label1);
+            this.panel7.Controls.Add(this.rdbtnNinio);
+            this.panel7.Controls.Add(this.rdbtnAdulto);
+            this.panel7.Location = new System.Drawing.Point(362, 82);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(98, 73);
+            this.panel7.TabIndex = 49;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label1.Location = new System.Drawing.Point(-3, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 21);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Edad";
+            // 
+            // rdbtnNinio
+            // 
+            this.rdbtnNinio.AutoSize = true;
+            this.rdbtnNinio.Location = new System.Drawing.Point(4, 50);
+            this.rdbtnNinio.Margin = new System.Windows.Forms.Padding(4);
+            this.rdbtnNinio.Name = "rdbtnNinio";
+            this.rdbtnNinio.Size = new System.Drawing.Size(55, 21);
+            this.rdbtnNinio.TabIndex = 3;
+            this.rdbtnNinio.Text = "Niño";
+            this.rdbtnNinio.UseVisualStyleBackColor = true;
+            this.rdbtnNinio.CheckedChanged += new System.EventHandler(this.rdbtnEdadNinio);
+            // 
+            // rdbtnAdulto
+            // 
+            this.rdbtnAdulto.AutoSize = true;
+            this.rdbtnAdulto.Checked = true;
+            this.rdbtnAdulto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rdbtnAdulto.Location = new System.Drawing.Point(4, 25);
+            this.rdbtnAdulto.Margin = new System.Windows.Forms.Padding(4);
+            this.rdbtnAdulto.Name = "rdbtnAdulto";
+            this.rdbtnAdulto.Size = new System.Drawing.Size(66, 21);
+            this.rdbtnAdulto.TabIndex = 2;
+            this.rdbtnAdulto.TabStop = true;
+            this.rdbtnAdulto.Text = "Adulto";
+            this.rdbtnAdulto.UseVisualStyleBackColor = true;
+            this.rdbtnAdulto.CheckedChanged += new System.EventHandler(this.rdbtnEdadAdulto);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.ClientSize = new System.Drawing.Size(1184, 662);
             this.Controls.Add(this.panelSegundoTrabajo);
             this.Controls.Add(this.panelPrimerTrabajo);
             this.Controls.Add(this.panelNivelStats);
@@ -1749,6 +1862,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudAgilidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudInteligencia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudFuerza)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1881,6 +2001,15 @@
         private System.Windows.Forms.CheckBox checkBox8;
         private System.Windows.Forms.CheckBox checkBox9;
         private System.Windows.Forms.CheckBox checkBox10;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RadioButton rdbtnNinio;
+        private System.Windows.Forms.RadioButton rdbtnAdulto;
     }
 }
 
