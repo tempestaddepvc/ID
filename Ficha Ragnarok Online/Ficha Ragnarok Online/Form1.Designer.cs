@@ -37,7 +37,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.cmboxLocalizacion = new System.Windows.Forms.ComboBox();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelDatosGenerales = new System.Windows.Forms.Panel();
             this.littleAvatar = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.rdbtnMediano = new System.Windows.Forms.RadioButton();
@@ -46,7 +46,7 @@
             this.rdbtnHumano = new System.Windows.Forms.RadioButton();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.nudSalud = new System.Windows.Forms.NumericUpDown();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label6 = new System.Windows.Forms.Label();
             this.panelPrimerTrabajo = new System.Windows.Forms.Panel();
@@ -139,7 +139,7 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnLimpiarJob2 = new System.Windows.Forms.Button();
             this.lblNumPuntosRestantesJob2 = new System.Windows.Forms.Label();
             this.panelNivelStats = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -166,13 +166,15 @@
             this.lblFuerza = new System.Windows.Forms.Label();
             this.lblStats = new System.Windows.Forms.Label();
             this.timerAvisosCaracteristicas = new System.Windows.Forms.Timer(this.components);
+            this.lblMorir = new System.Windows.Forms.Label();
+            this.timerAvisoNiveles = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.characterImage)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.panelDatosGenerales.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.littleAvatar)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSalud)).BeginInit();
             this.panelPrimerTrabajo.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudJob1)).BeginInit();
@@ -274,7 +276,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(132, 24);
             this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // cmboxLocalizacion
             // 
@@ -305,29 +306,29 @@
             this.lblNombre.Size = new System.Drawing.Size(80, 21);
             this.lblNombre.TabIndex = 4;
             this.lblNombre.Text = "Nombre";
-            this.lblNombre.Click += new System.EventHandler(this.lblNombre_Click);
             // 
-            // panel1
+            // panelDatosGenerales
             // 
-            this.panel1.Controls.Add(this.littleAvatar);
-            this.panel1.Controls.Add(this.panel7);
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.lblNombre);
-            this.panel1.Controls.Add(this.cmboxLocalizacion);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.characterImage);
-            this.panel1.Controls.Add(this.lblLocalizacion);
-            this.panel1.Location = new System.Drawing.Point(30, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(472, 298);
-            this.panel1.TabIndex = 10;
+            this.panelDatosGenerales.Controls.Add(this.lblMorir);
+            this.panelDatosGenerales.Controls.Add(this.littleAvatar);
+            this.panelDatosGenerales.Controls.Add(this.panel7);
+            this.panelDatosGenerales.Controls.Add(this.panel6);
+            this.panelDatosGenerales.Controls.Add(this.panel5);
+            this.panelDatosGenerales.Controls.Add(this.lblNombre);
+            this.panelDatosGenerales.Controls.Add(this.cmboxLocalizacion);
+            this.panelDatosGenerales.Controls.Add(this.textBox1);
+            this.panelDatosGenerales.Controls.Add(this.characterImage);
+            this.panelDatosGenerales.Controls.Add(this.lblLocalizacion);
+            this.panelDatosGenerales.Location = new System.Drawing.Point(30, 12);
+            this.panelDatosGenerales.Name = "panelDatosGenerales";
+            this.panelDatosGenerales.Size = new System.Drawing.Size(472, 298);
+            this.panelDatosGenerales.TabIndex = 10;
             // 
-            // pictureBox9
+            // littleAvatar
             // 
             this.littleAvatar.BackColor = System.Drawing.Color.Transparent;
             this.littleAvatar.Location = new System.Drawing.Point(62, 67);
-            this.littleAvatar.Name = "pictureBox9";
+            this.littleAvatar.Name = "littleAvatar";
             this.littleAvatar.Size = new System.Drawing.Size(150, 150);
             this.littleAvatar.TabIndex = 30;
             this.littleAvatar.TabStop = false;
@@ -406,7 +407,7 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.numericUpDown1);
+            this.panel5.Controls.Add(this.nudSalud);
             this.panel5.Controls.Add(this.progressBar1);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Location = new System.Drawing.Point(259, 188);
@@ -414,14 +415,20 @@
             this.panel5.Size = new System.Drawing.Size(176, 60);
             this.panel5.TabIndex = 47;
             // 
-            // numericUpDown1
+            // nudSalud
             // 
-            this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.numericUpDown1.Location = new System.Drawing.Point(1, 25);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(62, 20);
-            this.numericUpDown1.TabIndex = 13;
-            this.numericUpDown1.ValueChanged += new System.EventHandler(this.nudNivel_valueChanged);
+            this.nudSalud.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nudSalud.Location = new System.Drawing.Point(1, 25);
+            this.nudSalud.Name = "nudSalud";
+            this.nudSalud.Size = new System.Drawing.Size(62, 20);
+            this.nudSalud.TabIndex = 13;
+            this.nudSalud.Tag = "";
+            this.nudSalud.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.nudSalud.ValueChanged += new System.EventHandler(this.nudNivel_valueChanged);
             // 
             // progressBar1
             // 
@@ -430,6 +437,7 @@
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(100, 23);
             this.progressBar1.TabIndex = 15;
+            this.progressBar1.Value = 100;
             this.progressBar1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.progressbarNivelClick);
             // 
             // label6
@@ -460,6 +468,7 @@
             this.panelPrimerTrabajo.Name = "panelPrimerTrabajo";
             this.panelPrimerTrabajo.Size = new System.Drawing.Size(472, 280);
             this.panelPrimerTrabajo.TabIndex = 28;
+            this.panelPrimerTrabajo.Visible = false;
             // 
             // panel3
             // 
@@ -471,13 +480,13 @@
             this.panel3.Controls.Add(this.lblPrimerTrabajo);
             this.panel3.Location = new System.Drawing.Point(3, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(450, 73);
+            this.panel3.Size = new System.Drawing.Size(450, 87);
             this.panel3.TabIndex = 48;
             // 
             // lblMsgJob1
             // 
             this.lblMsgJob1.AutoSize = true;
-            this.lblMsgJob1.Location = new System.Drawing.Point(198, 6);
+            this.lblMsgJob1.Location = new System.Drawing.Point(151, 6);
             this.lblMsgJob1.Name = "lblMsgJob1";
             this.lblMsgJob1.Size = new System.Drawing.Size(66, 17);
             this.lblMsgJob1.TabIndex = 43;
@@ -566,7 +575,7 @@
             // 
             this.lblJob1Skills.AutoSize = true;
             this.lblJob1Skills.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJob1Skills.Location = new System.Drawing.Point(4, 80);
+            this.lblJob1Skills.Location = new System.Drawing.Point(5, 95);
             this.lblJob1Skills.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblJob1Skills.Name = "lblJob1Skills";
             this.lblJob1Skills.Size = new System.Drawing.Size(112, 21);
@@ -661,7 +670,7 @@
             // 
             this.lblMsgJob1Skills.AutoSize = true;
             this.lblMsgJob1Skills.ForeColor = System.Drawing.Color.Red;
-            this.lblMsgJob1Skills.Location = new System.Drawing.Point(127, 81);
+            this.lblMsgJob1Skills.Location = new System.Drawing.Point(128, 96);
             this.lblMsgJob1Skills.Name = "lblMsgJob1Skills";
             this.lblMsgJob1Skills.Size = new System.Drawing.Size(37, 17);
             this.lblMsgJob1Skills.TabIndex = 42;
@@ -969,12 +978,13 @@
             this.panelSegundoTrabajo.Controls.Add(this.panelHabilidad1SegundoTrabajo);
             this.panelSegundoTrabajo.Controls.Add(this.button1);
             this.panelSegundoTrabajo.Controls.Add(this.label9);
-            this.panelSegundoTrabajo.Controls.Add(this.button2);
+            this.panelSegundoTrabajo.Controls.Add(this.btnLimpiarJob2);
             this.panelSegundoTrabajo.Controls.Add(this.lblNumPuntosRestantesJob2);
             this.panelSegundoTrabajo.Location = new System.Drawing.Point(635, 316);
             this.panelSegundoTrabajo.Name = "panelSegundoTrabajo";
             this.panelSegundoTrabajo.Size = new System.Drawing.Size(472, 280);
             this.panelSegundoTrabajo.TabIndex = 29;
+            this.panelSegundoTrabajo.Visible = false;
             // 
             // panel4
             // 
@@ -1447,15 +1457,15 @@
             this.label9.TabIndex = 37;
             this.label9.Text = "Puntos restantes:";
             // 
-            // button2
+            // btnLimpiarJob2
             // 
-            this.button2.Location = new System.Drawing.Point(315, 243);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 40;
-            this.button2.Text = "Limpiar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.btnLimpiarSkills_click);
+            this.btnLimpiarJob2.Location = new System.Drawing.Point(315, 243);
+            this.btnLimpiarJob2.Name = "btnLimpiarJob2";
+            this.btnLimpiarJob2.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiarJob2.TabIndex = 40;
+            this.btnLimpiarJob2.Text = "Limpiar";
+            this.btnLimpiarJob2.UseVisualStyleBackColor = true;
+            this.btnLimpiarJob2.Click += new System.EventHandler(this.btnLimpiarSkills_click);
             // 
             // lblNumPuntosRestantesJob2
             // 
@@ -1531,7 +1541,7 @@
             // 
             this.lblMsgNivel.AutoSize = true;
             this.lblMsgNivel.ForeColor = System.Drawing.Color.Black;
-            this.lblMsgNivel.Location = new System.Drawing.Point(189, 28);
+            this.lblMsgNivel.Location = new System.Drawing.Point(192, 4);
             this.lblMsgNivel.Name = "lblMsgNivel";
             this.lblMsgNivel.Size = new System.Drawing.Size(66, 17);
             this.lblMsgNivel.TabIndex = 16;
@@ -1824,15 +1834,31 @@
             this.timerAvisosCaracteristicas.Interval = 1000;
             this.timerAvisosCaracteristicas.Tick += new System.EventHandler(this.timerAvisosCaracteristicas_Tick);
             // 
+            // lblMorir
+            // 
+            this.lblMorir.AutoSize = true;
+            this.lblMorir.ForeColor = System.Drawing.Color.Red;
+            this.lblMorir.Location = new System.Drawing.Point(325, 270);
+            this.lblMorir.Name = "lblMorir";
+            this.lblMorir.Size = new System.Drawing.Size(94, 17);
+            this.lblMorir.TabIndex = 47;
+            this.lblMorir.Text = "¡Has muerto!";
+            this.lblMorir.Visible = false;
+            // 
+            // timerAvisoNiveles
+            // 
+            this.timerAvisoNiveles.Interval = 1000;
+            this.timerAvisoNiveles.Tick += new System.EventHandler(this.timerAvisoNiveles_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 662);
+            this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.panelSegundoTrabajo);
             this.Controls.Add(this.panelPrimerTrabajo);
             this.Controls.Add(this.panelNivelStats);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelDatosGenerales);
             this.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(1200, 700);
@@ -1841,8 +1867,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ragnarok ";
             ((System.ComponentModel.ISupportInitialize)(this.characterImage)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelDatosGenerales.ResumeLayout(false);
+            this.panelDatosGenerales.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.littleAvatar)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
@@ -1850,7 +1876,7 @@
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSalud)).EndInit();
             this.panelPrimerTrabajo.ResumeLayout(false);
             this.panelPrimerTrabajo.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -1910,7 +1936,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox cmboxLocalizacion;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelDatosGenerales;
         private System.Windows.Forms.Panel panelPrimerTrabajo;
         private System.Windows.Forms.Panel panelSegundoTrabajo;
         private System.Windows.Forms.Panel panelNivelStats;
@@ -2000,7 +2026,7 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnLimpiarJob2;
         private System.Windows.Forms.Label lblNumPuntosRestantesJob2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.NumericUpDown nudNivel;
@@ -2029,7 +2055,7 @@
         private System.Windows.Forms.CheckBox checkBox9;
         private System.Windows.Forms.CheckBox checkBox10;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown nudSalud;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel6;
@@ -2039,6 +2065,8 @@
         private System.Windows.Forms.RadioButton rdbtnHumano;
         private System.Windows.Forms.PictureBox littleAvatar;
         private System.Windows.Forms.RadioButton rdbtnMediano;
+        private System.Windows.Forms.Label lblMorir;
+        private System.Windows.Forms.Timer timerAvisoNiveles;
     }
 }
 

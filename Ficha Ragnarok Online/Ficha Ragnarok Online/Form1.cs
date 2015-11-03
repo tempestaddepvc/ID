@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -28,9 +29,7 @@ namespace Ficha_Ragnarok_Online
         {
             InitializeComponent();
             characterImage.BackgroundImage = new Bitmap("..\\..\\elementosVisuales\\localizacion\\Eimburg.jpg");
-            cmboxPrimerJob.SelectedIndex = 0;
-            cmboxSegundoTrabajo.SelectedIndex = 0;
-            cmboxLocalizacion.SelectedIndex = 0;
+            
             lblSexo.Image = new Bitmap("..\\..\\elementosVisuales\\iconos sexo\\Hombre.gif");
             nudNivel.Tag = 1;  //El valor del tag de los NumericUpDown es su antiguo valor;
             nudJob1.Tag = 1;  //Se ha hecho así para poder reciclar métodos entre ellos
@@ -44,6 +43,9 @@ namespace Ficha_Ragnarok_Online
             nudInteligencia.Tag = 1;
             nudSuerte.Tag = 1;
             nudVitalidad.Tag = 1;
+            cmboxPrimerJob.SelectedIndex = 0;
+            cmboxSegundoTrabajo.SelectedIndex = 0;
+            cmboxLocalizacion.SelectedIndex = 0;
 
             panelHabilidad1PrimerTrabajo.Tag = 0; //En el tag del panel se guardan los puntos antiguos de cada skill
             panelHabilidad2PrimerTrabajo.Tag = 0;
@@ -61,13 +63,12 @@ namespace Ficha_Ragnarok_Online
             lblJob2Skill2.Tag = 0;
             lblJob2Skill3.Tag = 0;
             lblJob2Skill4.Tag = 0;
+            nudSalud.Tag = 100;
             littleAvatar.Parent = characterImage;
             littleAvatar.BackColor = Color.Transparent;
-                
+            desaparecerSkillsDeTrabajo(panelPrimerTrabajo);
+            desaparecerSkillsDeTrabajo(panelSegundoTrabajo);
 
-        }
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
         }
         private void lblMsgNivel_Click(object sender, EventArgs e)
@@ -78,18 +79,6 @@ namespace Ficha_Ragnarok_Online
         {
 
         }
-        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-
-        }
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
         private void comboCambiarLocalizacion(object sender, EventArgs e)
         {
             characterImage.BackgroundImage = new Bitmap("..\\..\\elementosVisuales\\localizacion\\" + cmboxLocalizacion.Text + ".jpg");
@@ -97,6 +86,7 @@ namespace Ficha_Ragnarok_Online
         private void cambiarAvatar()
         {
             PictureBox pictureAuxiliar;
+            Bitmap imagenAvatar;
             if (rdbtnHumano.Checked)
             {
                 littleAvatar.Image = null;
@@ -108,23 +98,35 @@ namespace Ficha_Ragnarok_Online
                 pictureAuxiliar = littleAvatar;
                 if (rdbtnEnano.Checked)
                 {
-                    littleAvatar.Location = new Point(15, 45);
+                    littleAvatar.Location = new Point(20, 45);
                 }
                 else
                 {
-                    littleAvatar.Location = new Point(25, 45);
+                    littleAvatar.Location = new Point(33, 45);
                 }
             }
+           
+            
             if (cmboxSegundoTrabajo.SelectedIndex != 0)
             {
-                pictureAuxiliar.Image = new Bitmap(new Bitmap(avatarPath + "segundoJob\\" + cmboxSegundoTrabajo.Text + ".gif"),avatarWidth,avatarHeight);
+                imagenAvatar = new Bitmap(new Bitmap(avatarPath + "segundoJob\\" + cmboxSegundoTrabajo.Text + ".gif"),avatarWidth,avatarHeight);
+               
             }
             else
             {
 
-                pictureAuxiliar.Image = new Bitmap(new Bitmap(avatarPath + "primerJob\\" + cmboxPrimerJob.Text + ".gif"), avatarWidth, avatarHeight);
+                imagenAvatar = new Bitmap(new Bitmap(avatarPath + "primerJob\\" + cmboxPrimerJob.Text + ".gif"), avatarWidth, avatarHeight);
+                
             }
-          
+            if(nudSalud.Value != 0)
+            {
+                pictureAuxiliar.Image = imagenAvatar;
+            }
+            else
+            {
+                pictureAuxiliar.Image = cambiarOpacidadImagen(imagenAvatar,(float)0.5);
+            }
+
         }
         private void rdbtnHombre_CheckedChanged(object sender, EventArgs e)
         {
@@ -267,9 +269,14 @@ namespace Ficha_Ragnarok_Online
             lblMsgJob2Skills.Visible = false;
             lblMsgJob1Skills.Visible = false;
             lblMsgStats.Visible = false;
-            ((System.Windows.Forms.Timer)sender).Stop();
+  
         }
         private void btnLimpiarStats_Click(object sender, EventArgs e)
+        {
+            limpiarStats(sender);
+            
+        }
+        private void limpiarStats(Object sender)
         {
             foreach (Object item in (((Panel)((Button)sender).Parent).Controls))
             {
@@ -331,14 +338,23 @@ namespace Ficha_Ragnarok_Online
             cmboxSegundoTrabajo.Items.Clear();
             cmboxSegundoTrabajo.Items.Add("Sin seleccionar");
             cmboxSegundoTrabajo.SelectedIndex = 0;
+            nudJob1.Value = 1;
+            limpiarSkills(btnLimpiarJob1);
             if (cmboxPrimerJob.Text == "Sin seleccionar")
             {
-
+               
+              desaparecerSkillsDeTrabajo(panelPrimerTrabajo);
 
 
             }
             else
             {
+                aparecerSkillsDeTrabajo(panelPrimerTrabajo);
+                lblMsgJob1.Text = "¡Ha desbloqueado las habilidades del primer trabajo!";
+                lblMsgJob1.ForeColor = Color.Green;
+                lblMsgJob1.Visible = true;
+                timerAvisoNiveles.Start();
+                
                 if (cmboxPrimerJob.Text == "Acólito")
                 {
                     cmboxSegundoTrabajo.Items.Add("Cura");
@@ -448,6 +464,11 @@ namespace Ficha_Ragnarok_Online
         }
         private void btnLimpiarSkills_click(object sender, EventArgs e)
         {
+            limpiarSkills(sender);
+
+        }
+        private void limpiarSkills(Object sender)
+        {
             Panel panelTrabajo = ((Panel)((Button)sender).Parent);
             foreach (Object panel in panelTrabajo.Controls)
             {
@@ -471,7 +492,6 @@ namespace Ficha_Ragnarok_Online
 
             escribirPuntosRestantes(panelTrabajo);
             escribirAvisosCaracteristicas(panelTrabajo, LIMPIAR);
-
         }
         private void btnAlAzarSkills_click(object sender, EventArgs e)
         {
@@ -526,16 +546,138 @@ namespace Ficha_Ragnarok_Online
             if (panel== panelPrimerTrabajo || panel == panelSegundoTrabajo || panel==panelNivelStats)
             {
                 panel.Tag = (int)panel.Tag + ((int)sender.Value) - (int)sender.Tag; //Se cambian los puntos restantes por:puntos restantes + nivel actual - nivel antiguo
+                if (((int)panel.Tag)==-1)
+                {
+                    if (panel == panelNivelStats)
+                    {
+                        limpiarStats(btnLimpiarStats);
+                        lblMsgStats.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        if (panel == panelPrimerTrabajo)
+                        {
+                            limpiarSkills(btnLimpiarJob1);
+                            lblMsgJob1Skills.ForeColor = Color.Red;
+                        }
+                        else
+                        {
+                            limpiarSkills(btnLimpiarJob2);
+                            lblMsgJob1Skills.ForeColor = Color.Red;
+                        }
+                    }
+                }
+            }
+            if (panel == panelDatosGenerales)
+            {
+                if((nudSalud.Value==0 && ((int)nudSalud.Tag) != (int)nudSalud.Value) )
+                {
+                    cambiarAvatar();
+                    lblMorir.ForeColor = Color.Red;
+                    lblMorir.Text = "¡Has muerto!";
+                    lblMorir.Visible = true;
+                    timerAvisoNiveles.Start();
+                }else if(((int)nudSalud.Tag) == 0 && ((int)nudSalud.Tag) != (int)nudSalud.Value)
+                {
+                    cambiarAvatar();
+                    lblMorir.ForeColor = Color.Green;
+                    lblMorir.Text = "¡Has revivido!!";
+                    lblMorir.Visible = true;
+                    timerAvisoNiveles.Start();
+                }
+            }
+            if (panel == panelNivelStats)
+            {
+                if (((int)nudNivel.Tag) < 10 && nudNivel.Value >= 10)
+                {
+                    lblMsgNivel.ForeColor = Color.Green;
+                    lblMsgNivel.Text = "¡Ha desbloqueado el \nprimer trabajo!";
+                    lblMsgNivel.Visible = true;
+                    timerAvisoNiveles.Start();
+                    aparecerTrabajo(panelPrimerTrabajo);
+                }
+                if (((int)nudNivel.Tag) >= 10 && nudNivel.Value < 10)
+                {
+                    lblMsgNivel.ForeColor = Color.Red;
+                    lblMsgNivel.Text = "¡Ha dejado de \ntener trabajo!";
+                    lblMsgNivel.Visible = true;
+                    timerAvisoNiveles.Start();
+                   desaparecerTrabajo(panelPrimerTrabajo);
+                }
+            }
+
+            }
+        private void desaparecerTrabajo(Panel panel)
+        {
+            panel.Visible = false;
+            desaparecerSkillsDeTrabajo(panel);
+            if(panel ==panelPrimerTrabajo)
+            {
+                nudJob1.Value = 1;
+            }
+            else
+            {
+                nudJob2.Value = 1;
             }
         }
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void desaparecerSkillsDeTrabajo(Panel panel)
         {
+            foreach (Object item in panel.Controls)
+            {
+                if (item is Panel && ((Panel)item).Tag == null)
+                {
 
+                }
+                else
+                {
+                    ((Control)item).Visible = false;
+                }
+            }
+            if (panel == panelPrimerTrabajo)
+            {
+                limpiarSkills(btnLimpiarJob1);
+            }
+            else
+            {
+                limpiarSkills(btnLimpiarJob2);
+            }
         }
-        private void lblNombre_Click(object sender, EventArgs e)
+        private void aparecerSkillsDeTrabajo(Panel panel)
         {
+            foreach (Object item in panel.Controls)
+            {
+                if (item is Panel && ((Panel)item).Tag == null)
+                {
 
+                }
+                else
+                {
+                    ((Control)item).Visible = true;
+                }
+            }
         }
-        
+        private void aparecerTrabajo(Panel panel)
+        {
+            panel.Visible = true;
+        }
+        private Bitmap cambiarOpacidadImagen(Image imagenACambiar, float valorDeOpacidad)
+        {
+            Bitmap imagenTransparente = new Bitmap(imagenACambiar.Width, imagenACambiar.Height); // Determining Width and Height of Source Image
+            Graphics graphics = Graphics.FromImage(imagenTransparente);
+            ColorMatrix colormatrix = new ColorMatrix();
+            colormatrix.Matrix33 = valorDeOpacidad;
+            ImageAttributes imgAttribute = new ImageAttributes();
+            imgAttribute.SetColorMatrix(colormatrix, ColorMatrixFlag.Default, ColorAdjustType.Bitmap);
+            graphics.DrawImage(imagenACambiar, new Rectangle(0, 0, imagenTransparente.Width, imagenTransparente.Height), 0, 0, imagenACambiar.Width, imagenACambiar.Height, GraphicsUnit.Pixel, imgAttribute);
+            graphics.Dispose();   // Releasing all resource used by graphics
+            return imagenTransparente;
+        }
+        private void timerAvisoNiveles_Tick(object sender, EventArgs e)
+        {
+            lblMorir.Visible = false;
+            lblMsgNivel.Visible = false;
+            lblMsgJob1.Visible = false;
+            ((System.Windows.Forms.Timer)sender).Stop();
+        }
     }
 }
