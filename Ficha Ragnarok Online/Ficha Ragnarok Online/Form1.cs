@@ -15,7 +15,8 @@ namespace Ficha_Ragnarok_Online
     public partial class Form1 : Form
     {
         private String avatarPath = "..\\..\\elementosVisuales\\avatar\\male\\";
-        private int avatarSize = 200;
+        private int avatarWidth = 200;
+        private int avatarHeight = 200;
         private const int LIMPIAR = 0;
         private const int ALEATORIO = 1;
         private const int ERROR = 2;
@@ -62,7 +63,7 @@ namespace Ficha_Ragnarok_Online
             lblJob2Skill4.Tag = 0;
             pictureBox9.Parent = characterImage;
             pictureBox9.BackColor = Color.Transparent;
-            pictureBox9.Location = new Point(25, 25);         
+            pictureBox9.Location = new Point(25, 45);         
 
         }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -108,12 +109,12 @@ namespace Ficha_Ragnarok_Online
             }
             if (cmboxSegundoTrabajo.SelectedIndex != 0)
             {
-                pictureAuxiliar.Image = new Bitmap(new Bitmap(avatarPath + "segundoJob\\" + cmboxSegundoTrabajo.Text + ".gif"),avatarSize,avatarSize);
+                pictureAuxiliar.Image = new Bitmap(new Bitmap(avatarPath + "segundoJob\\" + cmboxSegundoTrabajo.Text + ".gif"),avatarWidth,avatarHeight);
             }
             else
             {
 
-                pictureAuxiliar.Image = new Bitmap(new Bitmap(avatarPath + "primerJob\\" + cmboxPrimerJob.Text + ".gif"), avatarSize, avatarSize);
+                pictureAuxiliar.Image = new Bitmap(new Bitmap(avatarPath + "primerJob\\" + cmboxPrimerJob.Text + ".gif"), avatarWidth, avatarHeight);
             }
           
         }
@@ -139,12 +140,14 @@ namespace Ficha_Ragnarok_Online
         }
         private void rdbtnEdadAdulto(object sender, EventArgs e)
         {
-            avatarSize = 200;
+            avatarWidth = 200;
+            avatarHeight = 200;
             cambiarAvatar();
         }
         private void rdbtnEdadNinio(object sender, EventArgs e)
         {
-            avatarSize = 150;
+            avatarWidth = 150;
+            avatarHeight = 130;
             cambiarAvatar();
         }
         private void progressbarNivelClick(object sender, MouseEventArgs e)
