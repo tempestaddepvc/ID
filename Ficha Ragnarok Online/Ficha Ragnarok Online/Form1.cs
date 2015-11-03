@@ -395,7 +395,6 @@ namespace Ficha_Ragnarok_Online
                 panelDeTrabajo.Tag = ((int)panelDeTrabajo.Tag - ((int)lblAux.Tag) + ((int)panelDeSkill.Tag));
                 panelDeSkill.Tag = ((int)lblAux.Tag);
                 escribirPuntosRestantes(panelDeTrabajo);
-                escribirAvisosCaracteristicas(panelDeTrabajo, ALEATORIO);
             }
             else
             {
@@ -403,6 +402,74 @@ namespace Ficha_Ragnarok_Online
                 ((CheckBox)sender).Checked = false;
             }
         }
+        private void btnLimpiarSkills_click(object sender, EventArgs e)
+        {
+            Panel panelTrabajo = ((Panel)((Button)sender).Parent);
+            foreach (Object panel in panelTrabajo.Controls)
+            {
+                if (panel is Panel)
+                {
+                    if (((Panel)panel).Tag is int)
+                    {
+                        panelTrabajo.Tag = ((int)panelTrabajo.Tag) + ((int)((Panel)panel).Tag);
+                        ((Panel)panel).Tag = 0;
+                        foreach (Object item in ((Panel)panel).Controls)
+                        {
+                            if (item is CheckBox)
+                            {
+                                ((CheckBox)item).Checked = false;
+                            }
+                        }
+                    }
 
+                }
+            }
+
+            escribirPuntosRestantes(panelTrabajo);
+            escribirAvisosCaracteristicas(panelTrabajo, LIMPIAR);
+
+        }
+        private void btnAlAzarSkills_click(object sender, EventArgs e)
+        {
+            Panel panelTrabajo = ((Panel)((Button)sender).Parent);
+            ArrayList paneles = new ArrayList();
+            Random rnd = new Random();
+            int numpaneles;
+            int auxRandom;
+            foreach (Object panel in panelTrabajo.Controls)
+            {
+                if (panel is Panel)
+                {
+                    if (((Panel)panel).Tag is int)
+                    {
+                        if (((int)(((Panel)panel).Tag)) != 5)
+                        {
+                            paneles.Add(panel);
+                        }
+                    }
+                }
+            }
+
+            while (((int)panelTrabajo.Tag) != 0)
+            {
+                numpaneles = paneles.Count;
+                auxRandom = rnd.Next(numpaneles);
+                ((Panel)paneles[auxRandom]).Tag = ((int)((Panel)paneles[auxRandom]).Tag) + 1;
+                panelTrabajo.Tag = ((int)panelTrabajo.Tag) - 1;
+                foreach (Object item in ((Panel)paneles[auxRandom]).Controls)
+                {
+                    if (item is CheckBox)
+                    {
+                        if (((CheckBox)item).TabIndex == ((int)((Panel)paneles[auxRandom]).Tag))
+                        {
+                            ((CheckBox)item).Checked = true;
+                        }
+                    }
+                }
+
+                escribirPuntosRestantes(panelTrabajo);
+                escribirAvisosCaracteristicas(panelTrabajo, ALEATORIO);
+            }
+        }
     }
 }
