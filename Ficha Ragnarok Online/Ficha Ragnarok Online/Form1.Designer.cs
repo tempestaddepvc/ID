@@ -38,10 +38,12 @@
             this.cmboxLocalizacion = new System.Windows.Forms.ComboBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.littleAvatar = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.rdbtnMediano = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.rdbtnNinio = new System.Windows.Forms.RadioButton();
-            this.rdbtnAdulto = new System.Windows.Forms.RadioButton();
+            this.rdbtnEnano = new System.Windows.Forms.RadioButton();
+            this.rdbtnHumano = new System.Windows.Forms.RadioButton();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -164,9 +166,9 @@
             this.lblFuerza = new System.Windows.Forms.Label();
             this.lblStats = new System.Windows.Forms.Label();
             this.timerAvisosCaracteristicas = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.characterImage)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.littleAvatar)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -202,7 +204,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudAgilidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudInteligencia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudFuerza)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // characterImage
@@ -268,7 +269,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(255, 51);
+            this.textBox1.Location = new System.Drawing.Point(259, 50);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(132, 24);
@@ -308,7 +309,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pictureBox9);
+            this.panel1.Controls.Add(this.littleAvatar);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel5);
@@ -322,15 +323,37 @@
             this.panel1.Size = new System.Drawing.Size(472, 298);
             this.panel1.TabIndex = 10;
             // 
+            // pictureBox9
+            // 
+            this.littleAvatar.BackColor = System.Drawing.Color.Transparent;
+            this.littleAvatar.Location = new System.Drawing.Point(62, 67);
+            this.littleAvatar.Name = "pictureBox9";
+            this.littleAvatar.Size = new System.Drawing.Size(150, 150);
+            this.littleAvatar.TabIndex = 30;
+            this.littleAvatar.TabStop = false;
+            // 
             // panel7
             // 
+            this.panel7.Controls.Add(this.rdbtnMediano);
             this.panel7.Controls.Add(this.label1);
-            this.panel7.Controls.Add(this.rdbtnNinio);
-            this.panel7.Controls.Add(this.rdbtnAdulto);
-            this.panel7.Location = new System.Drawing.Point(362, 82);
+            this.panel7.Controls.Add(this.rdbtnEnano);
+            this.panel7.Controls.Add(this.rdbtnHumano);
+            this.panel7.Location = new System.Drawing.Point(258, 79);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(98, 73);
+            this.panel7.Size = new System.Drawing.Size(98, 103);
             this.panel7.TabIndex = 49;
+            // 
+            // rdbtnMediano
+            // 
+            this.rdbtnMediano.AutoSize = true;
+            this.rdbtnMediano.Location = new System.Drawing.Point(4, 78);
+            this.rdbtnMediano.Margin = new System.Windows.Forms.Padding(4);
+            this.rdbtnMediano.Name = "rdbtnMediano";
+            this.rdbtnMediano.Size = new System.Drawing.Size(80, 21);
+            this.rdbtnMediano.TabIndex = 8;
+            this.rdbtnMediano.Text = "Mediano";
+            this.rdbtnMediano.UseVisualStyleBackColor = true;
+            this.rdbtnMediano.CheckedChanged += new System.EventHandler(this.rdbtnAlto_CheckedChanged);
             // 
             // label1
             // 
@@ -340,43 +363,43 @@
             this.label1.Location = new System.Drawing.Point(-3, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 21);
+            this.label1.Size = new System.Drawing.Size(52, 21);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Edad";
+            this.label1.Text = "Raza";
             // 
-            // rdbtnNinio
+            // rdbtnEnano
             // 
-            this.rdbtnNinio.AutoSize = true;
-            this.rdbtnNinio.Location = new System.Drawing.Point(4, 50);
-            this.rdbtnNinio.Margin = new System.Windows.Forms.Padding(4);
-            this.rdbtnNinio.Name = "rdbtnNinio";
-            this.rdbtnNinio.Size = new System.Drawing.Size(55, 21);
-            this.rdbtnNinio.TabIndex = 3;
-            this.rdbtnNinio.Text = "Niño";
-            this.rdbtnNinio.UseVisualStyleBackColor = true;
-            this.rdbtnNinio.CheckedChanged += new System.EventHandler(this.rdbtnEdadNinio);
+            this.rdbtnEnano.AutoSize = true;
+            this.rdbtnEnano.Location = new System.Drawing.Point(4, 51);
+            this.rdbtnEnano.Margin = new System.Windows.Forms.Padding(4);
+            this.rdbtnEnano.Name = "rdbtnEnano";
+            this.rdbtnEnano.Size = new System.Drawing.Size(68, 21);
+            this.rdbtnEnano.TabIndex = 3;
+            this.rdbtnEnano.Text = "Enano";
+            this.rdbtnEnano.UseVisualStyleBackColor = true;
+            this.rdbtnEnano.CheckedChanged += new System.EventHandler(this.rdbtnRazaEnano);
             // 
-            // rdbtnAdulto
+            // rdbtnHumano
             // 
-            this.rdbtnAdulto.AutoSize = true;
-            this.rdbtnAdulto.Checked = true;
-            this.rdbtnAdulto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rdbtnAdulto.Location = new System.Drawing.Point(4, 25);
-            this.rdbtnAdulto.Margin = new System.Windows.Forms.Padding(4);
-            this.rdbtnAdulto.Name = "rdbtnAdulto";
-            this.rdbtnAdulto.Size = new System.Drawing.Size(66, 21);
-            this.rdbtnAdulto.TabIndex = 2;
-            this.rdbtnAdulto.TabStop = true;
-            this.rdbtnAdulto.Text = "Adulto";
-            this.rdbtnAdulto.UseVisualStyleBackColor = true;
-            this.rdbtnAdulto.CheckedChanged += new System.EventHandler(this.rdbtnEdadAdulto);
+            this.rdbtnHumano.AutoSize = true;
+            this.rdbtnHumano.Checked = true;
+            this.rdbtnHumano.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rdbtnHumano.Location = new System.Drawing.Point(4, 24);
+            this.rdbtnHumano.Margin = new System.Windows.Forms.Padding(4);
+            this.rdbtnHumano.Name = "rdbtnHumano";
+            this.rdbtnHumano.Size = new System.Drawing.Size(81, 21);
+            this.rdbtnHumano.TabIndex = 2;
+            this.rdbtnHumano.TabStop = true;
+            this.rdbtnHumano.Text = "Humano";
+            this.rdbtnHumano.UseVisualStyleBackColor = true;
+            this.rdbtnHumano.CheckedChanged += new System.EventHandler(this.rdbtnRazaHumano);
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.lblSexo);
             this.panel6.Controls.Add(this.rdbtnMujer);
             this.panel6.Controls.Add(this.rdbtnHombre);
-            this.panel6.Location = new System.Drawing.Point(258, 82);
+            this.panel6.Location = new System.Drawing.Point(371, 78);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(98, 73);
             this.panel6.TabIndex = 48;
@@ -386,7 +409,7 @@
             this.panel5.Controls.Add(this.numericUpDown1);
             this.panel5.Controls.Add(this.progressBar1);
             this.panel5.Controls.Add(this.label6);
-            this.panel5.Location = new System.Drawing.Point(258, 157);
+            this.panel5.Location = new System.Drawing.Point(259, 188);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(176, 60);
             this.panel5.TabIndex = 47;
@@ -1801,15 +1824,6 @@
             this.timerAvisosCaracteristicas.Interval = 1000;
             this.timerAvisosCaracteristicas.Tick += new System.EventHandler(this.timerAvisosCaracteristicas_Tick);
             // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.Location = new System.Drawing.Point(62, 67);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(150, 150);
-            this.pictureBox9.TabIndex = 30;
-            this.pictureBox9.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -1829,6 +1843,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.characterImage)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.littleAvatar)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -1881,7 +1896,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudAgilidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudInteligencia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudFuerza)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2021,9 +2035,10 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton rdbtnNinio;
-        private System.Windows.Forms.RadioButton rdbtnAdulto;
-        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.RadioButton rdbtnEnano;
+        private System.Windows.Forms.RadioButton rdbtnHumano;
+        private System.Windows.Forms.PictureBox littleAvatar;
+        private System.Windows.Forms.RadioButton rdbtnMediano;
     }
 }
 

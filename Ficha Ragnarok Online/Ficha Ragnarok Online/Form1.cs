@@ -61,9 +61,9 @@ namespace Ficha_Ragnarok_Online
             lblJob2Skill2.Tag = 0;
             lblJob2Skill3.Tag = 0;
             lblJob2Skill4.Tag = 0;
-            pictureBox9.Parent = characterImage;
-            pictureBox9.BackColor = Color.Transparent;
-            pictureBox9.Location = new Point(25, 45);         
+            littleAvatar.Parent = characterImage;
+            littleAvatar.BackColor = Color.Transparent;
+                
 
         }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -97,15 +97,23 @@ namespace Ficha_Ragnarok_Online
         private void cambiarAvatar()
         {
             PictureBox pictureAuxiliar;
-            if (rdbtnAdulto.Checked)
+            if (rdbtnHumano.Checked)
             {
-                pictureBox9.Image = null;
+                littleAvatar.Image = null;
                 pictureAuxiliar = characterImage;
             }
             else
             {
                 characterImage.Image = null;
-                pictureAuxiliar = pictureBox9;
+                pictureAuxiliar = littleAvatar;
+                if (rdbtnEnano.Checked)
+                {
+                    littleAvatar.Location = new Point(15, 45);
+                }
+                else
+                {
+                    littleAvatar.Location = new Point(25, 45);
+                }
             }
             if (cmboxSegundoTrabajo.SelectedIndex != 0)
             {
@@ -138,15 +146,21 @@ namespace Ficha_Ragnarok_Online
                 lblSexo.Image = new Bitmap("..\\..\\elementosVisuales\\iconos sexo\\Mujer.gif");
             }
         }
-        private void rdbtnEdadAdulto(object sender, EventArgs e)
+        private void rdbtnRazaHumano(object sender, EventArgs e)
         {
             avatarWidth = 200;
             avatarHeight = 200;
             cambiarAvatar();
         }
-        private void rdbtnEdadNinio(object sender, EventArgs e)
+        private void rdbtnRazaEnano(object sender, EventArgs e)
         {
-            avatarWidth = 150;
+            avatarWidth = 160;
+            avatarHeight = 130;
+            cambiarAvatar();
+        }
+        private void rdbtnAlto_CheckedChanged(object sender, EventArgs e)
+        {
+            avatarWidth = 130;
             avatarHeight = 130;
             cambiarAvatar();
         }
@@ -522,6 +536,6 @@ namespace Ficha_Ragnarok_Online
         {
 
         }
-      
+        
     }
 }
