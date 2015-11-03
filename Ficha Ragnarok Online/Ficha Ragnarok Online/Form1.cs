@@ -19,6 +19,7 @@ namespace Ficha_Ragnarok_Online
         private const int LIMPIAR = 0;
         private const int ALEATORIO = 1;
         private const int ERROR = 2;
+        
         private const String MSG_ERROR_CARACTERISTICAS = "¡No tienes suficientes puntos!";
         private const String MSG_LIMPIAR_CARACTERISTICAS = "Se han limpiado los puntos asignados";
         private const String MSG_ALEATORIO_CARACTERISTICAS = "Se han repartido los puntos aleatoriamente";
@@ -59,7 +60,9 @@ namespace Ficha_Ragnarok_Online
             lblJob2Skill2.Tag = 0;
             lblJob2Skill3.Tag = 0;
             lblJob2Skill4.Tag = 0;
-
+            pictureBox9.Parent = characterImage;
+            pictureBox9.BackColor = Color.Transparent;
+            pictureBox9.Location = new Point(25, 25);         
 
         }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -92,13 +95,25 @@ namespace Ficha_Ragnarok_Online
         }
         private void cambiarAvatar()
         {
-            if (cmboxSegundoTrabajo.SelectedIndex != 0)
+            PictureBox pictureAuxiliar;
+            if (rdbtnAdulto.Checked)
             {
-                characterImage.Image = new Bitmap(new Bitmap(avatarPath + "segundoJob\\" + cmboxSegundoTrabajo.Text + ".gif"),avatarSize,avatarSize);
+                pictureBox9.Image = null;
+                pictureAuxiliar = characterImage;
             }
             else
             {
-                characterImage.Image = new Bitmap(new Bitmap(avatarPath + "primerJob\\" + cmboxPrimerJob.Text + ".gif"), avatarSize, avatarSize);
+                characterImage.Image = null;
+                pictureAuxiliar = pictureBox9;
+            }
+            if (cmboxSegundoTrabajo.SelectedIndex != 0)
+            {
+                pictureAuxiliar.Image = new Bitmap(new Bitmap(avatarPath + "segundoJob\\" + cmboxSegundoTrabajo.Text + ".gif"),avatarSize,avatarSize);
+            }
+            else
+            {
+
+                pictureAuxiliar.Image = new Bitmap(new Bitmap(avatarPath + "primerJob\\" + cmboxPrimerJob.Text + ".gif"), avatarSize, avatarSize);
             }
           
         }
