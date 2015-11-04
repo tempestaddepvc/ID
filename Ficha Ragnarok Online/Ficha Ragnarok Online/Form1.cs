@@ -344,11 +344,16 @@ namespace Ficha_Ragnarok_Online
             {
                
               desaparecerSkillsDeTrabajo(panelPrimerTrabajo);
-
+                if (nudJob1.Value >= 10)
+                {
+                    desaparecerTrabajo(panelSegundoTrabajo);
+                    desaparecerSkillsDeTrabajo(panelSegundoTrabajo);
+                }  
 
             }
             else
             {
+                
                 aparecerSkillsDeTrabajo(panelPrimerTrabajo);
                 lblMsgJob1.Text = "¡Ha desbloqueado las habilidades del primer trabajo!";
                 lblMsgJob1.ForeColor = Color.Green;
@@ -397,6 +402,18 @@ namespace Ficha_Ragnarok_Online
         private void cmboxSegundoTrabajo_SelectedIndexChanged(object sender, EventArgs e)
         {
             cambiarAvatar();
+                if (cmboxPrimerJob.Text == "Sin seleccionar")
+                {
+
+                    desaparecerSkillsDeTrabajo(panelSegundoTrabajo);
+
+                }
+                else
+                {
+
+                    aparecerSkillsDeTrabajo(panelSegundoTrabajo);
+                
+            }
         }
         private void checkBoxClick(object sender, EventArgs e)
         {
@@ -605,6 +622,21 @@ namespace Ficha_Ragnarok_Online
                    desaparecerTrabajo(panelPrimerTrabajo);
                 }
             }
+            if (panel == panelPrimerTrabajo)
+            {
+                if (((int)nudJob1.Tag) < 10 && nudJob1.Value >= 10)
+                {
+                    aparecerTrabajo(panelSegundoTrabajo);
+                    lblMsgJob1.Text = "¡Ha desbloqueado el segundo trabajo";
+                    lblMsgJob1.ForeColor = Color.Green;
+                    lblMsgJob1.Visible = true;
+                    timerAvisoNiveles.Start();
+                }
+                if (((int)nudJob1.Tag) >= 10 && nudJob1.Value < 10)
+                {
+                    desaparecerTrabajo(panelSegundoTrabajo);
+                }
+            }
 
             }
         private void desaparecerTrabajo(Panel panel)
@@ -614,10 +646,15 @@ namespace Ficha_Ragnarok_Online
             if(panel ==panelPrimerTrabajo)
             {
                 nudJob1.Value = 1;
+                cmboxPrimerJob.SelectedIndex = 1;
             }
             else
             {
                 nudJob2.Value = 1;
+                lblMsgJob1.Text = "¡Ha perdido el segundo trabajo!";
+                lblMsgJob1.ForeColor = Color.Red;
+                lblMsgJob1.Visible = true;
+                timerAvisoNiveles.Start();
             }
         }
         private void desaparecerSkillsDeTrabajo(Panel panel)
@@ -677,6 +714,7 @@ namespace Ficha_Ragnarok_Online
             lblMorir.Visible = false;
             lblMsgNivel.Visible = false;
             lblMsgJob1.Visible = false;
+            
             ((System.Windows.Forms.Timer)sender).Stop();
         }
     }
