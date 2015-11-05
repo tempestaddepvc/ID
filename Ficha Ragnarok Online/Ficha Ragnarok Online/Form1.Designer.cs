@@ -38,6 +38,7 @@
             this.cmboxLocalizacion = new System.Windows.Forms.ComboBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.panelDatosGenerales = new System.Windows.Forms.Panel();
+            this.lblMorir = new System.Windows.Forms.Label();
             this.littleAvatar = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.rdbtnMediano = new System.Windows.Forms.RadioButton();
@@ -65,7 +66,7 @@
             this.checkBox19 = new System.Windows.Forms.CheckBox();
             this.checkBox20 = new System.Windows.Forms.CheckBox();
             this.lblJob1Skill4 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pbJob1Skill4 = new System.Windows.Forms.PictureBox();
             this.lblMsgJob1Skills = new System.Windows.Forms.Label();
             this.panelHabilidad2PrimerTrabajo = new System.Windows.Forms.Panel();
             this.checkBox11 = new System.Windows.Forms.CheckBox();
@@ -74,7 +75,7 @@
             this.checkBox14 = new System.Windows.Forms.CheckBox();
             this.checkBox15 = new System.Windows.Forms.CheckBox();
             this.lblJob1Skill2 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pbJob1Skill2 = new System.Windows.Forms.PictureBox();
             this.panelHabilidad3PrimerTrabajo = new System.Windows.Forms.Panel();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
@@ -82,7 +83,7 @@
             this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.lblJob1Skill3 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pbJob1Skill3 = new System.Windows.Forms.PictureBox();
             this.panelHabilidad1PrimerTrabajo = new System.Windows.Forms.Panel();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
@@ -90,7 +91,7 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.lblJob1Skill1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbJob1Skill1 = new System.Windows.Forms.PictureBox();
             this.btnAlAzarJob1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.btnLimpiarJob1 = new System.Windows.Forms.Button();
@@ -111,7 +112,7 @@
             this.checkBox24 = new System.Windows.Forms.CheckBox();
             this.checkBox25 = new System.Windows.Forms.CheckBox();
             this.lblJob2Skill4 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pbJob2Skill4 = new System.Windows.Forms.PictureBox();
             this.lblMsgJob2Skills = new System.Windows.Forms.Label();
             this.panelHabilidad2SegundoTrabajo = new System.Windows.Forms.Panel();
             this.checkBox26 = new System.Windows.Forms.CheckBox();
@@ -120,7 +121,7 @@
             this.checkBox29 = new System.Windows.Forms.CheckBox();
             this.checkBox30 = new System.Windows.Forms.CheckBox();
             this.lblJob2Skill2 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pbJob2Skill2 = new System.Windows.Forms.PictureBox();
             this.panelHabilidad3SegundoTrabajo = new System.Windows.Forms.Panel();
             this.checkBox31 = new System.Windows.Forms.CheckBox();
             this.checkBox32 = new System.Windows.Forms.CheckBox();
@@ -128,7 +129,7 @@
             this.checkBox34 = new System.Windows.Forms.CheckBox();
             this.checkBox35 = new System.Windows.Forms.CheckBox();
             this.lblJob2Skill3 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pbJob2Skill3 = new System.Windows.Forms.PictureBox();
             this.panelHabilidad1SegundoTrabajo = new System.Windows.Forms.Panel();
             this.checkBox36 = new System.Windows.Forms.CheckBox();
             this.checkBox37 = new System.Windows.Forms.CheckBox();
@@ -136,7 +137,7 @@
             this.checkBox39 = new System.Windows.Forms.CheckBox();
             this.checkBox40 = new System.Windows.Forms.CheckBox();
             this.lblJob2Skill1 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pbJob2Skill1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.btnLimpiarJob2 = new System.Windows.Forms.Button();
@@ -166,7 +167,6 @@
             this.lblFuerza = new System.Windows.Forms.Label();
             this.lblStats = new System.Windows.Forms.Label();
             this.timerAvisosCaracteristicas = new System.Windows.Forms.Timer(this.components);
-            this.lblMorir = new System.Windows.Forms.Label();
             this.timerAvisoNiveles = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.characterImage)).BeginInit();
             this.panelDatosGenerales.SuspendLayout();
@@ -179,24 +179,24 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudJob1)).BeginInit();
             this.panelHabilidad4PrimerTrabajo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJob1Skill4)).BeginInit();
             this.panelHabilidad2PrimerTrabajo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJob1Skill2)).BeginInit();
             this.panelHabilidad3PrimerTrabajo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJob1Skill3)).BeginInit();
             this.panelHabilidad1PrimerTrabajo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJob1Skill1)).BeginInit();
             this.panelSegundoTrabajo.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudJob2)).BeginInit();
             this.panelHabilidad4SegundoTrabajo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJob2Skill4)).BeginInit();
             this.panelHabilidad2SegundoTrabajo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJob2Skill2)).BeginInit();
             this.panelHabilidad3SegundoTrabajo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJob2Skill3)).BeginInit();
             this.panelHabilidad1SegundoTrabajo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJob2Skill1)).BeginInit();
             this.panelNivelStats.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudNivel)).BeginInit();
@@ -323,6 +323,17 @@
             this.panelDatosGenerales.Name = "panelDatosGenerales";
             this.panelDatosGenerales.Size = new System.Drawing.Size(472, 298);
             this.panelDatosGenerales.TabIndex = 10;
+            // 
+            // lblMorir
+            // 
+            this.lblMorir.AutoSize = true;
+            this.lblMorir.ForeColor = System.Drawing.Color.Red;
+            this.lblMorir.Location = new System.Drawing.Point(325, 270);
+            this.lblMorir.Name = "lblMorir";
+            this.lblMorir.Size = new System.Drawing.Size(94, 17);
+            this.lblMorir.TabIndex = 47;
+            this.lblMorir.Text = "¡Has muerto!";
+            this.lblMorir.Visible = false;
             // 
             // littleAvatar
             // 
@@ -590,7 +601,7 @@
             this.panelHabilidad4PrimerTrabajo.Controls.Add(this.checkBox19);
             this.panelHabilidad4PrimerTrabajo.Controls.Add(this.checkBox20);
             this.panelHabilidad4PrimerTrabajo.Controls.Add(this.lblJob1Skill4);
-            this.panelHabilidad4PrimerTrabajo.Controls.Add(this.pictureBox4);
+            this.panelHabilidad4PrimerTrabajo.Controls.Add(this.pbJob1Skill4);
             this.panelHabilidad4PrimerTrabajo.Location = new System.Drawing.Point(220, 179);
             this.panelHabilidad4PrimerTrabajo.Name = "panelHabilidad4PrimerTrabajo";
             this.panelHabilidad4PrimerTrabajo.Size = new System.Drawing.Size(194, 49);
@@ -655,16 +666,16 @@
             this.lblJob1Skill4.TabIndex = 1;
             this.lblJob1Skill4.Text = "lblJob1Skill4";
             // 
-            // pictureBox4
+            // pbJob1Skill4
             // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox4.Location = new System.Drawing.Point(3, 17);
-            this.pictureBox4.MaximumSize = new System.Drawing.Size(24, 24);
-            this.pictureBox4.MinimumSize = new System.Drawing.Size(24, 24);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
+            this.pbJob1Skill4.BackColor = System.Drawing.Color.Transparent;
+            this.pbJob1Skill4.Location = new System.Drawing.Point(3, 17);
+            this.pbJob1Skill4.MaximumSize = new System.Drawing.Size(24, 24);
+            this.pbJob1Skill4.MinimumSize = new System.Drawing.Size(24, 24);
+            this.pbJob1Skill4.Name = "pbJob1Skill4";
+            this.pbJob1Skill4.Size = new System.Drawing.Size(24, 24);
+            this.pbJob1Skill4.TabIndex = 0;
+            this.pbJob1Skill4.TabStop = false;
             // 
             // lblMsgJob1Skills
             // 
@@ -685,7 +696,7 @@
             this.panelHabilidad2PrimerTrabajo.Controls.Add(this.checkBox14);
             this.panelHabilidad2PrimerTrabajo.Controls.Add(this.checkBox15);
             this.panelHabilidad2PrimerTrabajo.Controls.Add(this.lblJob1Skill2);
-            this.panelHabilidad2PrimerTrabajo.Controls.Add(this.pictureBox3);
+            this.panelHabilidad2PrimerTrabajo.Controls.Add(this.pbJob1Skill2);
             this.panelHabilidad2PrimerTrabajo.Location = new System.Drawing.Point(6, 179);
             this.panelHabilidad2PrimerTrabajo.Name = "panelHabilidad2PrimerTrabajo";
             this.panelHabilidad2PrimerTrabajo.Size = new System.Drawing.Size(194, 49);
@@ -750,16 +761,16 @@
             this.lblJob1Skill2.TabIndex = 1;
             this.lblJob1Skill2.Text = "lblJob1Skill2";
             // 
-            // pictureBox3
+            // pbJob1Skill2
             // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 17);
-            this.pictureBox3.MaximumSize = new System.Drawing.Size(24, 24);
-            this.pictureBox3.MinimumSize = new System.Drawing.Size(24, 24);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            this.pbJob1Skill2.BackColor = System.Drawing.Color.Transparent;
+            this.pbJob1Skill2.Location = new System.Drawing.Point(3, 17);
+            this.pbJob1Skill2.MaximumSize = new System.Drawing.Size(24, 24);
+            this.pbJob1Skill2.MinimumSize = new System.Drawing.Size(24, 24);
+            this.pbJob1Skill2.Name = "pbJob1Skill2";
+            this.pbJob1Skill2.Size = new System.Drawing.Size(24, 24);
+            this.pbJob1Skill2.TabIndex = 0;
+            this.pbJob1Skill2.TabStop = false;
             // 
             // panelHabilidad3PrimerTrabajo
             // 
@@ -769,7 +780,7 @@
             this.panelHabilidad3PrimerTrabajo.Controls.Add(this.checkBox9);
             this.panelHabilidad3PrimerTrabajo.Controls.Add(this.checkBox10);
             this.panelHabilidad3PrimerTrabajo.Controls.Add(this.lblJob1Skill3);
-            this.panelHabilidad3PrimerTrabajo.Controls.Add(this.pictureBox2);
+            this.panelHabilidad3PrimerTrabajo.Controls.Add(this.pbJob1Skill3);
             this.panelHabilidad3PrimerTrabajo.Location = new System.Drawing.Point(220, 119);
             this.panelHabilidad3PrimerTrabajo.Name = "panelHabilidad3PrimerTrabajo";
             this.panelHabilidad3PrimerTrabajo.Size = new System.Drawing.Size(194, 49);
@@ -834,16 +845,16 @@
             this.lblJob1Skill3.TabIndex = 1;
             this.lblJob1Skill3.Text = "lblJob1Skill3";
             // 
-            // pictureBox2
+            // pbJob1Skill3
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 17);
-            this.pictureBox2.MaximumSize = new System.Drawing.Size(24, 24);
-            this.pictureBox2.MinimumSize = new System.Drawing.Size(24, 24);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.pbJob1Skill3.BackColor = System.Drawing.Color.Transparent;
+            this.pbJob1Skill3.Location = new System.Drawing.Point(3, 17);
+            this.pbJob1Skill3.MaximumSize = new System.Drawing.Size(24, 24);
+            this.pbJob1Skill3.MinimumSize = new System.Drawing.Size(24, 24);
+            this.pbJob1Skill3.Name = "pbJob1Skill3";
+            this.pbJob1Skill3.Size = new System.Drawing.Size(24, 24);
+            this.pbJob1Skill3.TabIndex = 0;
+            this.pbJob1Skill3.TabStop = false;
             // 
             // panelHabilidad1PrimerTrabajo
             // 
@@ -853,7 +864,7 @@
             this.panelHabilidad1PrimerTrabajo.Controls.Add(this.checkBox2);
             this.panelHabilidad1PrimerTrabajo.Controls.Add(this.checkBox1);
             this.panelHabilidad1PrimerTrabajo.Controls.Add(this.lblJob1Skill1);
-            this.panelHabilidad1PrimerTrabajo.Controls.Add(this.pictureBox1);
+            this.panelHabilidad1PrimerTrabajo.Controls.Add(this.pbJob1Skill1);
             this.panelHabilidad1PrimerTrabajo.Location = new System.Drawing.Point(3, 119);
             this.panelHabilidad1PrimerTrabajo.Name = "panelHabilidad1PrimerTrabajo";
             this.panelHabilidad1PrimerTrabajo.Size = new System.Drawing.Size(200, 49);
@@ -918,16 +929,16 @@
             this.lblJob1Skill1.TabIndex = 1;
             this.lblJob1Skill1.Text = "lblJob1Skill1";
             // 
-            // pictureBox1
+            // pbJob1Skill1
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 17);
-            this.pictureBox1.MaximumSize = new System.Drawing.Size(24, 24);
-            this.pictureBox1.MinimumSize = new System.Drawing.Size(24, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pbJob1Skill1.BackColor = System.Drawing.Color.Transparent;
+            this.pbJob1Skill1.Location = new System.Drawing.Point(3, 17);
+            this.pbJob1Skill1.MaximumSize = new System.Drawing.Size(24, 24);
+            this.pbJob1Skill1.MinimumSize = new System.Drawing.Size(24, 24);
+            this.pbJob1Skill1.Name = "pbJob1Skill1";
+            this.pbJob1Skill1.Size = new System.Drawing.Size(24, 24);
+            this.pbJob1Skill1.TabIndex = 0;
+            this.pbJob1Skill1.TabStop = false;
             // 
             // btnAlAzarJob1
             // 
@@ -1099,7 +1110,7 @@
             this.panelHabilidad4SegundoTrabajo.Controls.Add(this.checkBox24);
             this.panelHabilidad4SegundoTrabajo.Controls.Add(this.checkBox25);
             this.panelHabilidad4SegundoTrabajo.Controls.Add(this.lblJob2Skill4);
-            this.panelHabilidad4SegundoTrabajo.Controls.Add(this.pictureBox5);
+            this.panelHabilidad4SegundoTrabajo.Controls.Add(this.pbJob2Skill4);
             this.panelHabilidad4SegundoTrabajo.Location = new System.Drawing.Point(219, 176);
             this.panelHabilidad4SegundoTrabajo.Name = "panelHabilidad4SegundoTrabajo";
             this.panelHabilidad4SegundoTrabajo.Size = new System.Drawing.Size(195, 49);
@@ -1164,16 +1175,16 @@
             this.lblJob2Skill4.TabIndex = 1;
             this.lblJob2Skill4.Text = "lblJob2Skill4";
             // 
-            // pictureBox5
+            // pbJob2Skill4
             // 
-            this.pictureBox5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox5.Location = new System.Drawing.Point(3, 17);
-            this.pictureBox5.MaximumSize = new System.Drawing.Size(24, 24);
-            this.pictureBox5.MinimumSize = new System.Drawing.Size(24, 24);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
+            this.pbJob2Skill4.BackColor = System.Drawing.Color.Transparent;
+            this.pbJob2Skill4.Location = new System.Drawing.Point(3, 17);
+            this.pbJob2Skill4.MaximumSize = new System.Drawing.Size(24, 24);
+            this.pbJob2Skill4.MinimumSize = new System.Drawing.Size(24, 24);
+            this.pbJob2Skill4.Name = "pbJob2Skill4";
+            this.pbJob2Skill4.Size = new System.Drawing.Size(24, 24);
+            this.pbJob2Skill4.TabIndex = 0;
+            this.pbJob2Skill4.TabStop = false;
             // 
             // lblMsgJob2Skills
             // 
@@ -1194,7 +1205,7 @@
             this.panelHabilidad2SegundoTrabajo.Controls.Add(this.checkBox29);
             this.panelHabilidad2SegundoTrabajo.Controls.Add(this.checkBox30);
             this.panelHabilidad2SegundoTrabajo.Controls.Add(this.lblJob2Skill2);
-            this.panelHabilidad2SegundoTrabajo.Controls.Add(this.pictureBox6);
+            this.panelHabilidad2SegundoTrabajo.Controls.Add(this.pbJob2Skill2);
             this.panelHabilidad2SegundoTrabajo.Location = new System.Drawing.Point(6, 176);
             this.panelHabilidad2SegundoTrabajo.Name = "panelHabilidad2SegundoTrabajo";
             this.panelHabilidad2SegundoTrabajo.Size = new System.Drawing.Size(196, 49);
@@ -1259,16 +1270,16 @@
             this.lblJob2Skill2.TabIndex = 1;
             this.lblJob2Skill2.Text = "lblJob2Skill2";
             // 
-            // pictureBox6
+            // pbJob2Skill2
             // 
-            this.pictureBox6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox6.Location = new System.Drawing.Point(3, 17);
-            this.pictureBox6.MaximumSize = new System.Drawing.Size(24, 24);
-            this.pictureBox6.MinimumSize = new System.Drawing.Size(24, 24);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
+            this.pbJob2Skill2.BackColor = System.Drawing.Color.Transparent;
+            this.pbJob2Skill2.Location = new System.Drawing.Point(3, 17);
+            this.pbJob2Skill2.MaximumSize = new System.Drawing.Size(24, 24);
+            this.pbJob2Skill2.MinimumSize = new System.Drawing.Size(24, 24);
+            this.pbJob2Skill2.Name = "pbJob2Skill2";
+            this.pbJob2Skill2.Size = new System.Drawing.Size(24, 24);
+            this.pbJob2Skill2.TabIndex = 0;
+            this.pbJob2Skill2.TabStop = false;
             // 
             // panelHabilidad3SegundoTrabajo
             // 
@@ -1278,7 +1289,7 @@
             this.panelHabilidad3SegundoTrabajo.Controls.Add(this.checkBox34);
             this.panelHabilidad3SegundoTrabajo.Controls.Add(this.checkBox35);
             this.panelHabilidad3SegundoTrabajo.Controls.Add(this.lblJob2Skill3);
-            this.panelHabilidad3SegundoTrabajo.Controls.Add(this.pictureBox7);
+            this.panelHabilidad3SegundoTrabajo.Controls.Add(this.pbJob2Skill3);
             this.panelHabilidad3SegundoTrabajo.Location = new System.Drawing.Point(219, 116);
             this.panelHabilidad3SegundoTrabajo.Name = "panelHabilidad3SegundoTrabajo";
             this.panelHabilidad3SegundoTrabajo.Size = new System.Drawing.Size(195, 49);
@@ -1343,16 +1354,16 @@
             this.lblJob2Skill3.TabIndex = 1;
             this.lblJob2Skill3.Text = "lblJob2Skill3";
             // 
-            // pictureBox7
+            // pbJob2Skill3
             // 
-            this.pictureBox7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox7.Location = new System.Drawing.Point(3, 17);
-            this.pictureBox7.MaximumSize = new System.Drawing.Size(24, 24);
-            this.pictureBox7.MinimumSize = new System.Drawing.Size(24, 24);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox7.TabIndex = 0;
-            this.pictureBox7.TabStop = false;
+            this.pbJob2Skill3.BackColor = System.Drawing.Color.Transparent;
+            this.pbJob2Skill3.Location = new System.Drawing.Point(3, 17);
+            this.pbJob2Skill3.MaximumSize = new System.Drawing.Size(24, 24);
+            this.pbJob2Skill3.MinimumSize = new System.Drawing.Size(24, 24);
+            this.pbJob2Skill3.Name = "pbJob2Skill3";
+            this.pbJob2Skill3.Size = new System.Drawing.Size(24, 24);
+            this.pbJob2Skill3.TabIndex = 0;
+            this.pbJob2Skill3.TabStop = false;
             // 
             // panelHabilidad1SegundoTrabajo
             // 
@@ -1362,7 +1373,7 @@
             this.panelHabilidad1SegundoTrabajo.Controls.Add(this.checkBox39);
             this.panelHabilidad1SegundoTrabajo.Controls.Add(this.checkBox40);
             this.panelHabilidad1SegundoTrabajo.Controls.Add(this.lblJob2Skill1);
-            this.panelHabilidad1SegundoTrabajo.Controls.Add(this.pictureBox8);
+            this.panelHabilidad1SegundoTrabajo.Controls.Add(this.pbJob2Skill1);
             this.panelHabilidad1SegundoTrabajo.Location = new System.Drawing.Point(3, 116);
             this.panelHabilidad1SegundoTrabajo.Name = "panelHabilidad1SegundoTrabajo";
             this.panelHabilidad1SegundoTrabajo.Size = new System.Drawing.Size(199, 49);
@@ -1427,16 +1438,16 @@
             this.lblJob2Skill1.TabIndex = 1;
             this.lblJob2Skill1.Text = "lblJob2Skill1";
             // 
-            // pictureBox8
+            // pbJob2Skill1
             // 
-            this.pictureBox8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox8.Location = new System.Drawing.Point(3, 17);
-            this.pictureBox8.MaximumSize = new System.Drawing.Size(24, 24);
-            this.pictureBox8.MinimumSize = new System.Drawing.Size(24, 24);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox8.TabIndex = 0;
-            this.pictureBox8.TabStop = false;
+            this.pbJob2Skill1.BackColor = System.Drawing.Color.Transparent;
+            this.pbJob2Skill1.Location = new System.Drawing.Point(3, 17);
+            this.pbJob2Skill1.MaximumSize = new System.Drawing.Size(24, 24);
+            this.pbJob2Skill1.MinimumSize = new System.Drawing.Size(24, 24);
+            this.pbJob2Skill1.Name = "pbJob2Skill1";
+            this.pbJob2Skill1.Size = new System.Drawing.Size(24, 24);
+            this.pbJob2Skill1.TabIndex = 0;
+            this.pbJob2Skill1.TabStop = false;
             // 
             // button1
             // 
@@ -1834,17 +1845,6 @@
             this.timerAvisosCaracteristicas.Interval = 1000;
             this.timerAvisosCaracteristicas.Tick += new System.EventHandler(this.timerAvisosCaracteristicas_Tick);
             // 
-            // lblMorir
-            // 
-            this.lblMorir.AutoSize = true;
-            this.lblMorir.ForeColor = System.Drawing.Color.Red;
-            this.lblMorir.Location = new System.Drawing.Point(325, 270);
-            this.lblMorir.Name = "lblMorir";
-            this.lblMorir.Size = new System.Drawing.Size(94, 17);
-            this.lblMorir.TabIndex = 47;
-            this.lblMorir.Text = "¡Has muerto!";
-            this.lblMorir.Visible = false;
-            // 
             // timerAvisoNiveles
             // 
             this.timerAvisoNiveles.Interval = 1000;
@@ -1854,7 +1854,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.ClientSize = new System.Drawing.Size(1184, 662);
             this.Controls.Add(this.panelSegundoTrabajo);
             this.Controls.Add(this.panelPrimerTrabajo);
             this.Controls.Add(this.panelNivelStats);
@@ -1884,16 +1884,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudJob1)).EndInit();
             this.panelHabilidad4PrimerTrabajo.ResumeLayout(false);
             this.panelHabilidad4PrimerTrabajo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJob1Skill4)).EndInit();
             this.panelHabilidad2PrimerTrabajo.ResumeLayout(false);
             this.panelHabilidad2PrimerTrabajo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJob1Skill2)).EndInit();
             this.panelHabilidad3PrimerTrabajo.ResumeLayout(false);
             this.panelHabilidad3PrimerTrabajo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJob1Skill3)).EndInit();
             this.panelHabilidad1PrimerTrabajo.ResumeLayout(false);
             this.panelHabilidad1PrimerTrabajo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJob1Skill1)).EndInit();
             this.panelSegundoTrabajo.ResumeLayout(false);
             this.panelSegundoTrabajo.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -1901,16 +1901,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudJob2)).EndInit();
             this.panelHabilidad4SegundoTrabajo.ResumeLayout(false);
             this.panelHabilidad4SegundoTrabajo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJob2Skill4)).EndInit();
             this.panelHabilidad2SegundoTrabajo.ResumeLayout(false);
             this.panelHabilidad2SegundoTrabajo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJob2Skill2)).EndInit();
             this.panelHabilidad3SegundoTrabajo.ResumeLayout(false);
             this.panelHabilidad3SegundoTrabajo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJob2Skill3)).EndInit();
             this.panelHabilidad1SegundoTrabajo.ResumeLayout(false);
             this.panelHabilidad1SegundoTrabajo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJob2Skill1)).EndInit();
             this.panelNivelStats.ResumeLayout(false);
             this.panelNivelStats.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -1966,7 +1966,7 @@
         private System.Windows.Forms.CheckBox checkBox19;
         private System.Windows.Forms.CheckBox checkBox20;
         private System.Windows.Forms.Label lblJob1Skill4;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pbJob1Skill4;
         private System.Windows.Forms.Label lblMsgJob1Skills;
         private System.Windows.Forms.Panel panelHabilidad2PrimerTrabajo;
         private System.Windows.Forms.CheckBox checkBox11;
@@ -1974,10 +1974,10 @@
         private System.Windows.Forms.CheckBox checkBox13;
         private System.Windows.Forms.CheckBox checkBox14;
         private System.Windows.Forms.Label lblJob1Skill2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pbJob1Skill2;
         private System.Windows.Forms.Panel panelHabilidad3PrimerTrabajo;
         private System.Windows.Forms.Label lblJob1Skill3;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pbJob1Skill3;
         private System.Windows.Forms.Panel panelHabilidad1PrimerTrabajo;
         private System.Windows.Forms.CheckBox checkBox5;
         private System.Windows.Forms.CheckBox checkBox4;
@@ -1985,7 +1985,7 @@
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label lblJob1Skill1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbJob1Skill1;
         private System.Windows.Forms.Button btnAlAzarJob1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnLimpiarJob1;
@@ -1998,7 +1998,7 @@
         private System.Windows.Forms.CheckBox checkBox24;
         private System.Windows.Forms.CheckBox checkBox25;
         private System.Windows.Forms.Label lblJob2Skill4;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pbJob2Skill4;
         private System.Windows.Forms.Label lblMsgJob2Skills;
         private System.Windows.Forms.Panel panelHabilidad2SegundoTrabajo;
         private System.Windows.Forms.CheckBox checkBox26;
@@ -2007,7 +2007,7 @@
         private System.Windows.Forms.CheckBox checkBox29;
         private System.Windows.Forms.CheckBox checkBox30;
         private System.Windows.Forms.Label lblJob2Skill2;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pbJob2Skill2;
         private System.Windows.Forms.Panel panelHabilidad3SegundoTrabajo;
         private System.Windows.Forms.CheckBox checkBox31;
         private System.Windows.Forms.CheckBox checkBox32;
@@ -2015,7 +2015,7 @@
         private System.Windows.Forms.CheckBox checkBox34;
         private System.Windows.Forms.CheckBox checkBox35;
         private System.Windows.Forms.Label lblJob2Skill3;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pbJob2Skill3;
         private System.Windows.Forms.Panel panelHabilidad1SegundoTrabajo;
         private System.Windows.Forms.CheckBox checkBox36;
         private System.Windows.Forms.CheckBox checkBox37;
@@ -2023,7 +2023,7 @@
         private System.Windows.Forms.CheckBox checkBox39;
         private System.Windows.Forms.CheckBox checkBox40;
         private System.Windows.Forms.Label lblJob2Skill1;
-        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pbJob2Skill1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnLimpiarJob2;

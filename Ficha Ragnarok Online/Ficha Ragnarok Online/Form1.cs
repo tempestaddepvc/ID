@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -402,12 +403,14 @@ namespace Ficha_Ragnarok_Online
         private void cmboxSegundoTrabajo_SelectedIndexChanged(object sender, EventArgs e)
         {
             cambiarAvatar();
-                if (cmboxPrimerJob.Text == "Sin seleccionar")
+            nudJob2.Value = 1;
+            if (cmboxSegundoTrabajo.Text == "Sin seleccionar")
                 {
 
-                    desaparecerSkillsDeTrabajo(panelSegundoTrabajo);
+                desaparecerSkillsDeTrabajo(panelSegundoTrabajo);
+                
 
-                }
+            }
                 else
                 {
 
@@ -551,7 +554,10 @@ namespace Ficha_Ragnarok_Online
                         }
                     }
                 }
-
+                    if (((int)((Panel)paneles[auxRandom]).Tag) == 5)
+                    {
+                        paneles.Remove(paneles[auxRandom]);
+                    }
 
             }
             escribirPuntosRestantes(panelTrabajo);
@@ -690,7 +696,48 @@ namespace Ficha_Ragnarok_Online
                 else
                 {
                     ((Control)item).Visible = true;
+                    dibujarSkills(panel);
                 }
+            }
+        }
+        private void dibujarSkills(Panel panel)
+        {
+            ArrayList listaLabel = new ArrayList();
+
+            ArrayList listaPictureBox=new ArrayList();
+            String ruta;
+            int i = 0;
+            if (panel == panelPrimerTrabajo)
+            {
+                listaLabel.Add(lblJob1Skill1);
+                listaLabel.Add(lblJob1Skill2);
+                listaLabel.Add(lblJob1Skill3);
+                listaLabel.Add(lblJob1Skill4);
+                listaPictureBox.Add(pbJob1Skill1);
+                listaPictureBox.Add(pbJob1Skill2);
+                listaPictureBox.Add(pbJob1Skill3);
+                listaPictureBox.Add(pbJob1Skill4);
+                ruta = "..\\..\\elementosVisuales\\iconos habilidades\\primerJob\\"+ cmboxPrimerJob.Text + "\\";
+               
+            }
+            else
+            {
+                listaLabel.Add(lblJob2Skill1);
+                listaLabel.Add(lblJob2Skill2);
+                listaLabel.Add(lblJob2Skill3);
+                listaLabel.Add(lblJob2Skill4);
+                listaPictureBox.Add(pbJob2Skill1);
+                listaPictureBox.Add(pbJob2Skill2);
+                listaPictureBox.Add(pbJob2Skill3);
+                listaPictureBox.Add(pbJob2Skill4);
+                ruta = "..\\..\\elementosVisuales\\iconos habilidades\\segundoJob\\" + cmboxSegundoTrabajo.Text + "\\";
+            }
+            foreach (string icono in Directory.GetFiles(ruta, "*.gif"))
+            {
+                ((PictureBox)listaPictureBox[i]).Image = new Bitmap(icono);
+                ((Label)listaLabel[i]).Text = Path.GetFileNameWithoutExtension(icono);
+                //.Select(Path.GetFileName))
+                i++;
             }
         }
         private void aparecerTrabajo(Panel panel)
@@ -716,6 +763,15 @@ namespace Ficha_Ragnarok_Online
             lblMsgJob1.Visible = false;
             
             ((System.Windows.Forms.Timer)sender).Stop();
+        }
+        private void checkBox1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void checkBox15_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
